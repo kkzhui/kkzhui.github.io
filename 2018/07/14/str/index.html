@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="小豌豆">
 <meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated dailying 字符串字符串的声明  字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。  字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进行重新赋值。  字符串进行比较时,采用对应位置的逐个字母比">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-15T09:48:31.730Z">
+<meta property="og:updated_time" content="2018-07-15T15:54:18.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串的声明和操作">
 <meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated dailying 字符串字符串的声明  字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。  字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进行重新赋值。  字符串进行比较时,采用对应位置的逐个字母比">
@@ -195,14 +195,21 @@
 <p>注意：如果分割符在字符串中未出现，则会把字符串作为列表的一个元素<br>比如:<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w,e,l,c,o,m,e'</span></span><br><span class="line"> str1.split()</span><br></pre></td></tr></table></figure></p>
 <p> 结果为:[‘w,e,l,c,o,m,e’]</p>
 <p>strip() 字符串左右两端去除指定字符（默认情况，去除空格）<br>函数格式：str.strip([指定字符])<br>返回值：根据指定的字符，对字符串进行两端去除其内容，返回一个新的字符串。如果字符串中间有空格或指定字符，那么该函数不起作用。如果指定的字符在字符串左右两端不存在，那么将返回字符串本身</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">' welcome  '</span></span><br><span class="line">str2 = str1.strip()</span><br><span class="line"> <span class="built_in">print</span>(str1,str2)</span><br></pre></td></tr></table></figure>
-<p>结果为： welcome  welcome’</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string1 = <span class="string">'awelcom to zhengzhoua'</span></span><br><span class="line">string1.strip(<span class="string">'a'</span>)</span><br><span class="line"><span class="string">'welcom to zhengzhou'</span></span><br></pre></td></tr></table></figure>
-<p>结果为：’welcom to zhengzhou’</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">' welcome  '</span></span><br><span class="line"> str2 = str1.strip()</span><br><span class="line"> <span class="built_in">print</span>(str1,str2)</span><br></pre></td></tr></table></figure>
+<p>结果为： welcome  welcome</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'awelcom to zhengzhoua'</span></span><br><span class="line">str1.strip(<span class="string">'a'</span>)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure>
+<p>结果为：welcom to zhengzhou</p>
+<p>注意：如果指定字符内容为一个字符序列，那么意味着使用strip去除左右两端指定字符时，只要符合字符序列中的某一位，就进行去除<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ string1 = <span class="string">' awelcom to zhengzhouab'</span></span><br><span class="line">string1.strip(<span class="string">' ab'</span>)</span><br><span class="line"><span class="string">'welcom to zhengzhou'</span></span><br></pre></td></tr></table></figure></p>
+<p> 结果为：welcom to zhengzhou</p>
+<p>replace()替换函数<br>函数格式：str.replace(old,new[,max])<br>返回值：将指定字符串（old）替换为新字符串（new）,最大可以替换max次。替换完成后，返回一个新字符串。<br>注意：此处的max参数，主要用来指定替换的次数，如果该参数缺省，表示替换里面所有符合条件的字符串。<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str)  <span class="comment"># 替换所有的a</span></span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为:’f,b,c,f,f,d’</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str,2)  </span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure>
+<p>结果为:’f,b,c,f,a,d’</p>
+<p>isalnum()、isalpha()、isdigit()<br>函数格式：str.isalnum()    判断字符串内容，是否有数字或字母组成<br>          str.isalpha()    判断字符串内容，是否由字母组成<br>          str.isdigit()    判断字符串内容，是否由数字组成<br>返回值：如果符合条件，返回True；如果不符合，返回False。</p>
+<p>[] 字符串运算符<br>使用方法：str[索引位] =&gt; 返回指定索引位的字符<br>索引位有两种表示方式：<br>string1 = ‘hello world’<br>第一种：string1[0] =&gt; h    到string1[10] =&gt; d<br>第二种：string1[-1] =&gt; d   到string1[-11] =&gt; h<br>切片操作:<br>格式：str[start,end,step]<br>start：代表切片开始的索引位<br>end: 代表切片结束的索引位（但是不会输出该索引位指向的字符）<br>step：代表每隔次几个字符个数截取一个</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'welcome'</span></span><br><span class="line">a = str1[2]</span><br><span class="line">b = str1[1:2]</span><br><span class="line">c = str1[1:]</span><br><span class="line">d = str1[:3]</span><br><span class="line">e = str1[1:4,2]</span><br><span class="line">f = str1[-5,-1]</span><br><span class="line">d = str1[5:1:-1]  </span><br><span class="line"><span class="built_in">print</span>(a,b,c,d,e,f)</span><br></pre></td></tr></table></figure>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
 
@@ -295,6 +302,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/07/15/data_type/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
     <a href="/2018/07/13/list_Tuple/" id="article-nav-older" class="article-nav-link-wrap">
