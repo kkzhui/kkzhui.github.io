@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | 小豌豆</title>
+  <title>print()的用法和变量 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
 <meta name="keywords" content="python、爬虫、Web开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="print()的用法和变量">
 <meta property="og:url" content="http://yoursite.com/2018/07/09/hello-world/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-12T05:58:53.463Z">
+<meta property="og:updated_time" content="2018-07-16T12:41:13.232Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="print()的用法和变量">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -172,7 +172,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      print()的用法和变量
     </h1>
   
 
@@ -185,15 +185,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="print-的用法和变量"><a href="#print-的用法和变量" class="headerlink" title="print()的用法和变量"></a>print()的用法和变量</h2><h3 id="print-的用法"><a href="#print-的用法" class="headerlink" title="print()的用法"></a>print()的用法</h3><p>1、print()函数<br>语法格式：print(value,…,sep=’ ‘,end=’\n’)<br>其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容<br>sep代表输出多个值之间的间隔符，默认使用空格隔开。我们可以重新定义间隔符，比如采用：#、，等<br>end代表输出语句的结束标识，默认使用了换行，我们可以重新定义其他内容，其输出的内容将不再进行换行操作。<br>2、print()函数的基本使用<br>print()常用输出方式：<br>print(‘hello ‘)、print(123456)等<br>3、参数格式输出<br>%S代表了字符串内容,其中<br>print(‘welcome  to %s’%Shanghai)输出结果为:welcome to Shanghai<br>print(‘welcome to %10.3s’%Beijing)=&gt;welcome to       Bei,输出结果为10个字符其中包含字符串Beijing中前三个，其余用空格填充</p>
+<p>%d：代表了整数内容，其中<br>print(‘price %d’%10)=&gt;price 10<br>print(‘price %d’%10.5) =&gt; price 10<br>print(‘price %3d’%10000)=&gt; price 10000<br>注意这里面的3d表示输出一个宽度为3个单元的数值，如果数值长度小于三，那么数值靠右对齐。<br>-3d表示，数值反向对齐（靠左对齐）</p>
+<p>%f：代表了浮点数内容(注意，在Python中浮点数是一个近似值，所以结果也是近似)<br>print(‘price %f’%10.2)=&gt;10.200000<br>print(‘price %.1f’%10.2) =&gt; 10.2<br>print(‘prince %.1f’%10.58) = &gt;10.6 当取一位小数位的时候，将小数位第二位进行舍入操作，但是Python的中间值不是5，导致当小数位第二位是5时，直接被舍去<br>print(‘%5.1f’%10.3) =&gt; 10.3<br>输出一个宽度为5的单位，其中整数3位，小数部分1位，小数点占一位</p>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h3><p>在Python3.0之后，推荐使用{0}来代替前期的%d,%s,%f等一系列的格式化参数，采用了字符串的format函数进行处理。写法如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">print</span>(<span class="string">'welcome &#123;0&#125;同学，来&#123;1&#125;'</span>.format(<span class="string">'tom'</span>,<span class="string">'上海'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>其中{0}，{1}分别映射format()中的’tom’和’上海’，如果前面占位符中的索引值变化，那么他们映射的值也随之变化。</p>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h3><p>在Python没有变量类型，直接进行变量的声明，比如:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ i = 10</span><br></pre></td></tr></table></figure></p>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="变量的赋值"><a href="#变量的赋值" class="headerlink" title="变量的赋值"></a>变量的赋值</h3><p>在python中，有两种赋值方式<br>第一种，单个变量赋值  name = ‘tom’<br>第二种，多个变量同时赋值  name, age, sex = ‘tom’， 23， ‘男’</p>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="变量在内存中的存在情况"><a href="#变量在内存中的存在情况" class="headerlink" title="变量在内存中的存在情况"></a>变量在内存中的存在情况</h3><p>1、python中的变量，在声明和赋值时，不仅声明了变量的名字同时还为这个变量指向了内存中的地址，该地址用来存储变量的值。<br>2、python中整数、字符串、浮点数等其本身都属于常量，所以当赋值给一个变量时，如：<br>i = 10意味着将10这个常量在内存中的地址指向，因此，i = 10 ，j = 10 使用id(i),id(j）我们法向他们的id是相同的。<br>因为，他们的值10在内存中的地址时相同的。<br>3、变量与内存地址<br>当我们声明一个变量时，对其进行赋值。实际上就是将变量值所在的内存地址，赋值给该变量。也就是说这个变量指向其值所在的内存地址。<br>当我们改变变量的值的时候，说白了就是将变量指向的内存地址进行变化。<br>4、变量与常量<br>变量：我们认为其内容是临时结果，可变的。供后续的程序代码进行调用。<br>常量：我们认为其内容是不变的，或者在程序运行的过程中也不发生改变。<br>在Python中，我们通过大写变量名，来表明这是一个常量，比如：CARDID = ‘12048377293’<br>5、变量命名规则<br>首先，Python中的变量命名，必须由字母、数字或下划线三者组成，不能有其他的字符出现<br>其次，变量名的首个字符，必须是字母或下划线<br>然后，Python中的关键字不能作为变量名来使用，常用的关键字诸如：if,for,is,none等等。<br>Python是严格区分大小写的语言，其中A = 10 ，a = 10。我们认为这是两个不同的变量</p>
 
       
 
