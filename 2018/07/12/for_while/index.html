@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>for语句和while语句使用方法 | 小豌豆</title>
+  <title>字符串的声明和操作 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Quick Startfor循环 第一种Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 12$ for 变量 in 集合：    代码 这种方式只能用在集合数据上，比如：字符串、列表、元组、字典等内容。 例子123$ words = &apos;welcome to zhengzhou&apos; for i in w">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 字符串字符串的声明字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。例如：str1 = ‘welcome’、str2 = “welcome”字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进">
 <meta name="keywords" content="python、爬虫、Web开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="for语句和while语句使用方法">
+<meta property="og:title" content="字符串的声明和操作">
 <meta property="og:url" content="http://yoursite.com/2018/07/12/for_while/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="Quick Startfor循环 第一种Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 12$ for 变量 in 集合：    代码 这种方式只能用在集合数据上，比如：字符串、列表、元组、字典等内容。 例子123$ words = &apos;welcome to zhengzhou&apos; for i in w">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 字符串字符串的声明字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。例如：str1 = ‘welcome’、str2 = “welcome”字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-19T03:55:25.098Z">
+<meta property="og:updated_time" content="2018-07-20T02:30:03.030Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="for语句和while语句使用方法">
-<meta name="twitter:description" content="Quick Startfor循环 第一种Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 12$ for 变量 in 集合：    代码 这种方式只能用在集合数据上，比如：字符串、列表、元组、字典等内容。 例子123$ words = &apos;welcome to zhengzhou&apos; for i in w">
+<meta name="twitter:title" content="字符串的声明和操作">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 字符串字符串的声明字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。例如：str1 = ‘welcome’、str2 = “welcome”字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -177,7 +177,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      for语句和while语句使用方法
+      字符串的声明和操作
     </h1>
   
 
@@ -190,36 +190,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="for循环-第一种"><a href="#for循环-第一种" class="headerlink" title="for循环 第一种"></a>for循环 第一种</h3><p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> 变量 <span class="keyword">in</span> 集合：</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
-<p>这种方式只能用在集合数据上，比如：字符串、列表、元组、字典等内容。</p>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ words = <span class="string">'welcome to zhengzhou'</span></span><br><span class="line"> <span class="keyword">for</span> i <span class="keyword">in</span> words:</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-<p>推导式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ s = list()</span><br><span class="line">item = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">[s.append(i) <span class="keyword">for</span> i <span class="keyword">in</span> item <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
-<p>结果为：[1,2,3,4,5,6,7,8]<br>注意：推导式的执行顺序是:先执行变量后面的循环语句，如果有两个连续的循环语句那么表明这是一个循环嵌套语句，先执行一次前面的循环语句，然后执行N次后面的循环语句，每次执行完就生成一次最前面变量，该变量作为列表的一个元素。一致到所有循环结束。</p>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="for的第二种用法"><a href="#for的第二种用法" class="headerlink" title="for的第二种用法"></a>for的第二种用法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i  <span class="keyword">in</span> range(循环次数):</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
-<p>range()函数：<br>range(stop) :缺省情况下，表示从0开始，循环n次<br>range(star,stop[,step])</p>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(10):</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="while语句用法"><a href="#while语句用法" class="headerlink" title="while语句用法"></a>while语句用法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">while</span> 条件：</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="例子-2"><a href="#例子-2" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i=1</span><br><span class="line">$ <span class="keyword">while</span> i&lt;=9:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line">    i = i + 1</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="利用for循环来生成列表"><a href="#利用for循环来生成列表" class="headerlink" title="利用for循环来生成列表"></a>利用for循环来生成列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ s = [i*k <span class="keyword">for</span> i <span class="keyword">in</span> range(1,10) <span class="keyword">for</span> k <span class="keyword">in</span> range(1,10)]</span><br><span class="line">  <span class="built_in">print</span> (s)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="for循环常用的方式：嵌套"><a href="#for循环常用的方式：嵌套" class="headerlink" title="for循环常用的方式：嵌套"></a>for循环常用的方式：嵌套</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(次数):</span><br><span class="line">     <span class="keyword">for</span> j <span class="keyword">in</span> range(次数):</span><br></pre></td></tr></table></figure>
-<p>注意：如果变量的值需要通过外层循环来获取或生成，那么我们可以将其设为全局变量，即与外层循环for同等级的变量，如果变量需要在内层循环中生成或获取，我们通常会在外循环中声明，即与内循环同级。<br>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="break和continue"><a href="#break和continue" class="headerlink" title="break和continue"></a>break和continue</h3><p>break：当满足指定条件，break表示中断（中止）此循环，如果循环外部还有其他代码则继续向下执行。<br>continue：当满足指定条件时，continue表示结束本次循环，开始下一次循环，并未退出循环。<br>这两个关键字都是必须配合循环语句来使用，不能单独用在其他地方。<br><a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h2 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h2><h3 id="1-输出10行内容，每行的内容都是“-”。"><a href="#1-输出10行内容，每行的内容都是“-”。" class="headerlink" title="1. 输出10行内容，每行的内容都是“*”。"></a>1. 输出10行内容，每行的内容都是“<strong>*</strong>”。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(10):</span><br><span class="line">     <span class="built_in">print</span> (<span class="string">'*****'</span>)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="2-计算从1到1000以内所有能被3或者17整除的数的和并输出"><a href="#2-计算从1到1000以内所有能被3或者17整除的数的和并输出" class="headerlink" title="2. 计算从1到1000以内所有能被3或者17整除的数的和并输出"></a>2. 计算从1到1000以内所有能被3或者17整除的数的和并输出</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ </span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001):</span><br><span class="line">     <span class="keyword">if</span> i%3 == 0 or i%17 == 0:</span><br><span class="line">         sum = sum + i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'1到1000以内所有能被3或17整除的数的和为&#123;0&#125;'</span>.format(sum))</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="3-给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）"><a href="#3-给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）" class="headerlink" title="3. 给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）"></a>3. 给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ </span><br><span class="line">sum = 0</span><br><span class="line">n = int(input(<span class="string">'请输入一个正整数：'</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,n+1):</span><br><span class="line">    <span class="keyword">if</span> n%i == 0:</span><br><span class="line">        sum = sum + 1</span><br><span class="line"><span class="keyword">if</span> sum == 2:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;是质数'</span>.format(n))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;不是质数'</span>.format(n))</span><br></pre></td></tr></table></figure>
-<h3 id="4-li-1-1-2-2-3-4-5-5-6-6-7-8-将此列表去重。"><a href="#4-li-1-1-2-2-3-4-5-5-6-6-7-8-将此列表去重。" class="headerlink" title="4. li = [1,1,2,2,3,4,5,5,6,6,7,8]将此列表去重。"></a>4. li = [1,1,2,2,3,4,5,5,6,6,7,8]将此列表去重。</h3><p>正确做法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ li = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">s = list()</span><br><span class="line">[s.append(i) <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
-<p>输出结果：[1,2,3,4,5,6,7,8]</p>
-<p>错误做法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ li = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">s = list()</span><br><span class="line">s = [i <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
-<p>输出结果：[1,1,2,2,3,4,5,5,6,6,7,8]<br>错误原因：因为在执行if语句时s列表没有被加入内容，会把所有li的内容赋值给i,最后形成的列表赋值给s,所以输出的s列表和li相同。</p>
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="字符串的声明"><a href="#字符串的声明" class="headerlink" title="字符串的声明"></a>字符串的声明</h3><p>字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。<br>例如：str1 = ‘welcome’、str2 = “welcome”<br>字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进行重新赋值。<br>字符串进行比较时,采用对应位置的逐个字母比较，首先将字母转成ASCII码，然后根据码值进行比较大小。如果一旦出现一方的字母码值大于另一方，就结束比较。<br>比较运算符：&gt;、&lt;、==、!=、&gt;=、&lt;=<br>他们的返回值为布尔型，即True或False</p>
+<p>使用input(),允许进行交互式输入,默认input()输入的值类型为str字符串类型。</p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="字符串常用方法"><a href="#字符串常用方法" class="headerlink" title="字符串常用方法"></a>字符串常用方法</h3><p>find() 查找<br>函数格式：str.find(子字符串[,开始索引位，结束索引位])<br>返回值：如果查找成功，则返回所查找内容在字符串中的索引位置，如果没有找到，返回-1.(如果查找的内容,在字符串中有多个，则只返回第一个字符的索引位)</p>
+<p>index() 返回指定字符的索引位<br>函数格式：index(子字符串[,开始索引位，结束索引位])<br>返回值：如果找到指定的字符串，则返回其索引位；如果找不到就报错ValueError</p>
+<p>split()拆分字符串<br>函数格式：str.split([分隔符])<br>返回值：根据指定的分隔符，对字符串进行拆分，返回一个列表；如果不指定分隔符，那么会将整个字符串，作为列表的一个元素。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w,e,l,c,o,m,e'</span></span><br><span class="line"> str1.split(<span class="string">','</span>)</span><br><span class="line"> <span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure></p>
+<p> 结果为：[‘w’, ‘e’, ‘l’, ‘c’,’o’,’m’,’e’]</p>
+<p>注意：如果分割符在字符串中未出现，则会把字符串作为列表的一个元素<br>比如:<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w,e,l,c,o,m,e'</span></span><br><span class="line"> str1.split()</span><br></pre></td></tr></table></figure></p>
+<p> 结果为:[‘w,e,l,c,o,m,e’]</p>
+<p>strip() 字符串左右两端去除指定字符（默认情况，去除空格）<br>函数格式：str.strip([指定字符])<br>返回值：根据指定的字符，对字符串进行两端去除其内容，返回一个新的字符串。如果字符串中间有空格或指定字符，那么该函数不起作用。如果指定的字符在字符串左右两端不存在，那么将返回字符串本身</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">' welcome  '</span></span><br><span class="line"> str2 = str1.strip()</span><br><span class="line"> <span class="built_in">print</span>(str1,str2)</span><br></pre></td></tr></table></figure>
+<p>结果为： welcome  welcome</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'awelcom to zhengzhoua'</span></span><br><span class="line">str1.strip(<span class="string">'a'</span>)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure>
+<p>结果为：welcom to zhengzhou</p>
+<p>注意：如果指定字符内容为一个字符序列，那么意味着使用strip去除左右两端指定字符时，只要符合字符序列中的某一位，就进行去除<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ string1 = <span class="string">' awelcom to zhengzhouab'</span></span><br><span class="line">string1.strip(<span class="string">' ab'</span>)</span><br><span class="line"><span class="string">'welcom to zhengzhou'</span></span><br></pre></td></tr></table></figure></p>
+<p> 结果为：welcom to zhengzhou</p>
+<p>replace()替换函数<br>函数格式：str.replace(old,new[,max])<br>返回值：将指定字符串（old）替换为新字符串（new）,最大可以替换max次。替换完成后，返回一个新字符串。<br>注意：此处的max参数，主要用来指定替换的次数，如果该参数缺省，表示替换里面所有符合条件的字符串。<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str)  <span class="comment"># 替换所有的a</span></span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为:’f,b,c,f,f,d’</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str,2)  </span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure>
+<p>结果为:’f,b,c,f,a,d’</p>
+<p>isalnum()、isalpha()、isdigit()<br>函数格式：str.isalnum()    判断字符串内容，是否有数字或字母组成<br>          str.isalpha()    判断字符串内容，是否由字母组成<br>          str.isdigit()    判断字符串内容，是否由数字组成<br>返回值：如果符合条件，返回True；如果不符合，返回False。</p>
+<h3 id="字符串运算符"><a href="#字符串运算符" class="headerlink" title="字符串运算符 []"></a>字符串运算符 []</h3><p>使用方法：str[索引位] =&gt; 返回指定索引位的字符<br>索引位有两种表示方式：<br>string1 = ‘hello world’<br>第一种：string1[0] =&gt; h    到string1[10] =&gt; d<br>第二种：string1[-1] =&gt; d   到string1[-11] =&gt; h<br>切片操作:<br>格式：str[start,end,step]<br>start：代表切片开始的索引位<br>end: 代表切片结束的索引位（但是不会输出该索引位指向的字符）<br>step：代表每隔次几个字符个数截取一个</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'welcome'</span></span><br><span class="line">a = str1[2] <span class="comment">#从字符串索引位0开始到1依次获取字符串元素形成一个新子字符串</span></span><br><span class="line">b = str1[1:3]<span class="comment">#从字符串索引位1开始到3依次获取字符串元素形成一个新子字符串</span></span><br><span class="line">c = str1[1:]<span class="comment">#从字符串索引位1开始获取字符串直到最后一位元素形成一个新子字符串</span></span><br><span class="line">d = str1[:3]<span class="comment">#从字符串索引位0开始到2获取字符串元素形成一个新子字符串</span></span><br><span class="line">e = str1[1:4:2]<span class="comment">#从字符串索引位1，3获取字符串元素形成一个新子字符串</span></span><br><span class="line">f = str1[-5:-1]<span class="comment">#从字符串索引位-5开始到-1获取字符串元素形成一个新子字符串</span></span><br><span class="line">d = str1[5:1:-1]<span class="comment">#从字符串索引位5开始到1从右往左获取字符串元素形成一个新子字符串 </span></span><br><span class="line"><span class="built_in">print</span>(a,b,c,d,e,f)</span><br></pre></td></tr></table></figure>
+<h3 id="连接符与重复操作符"><a href="#连接符与重复操作符" class="headerlink" title="连接符与重复操作符"></a>连接符与重复操作符</h3><p>+：在字符串中使用时，作为连接两个字符串，并返回一个新字符串的作用来使用。<br><em>：重复操作指定的次数，即将字符串重复输出N次。返回一个新字符串。<br>注意：在重复操作中，必须遵循：字符串</em>正整数这样的格式，如果数值不是正整数，其结果返回一个空字符串，如果不是数值类型，程序报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1= <span class="string">'abc'</span></span><br><span class="line">str2 = <span class="string">'df'</span></span><br><span class="line"><span class="built_in">print</span>(str1+str2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：abcdf</p>
+<h3 id="in运算符"><a href="#in运算符" class="headerlink" title="in运算符"></a>in运算符</h3><p>用来检测指定的内容，是否在字符串中，如果存在则返回True，反之返回False</p>
 
       
 
@@ -317,14 +314,14 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          列表和元组
+          IF 语句
         
       </div>
     </a>
   
   
     <a href="/2018/07/11/if/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">IF 语句</div>
+      <div class="article-nav-title">基本数据类型</div>
       <i class="icon-circle-right"></i>
     </a>
   
