@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>高级特性 | 小豌豆</title>
+  <title>print()的用法和变量 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1.列表生成式列表生成式通常是结合range()函数一起使用的。Python 的内置函数range() 函数可创建一个整数序列，一般用在 for 循环中。语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
 <meta name="keywords" content="python、爬虫、Web开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高级特性">
-<meta property="og:url" content="http://yoursite.com/2018/07/19/iterator/index.html">
+<meta property="og:title" content="print()的用法和变量">
+<meta property="og:url" content="http://yoursite.com/2018/07/09/print_changeCount/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1.列表生成式列表生成式通常是结合range()函数一起使用的。Python 的内置函数range() 函数可创建一个整数序列，一般用在 for 循环中。语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-19T12:17:42.901Z">
+<meta property="og:updated_time" content="2018-07-19T09:53:13.902Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高级特性">
-<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1.列表生成式列表生成式通常是结合range()函数一起使用的。Python 的内置函数range() 函数可创建一个整数序列，一般用在 for 循环中。语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0">
+<meta name="twitter:title" content="print()的用法和变量">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily print()的用法和变量print()的用法1、print()函数语法格式：print(value,…,sep=’ ‘,end=’\n’)其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容sep代表输出多个值之间的间隔符，默认使用空">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -170,45 +170,39 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-iterator" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-print_changeCount" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      高级特性
+      print()的用法和变量
     </h1>
   
 
         
-        <a href="/2018/07/19/iterator/" class="archive-article-date">
-  	<time datetime="2018-07-19T03:58:29.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+        <a href="/2018/07/09/print_changeCount/" class="archive-article-date">
+  	<time datetime="2018-07-09T12:22:34.439Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://kkzhui.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h3 id="1-列表生成式"><a href="#1-列表生成式" class="headerlink" title="1.列表生成式"></a>1.列表生成式</h3><p>列表生成式通常是结合range()函数一起使用的。<br>Python 的内置函数range() 函数可创建一个整数序列，一般用在 for 循环中。<br>语法格式： range(start,end[,step])。<br>start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。<br>end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。<br>step：步长（可选）。默认为1，例如range(0,3,1)等价于range(0,3)；range(0,6,2)等价于[0,2,4,6]<br>注意：range()函数自身并不会自动产生整数序列，它需要使用其他方式来调用它才会产生。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ a = range(10)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:rangr(0,10)</p>
-<h3 id="列表推导式生成式"><a href="#列表推导式生成式" class="headerlink" title="列表推导式生成式"></a>列表推导式生成式</h3><p>格式：[表达式或函数  for x in 序列]<br>含义：通过生成式中的循环，逐一产生x值，表达式使用X值进行相关运算。最终结果作为列表的元素。也就意味着，循环多少次，就会产生多少个相关元素。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<h2 id="迭代器（Iterator）"><a href="#迭代器（Iterator）" class="headerlink" title="迭代器（Iterator）"></a>迭代器（Iterator）</h2><p>1、概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中迭代器只能向前不能回退。其包含两个方法iter()和next()。<br>iter()用来创建一个迭代器，next()用来访问下一个元素。<br>目前我们所学的字符串、列表、元组都可以创建迭代器，那么他们也是可迭代化的对象。</p>
-<p>迭代器两个步骤：<br>1、当调用next()函数，会将迭代器当前位置状态进行改变<br>2、会将下一个元素进行返回</p>
-<p>迭代器的延迟作用：迭代器生成的元素并不是在迭代器声明时，就准备好了的。通常时在调用迭代器需要提供该元素时生成的，也就是说只有在我们需要的时候迭代器才产生相关元素，不需要时并不会主动的生成相关元素。我们可以把迭代器看成一个容器，到我们需要时使用next()方法返回容器中的下一个值。</p>
-<p>可迭代化（iterable）：表明相关的对象可以创建迭代器对象，同时他们自身都是可以进行for数据遍历的。<br>我们可以使用isinstance()来判断对象是否为可迭代化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import Iterable</span><br><span class="line">string = <span class="string">'hello'</span></span><br><span class="line"><span class="built_in">print</span>(isinstance(string, Iterable))</span><br></pre></td></tr></table></figure></p>
-<p>输出结果为:True<br>函数格式：isinstance(对象，类型)<br>返回值：布尔值<br>结果：如果指定的对象属于指定的类型，那么返回True，反之返回False</p>
-<p>enumerate()函数<br>函数格式：enumerate(iterable)<br>返回值：生成一个枚举对象<br>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ enum = enumberate([<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>])</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> enum:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>输出结果为:<br>(0, ‘one’)<br>(1, ‘two’)<br>(2, ‘three’)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ enum = enumberate([<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>])</span><br><span class="line"><span class="keyword">for</span> i,value <span class="keyword">in</span> enum:</span><br><span class="line">    <span class="built_in">print</span>(i, value)</span><br></pre></td></tr></table></figure>
-<p>输出结果为:<br>0 one<br>1 two<br>2 three</p>
-<h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h3 id="1、创建方式"><a href="#1、创建方式" class="headerlink" title="1、创建方式"></a>1、创建方式</h3><p>第一种，使用列表推导式，将[]改为()，生成一个generator对象<br>第二种，使用函数方式，采用yield关键字来实现</p>
-<h3 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h3><p>生成器我们通常可以认为一种特殊的迭代器，但是它不需要像迭代器一样去实现<strong>iter</strong>,<strong>next</strong>方法。只需要使用yield关键字，该关键字可以在每次调用生成器函数时起到暂停作用，并将其值进行返回。同时还会记录当前运行值的状态。</p>
-<h2 id="迭代器和生成器总结"><a href="#迭代器和生成器总结" class="headerlink" title="迭代器和生成器总结"></a>迭代器和生成器总结</h2><p>1、容器是一系列的元素集合，str、list、set、dict对象都可以看作是容器，容器都可以进行迭代（即用在while或for循环），凡是这样的容器我们都称为可迭代化对象（Iterable）。<br>2、可迭代化对象都实现了<strong>iter</strong>方法，该方法返回一个迭代器对象。<br>3、迭代器都拥有一个状态字段，用于记录下次迭代返回值。它实现了<strong>next</strong>和<strong>iter</strong>方法，迭代器不会一次性把所有的元素都加载到内存中，而是在需要的时候才生成返回结果。<br>4、生成器是一种特殊的迭代器，它的返回值不是通过return来返回的，而是通过yield来返回的。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<h3 id="一个简单的医院排号系统"><a href="#一个简单的医院排号系统" class="headerlink" title="一个简单的医院排号系统"></a>一个简单的医院排号系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">$ def gene ( n ):</span><br><span class="line">    i =1000</span><br><span class="line">    no = n+str(i)</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'A'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'A'</span>+str(i)</span><br><span class="line">        <span class="keyword">elif</span><span class="string">'B'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'B'</span>+str(i)</span><br><span class="line">        <span class="keyword">elif</span> <span class="string">'C'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'C'</span>+str(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pass</span><br><span class="line">a = gene(<span class="string">'A'</span>)</span><br><span class="line">b = gene(<span class="string">'B'</span>)</span><br><span class="line">c = gene(<span class="string">'C'</span>)</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    msg=input(<span class="string">'请输入您需要查看科室的代码,输入Q退出：'</span>)</span><br><span class="line">    name =input(<span class="string">'请输入你的姓名：'</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> msg == <span class="string">'Q'</span>:</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'A'</span> == msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(a),name,msg))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'B'</span> ==msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(b),name,msg))</span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'C'</span> ==msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(c),name,msg))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入错误！'</span>)</span><br></pre></td></tr></table></figure>
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="print-的用法和变量"><a href="#print-的用法和变量" class="headerlink" title="print()的用法和变量"></a>print()的用法和变量</h2><h3 id="print-的用法"><a href="#print-的用法" class="headerlink" title="print()的用法"></a>print()的用法</h3><p>1、print()函数<br>语法格式：print(value,…,sep=’ ‘,end=’\n’)<br>其中，value代表我们要输出的内容，可以是字符串，可以是数值等内容<br>sep代表输出多个值之间的间隔符，默认使用空格隔开。我们可以重新定义间隔符，比如采用：#、，等<br>end代表输出语句的结束标识，默认使用了换行，我们可以重新定义其他内容，其输出的内容将不再进行换行操作。<br>2、print()函数的基本使用<br>print()常用输出方式：<br>print(‘hello ‘)、print(123456)等<br>3、参数格式输出<br>%S代表了字符串内容,其中<br>print(‘welcome  to %s’%Shanghai)输出结果为:welcome to Shanghai<br>print(‘welcome to %10.3s’%Beijing)=&gt;welcome to       Bei,输出结果为10个字符其中包含字符串Beijing中前三个，其余用空格填充</p>
+<p>%d：代表了整数内容，其中<br>print(‘price %d’%10)=&gt;price 10<br>print(‘price %d’%10.5) =&gt; price 10<br>print(‘price %3d’%10000)=&gt; price 10000<br>注意这里面的3d表示输出一个宽度为3个单元的数值，如果数值长度小于三，那么数值靠右对齐。<br>-3d表示，数值反向对齐（靠左对齐）</p>
+<p>%f：代表了浮点数内容(注意，在Python中浮点数是一个近似值，所以结果也是近似)<br>print(‘price %f’%10.2)=&gt;10.200000<br>print(‘price %.1f’%10.2) =&gt; 10.2<br>print(‘prince %.1f’%10.58) = &gt;10.6 当取一位小数位的时候，将小数位第二位进行舍入操作，但是Python的中间值不是5，导致当小数位第二位是5时，直接被舍去<br>print(‘%5.1f’%10.3) =&gt; 10.3<br>输出一个宽度为5的单位，其中整数3位，小数部分1位，小数点占一位</p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h3><p>在Python3.0之后，推荐使用{0}来代替前期的%d,%s,%f等一系列的格式化参数，采用了字符串的format函数进行处理。写法如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">print</span>(<span class="string">'welcome &#123;0&#125;同学，来&#123;1&#125;'</span>.format(<span class="string">'tom'</span>,<span class="string">'上海'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>其中{0}，{1}分别映射format()中的’tom’和’上海’，如果前面占位符中的索引值变化，那么他们映射的值也随之变化。</p>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h3><p>在Python没有变量类型，直接进行变量的声明，比如:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ i = 10</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="变量的赋值"><a href="#变量的赋值" class="headerlink" title="变量的赋值"></a>变量的赋值</h3><p>在python中，有两种赋值方式<br>第一种，单个变量赋值  name = ‘tom’<br>第二种，多个变量同时赋值  name, age, sex = ‘tom’， 23， ‘男’</p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="变量在内存中的存在情况"><a href="#变量在内存中的存在情况" class="headerlink" title="变量在内存中的存在情况"></a>变量在内存中的存在情况</h3><p>1、python中的变量，在声明和赋值时，不仅声明了变量的名字同时还为这个变量指向了内存中的地址，该地址用来存储变量的值。<br>2、python中整数、字符串、浮点数等其本身都属于常量，所以当赋值给一个变量时，如：<br>i = 10意味着将10这个常量在内存中的地址指向，因此，i = 10 ，j = 10 使用id(i),id(j）我们法向他们的id是相同的。<br>因为，他们的值10在内存中的地址时相同的。<br>3、变量与内存地址<br>当我们声明一个变量时，对其进行赋值。实际上就是将变量值所在的内存地址，赋值给该变量。也就是说这个变量指向其值所在的内存地址。<br>当我们改变变量的值的时候，说白了就是将变量指向的内存地址进行变化。<br>4、变量与常量<br>变量：我们认为其内容是临时结果，可变的。供后续的程序代码进行调用。<br>常量：我们认为其内容是不变的，或者在程序运行的过程中也不发生改变。<br>在Python中，我们通过大写变量名，来表明这是一个常量，比如：CARDID = ‘12048377293’<br>5、变量命名规则<br>首先，Python中的变量命名，必须由字母、数字或下划线三者组成，不能有其他的字符出现<br>其次，变量名的首个字符，必须是字母或下划线<br>然后，Python中的关键字不能作为变量名来使用，常用的关键字诸如：if,for,is,none等等。<br>Python是严格区分大小写的语言，其中A = 10 ，a = 10。我们认为这是两个不同的变量</p>
 
       
 
@@ -288,7 +282,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/iterator/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/09/print_changeCount/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -302,11 +296,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2018/07/18/set/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">集合数据类型</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2018/07/11/if/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          IF 语句
+        
+      </div>
     </a>
+  
   
 </nav>
 
