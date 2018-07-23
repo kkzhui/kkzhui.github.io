@@ -168,6 +168,80 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-def" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/23/def/">python函数</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/23/def/" class="archive-article-date">
+  	<time datetime="2018-07-23T13:03:33.219Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><h3 id="1、函数的定义"><a href="#1、函数的定义" class="headerlink" title="1、函数的定义"></a>1、函数的定义</h3><p>函数的格式：<br>def 函数名([参数列表]):<br>    执行代码<br>其中，函数名的命名方式与变量名的要求相同，即只能是数字、字符、下划线三者构成，同时不能由</p>
+<p>数字开头。<br>另外，函数的参数根据情况，可以有参，也可以无参。同时，参数的个数，可以是1到N个。最后，调</p>
+<p>用函数时，一定要保证该函数已经被定义。调用的函数名与定义的函数名一致。</p>
+<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>函数在外部调用时，直接写函数名以及函数参数即可，不需要将函数体写出来。同时，函数是否有返回值，由其函数体最后一句代码是否为return来决定的。如果由return语句，那么就意味着该函数有返回值，如果没有返回值就意味着返回值为None。<br>注意：函数使用return作为返回值语句，该命令通常放在函数的最后一句，保证函数相关的代码都执行完毕后才返回，如果后面还有其他程序，则不会被执行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def area(w, h):</span><br><span class="line">    <span class="built_in">return</span> w * h</span><br><span class="line"><span class="built_in">print</span>(area(3, 4)</span><br></pre></td></tr></table></figure>
+<p>结果为：12</p>
+<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>概念：函数在定义时声明的参数，我们称为形参（形式参数）。形参的作用，主要是用来表明参数顺序、类型和个数。并不代表具体内容。<br>我们在调用函数的时候，根据形参的规定（顺序、类型、个数），传递进来实际的内容。我们称为实参。<br>例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def display(name,age):   <span class="comment"># 定义函数时声明的形参：name,age</span></span><br><span class="line">    <span class="built_in">print</span>(name,age)</span><br><span class="line">display(<span class="string">'tom'</span>,22)        <span class="comment">#调用函数时实际传递的参数值</span></span><br></pre></td></tr></table></figure></p>
+<p>结果为：tom 22</p>
+<p>1）必须的参数<br>我们在函数定义时，显示声明在函数的参数列表中的参数，这些参数一旦被声明，函数在调用时，必须按照所声明的顺序、个数和数据类型，来传递实际的参数内容。<br>2）关键字参数<br>我们在定义函数时，声明了函数的参数后，在调用函数时我们不仅传递实际的参数内容，同时还将参数名字与之对应，这样保证传递进来的参数如果没有按照函数定义时规定的顺序，也能够正确传递进来。<br>3)默认参数<br>我们在定义函数时，声明函数的参数，同时可以给这些参数进行赋值，在调用该函数时，如果没有给对应参数传递实参，那么python会默认使用定义函数时所声明的默认参数值。<br>4）可变参数<br>普通可变参数：我们在定义函数时，因为参数过多或者不确定具体参数列表的个数，我们还可以采用可变参数来实现。可变参数表示从0到N个参数，采用*参数名<br>注意，此时可变参数类型，为tuple元组类型。<br>关键字可变参数：我们在定义函数时，通过使用**参数名，来表示0到N个参数，在外部调用函数时，将这些可变参数组装成一个字典。<br>例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ def person(name, password, **kw):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'用户名&#123;0&#125;，密码&#123;1&#125;，其他内容&#123;2&#125;'</span>.format(name,password,kw))</span><br><span class="line">person(<span class="string">'tom'</span>,<span class="string">'123456'</span>)</span><br><span class="line">person(<span class="string">'simth'</span>, <span class="string">'12345'</span>,sex=<span class="string">'男'</span>, address=<span class="string">'郑州'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：用户名tom，密码123456，其他内容{}<br>       用户名simth，密码12345，其他内容{‘sex’: ‘男’, ‘address’: ‘郑州’}<br>特殊用法：<em><br>在函数定义中，如果单独使用一个</em>号，意味着该<em>后面的参数，为关键字参数声明时必须使用的名字。在调用该函数时，关键字参数的名字要与函数定义中</em>号后面的参数名称一致。例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def person(name, password, *, city, sex):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'用户名&#123;0&#125;，密码&#123;1&#125;，其他内容&#123;2&#125;&#123;3&#125;'</span>.format(name, password, city, sex))</span><br><span class="line">person(<span class="string">'simth'</span>, <span class="string">'12345'</span>,sex=<span class="string">'男'</span>, city=<span class="string">'郑州'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>结果为:用户名simth,密码12345，其他内容郑州男</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/23/def/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-practise1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -601,7 +675,9 @@ a = dic3.fromkeys([1,2,3],[<span class="string">'a'</span>,<span class="string">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h3 id="商品管理系统"><a href="#商品管理系统" class="headerlink" title="商品管理系统"></a>商品管理系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line">$ goods_dic = &#123;</span><br><span class="line"></span><br><span class="line">    <span class="string">'goods_no'</span>:[<span class="string">'10001'</span>,<span class="string">'10002'</span>,<span class="string">'10003'</span>],</span><br><span class="line"></span><br><span class="line">    <span class="string">'10001'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10001'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'电视'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:3000,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'上海'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:50,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'乐视'</span></span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="string">'10002'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10002'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'空调'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:2900,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'北京'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:60,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'格力'</span></span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="string">'10003'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10003'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'笔记本电脑'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:4998,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'美国'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:30,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'苹果'</span></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'商品序号'</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(goods_dic[<span class="string">'goods_no'</span>])):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;'</span>.format(goods_dic[<span class="string">'goods_no'</span>][i]))</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    msg = input(<span class="string">'请输入商品编号：'</span>)</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">if</span>  msg <span class="keyword">in</span> goods_dic[<span class="string">'goods_no'</span>]:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'1、查看商品的详细情况'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'2、购买商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'3、修改商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'4、删除商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'5、添加商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'6或其他序号、退出'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">        key = int(input(<span class="string">'请输入接下来想进行的操作所对应的序号：'</span>))</span><br><span class="line">        <span class="keyword">if</span> 1 == key:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'序号  商品名称 商品单价 商品产地 商品库存 商品品牌'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0&#125;   &#123;1&#125;      &#123;2&#125;     &#123;3&#125;      &#123;4&#125;      &#123;5&#125;'</span>.format(msg, goods_dic[msg][<span class="string">'name'</span>],goods_dic[msg][<span class="string">'price'</span>],goods_dic[msg][<span class="string">'address'</span>],goods_dic[msg][<span class="string">'num'</span>],goods_dic[msg][<span class="string">'brand'</span>]))</span><br><span class="line">        <span class="keyword">elif</span> 2 == key:</span><br><span class="line">            buy_num=int(input(<span class="string">'请输入你购买商品的数量：'</span>))</span><br><span class="line">            <span class="keyword">if</span> buy_num &gt; goods_dic[msg][<span class="string">'num'</span>]:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'购买数量超过库存数量！'</span>)</span><br><span class="line">            <span class="keyword">elif</span> buy_num &lt;= goods_dic[msg][<span class="string">'num'</span>] and buy_num &gt; 0:</span><br><span class="line">                total_num = buy_num * goods_dic[msg][<span class="string">'price'</span>]</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品名称   商品总价'</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'&#123;0&#125;        &#123;1&#125;'</span>.format(goods_dic[msg][<span class="string">'name'</span>],total_num))</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'输入的数量有误！'</span>)</span><br><span class="line">        <span class="keyword">elif</span> 3 == key:</span><br><span class="line">            goods_price = int(input(<span class="string">'请输入商品单价:'</span>))</span><br><span class="line">            goods_num = int(input(<span class="string">'请输入商品库存:'</span>))</span><br><span class="line">            <span class="keyword">if</span> goods_price&gt;0:</span><br><span class="line">                goods_dic[msg][<span class="string">'price'</span>] = goods_price</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品单价修改成功！'</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品单价修改失败！'</span>)</span><br><span class="line">            <span class="keyword">if</span> goods_num &gt;= 0: </span><br><span class="line">                goods_dic[msg][<span class="string">'num'</span>] = goods_num</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品库存修改成功'</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品库存修改失败'</span>)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">elif</span> 4 == key:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(goods_dic[<span class="string">'goods_no'</span>])):</span><br><span class="line">                <span class="keyword">if</span> goods_dic[<span class="string">'goods_no'</span>][i] == msg:</span><br><span class="line">                     goods_dic[<span class="string">'goods_no'</span>].pop(i)</span><br><span class="line">                     <span class="built_in">break</span></span><br><span class="line">            del goods_dic[msg]</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'删除商品成功'</span>)</span><br><span class="line">        <span class="keyword">elif</span> 5 == key:</span><br><span class="line">            goods_no_num = input(<span class="string">'请输入你想添加的商品序号'</span>)</span><br><span class="line">            <span class="keyword">if</span> goods_no_num not <span class="keyword">in</span> goods_dic[<span class="string">'goods_no'</span>] and goods_no_num not <span class="keyword">in</span> goods_dic:</span><br><span class="line">                goods_dic[<span class="string">'goods_no'</span>].append(goods_no_num)</span><br><span class="line">                goods_dic[goods_no_num] = &#123;&#125;</span><br><span class="line">                goods_dic[goods_no_num][<span class="string">'id'</span>] = goods_no_num</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品已存在'</span>)</span><br><span class="line">                <span class="built_in">continue</span></span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'name'</span>]=input(<span class="string">'请输入商品名称：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'price'</span>]=input(<span class="string">'请输入商品单价：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'address'</span>]=input(<span class="string">'请输入商品产地：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'num'</span>]=input(<span class="string">'请输入商品库存：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'brand'</span>]=input(<span class="string">'请输入商品品牌：'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'添加商品成功!'</span>) </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">break</span>     </span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'你输入的商品编号有误，请重新输入'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="生成两个有20个随机数的列表，比较其中不同的数字有几个"><a href="#生成两个有20个随机数的列表，比较其中不同的数字有几个" class="headerlink" title="生成两个有20个随机数的列表，比较其中不同的数字有几个"></a>生成两个有20个随机数的列表，比较其中不同的数字有几个</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ import random</span><br><span class="line">lis1 = [random.randrange(10,20) <span class="keyword">for</span> i <span class="keyword">in</span> range(20)]</span><br><span class="line">lis2 = [random.randrange(10,20) <span class="keyword">for</span> i <span class="keyword">in</span> range(20)]</span><br><span class="line">lis3 = list()</span><br><span class="line"><span class="built_in">print</span>(lis1)</span><br><span class="line"><span class="built_in">print</span>(lis2)</span><br><span class="line">sum1 = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> lis1:</span><br><span class="line">    <span class="keyword">if</span> i not <span class="keyword">in</span> lis3:</span><br><span class="line">        lis3.append(i)</span><br><span class="line">        sum1 = sum1 + 1</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'其中有&#123;0&#125;个不重复的数字'</span>.format(sum1))</span><br></pre></td></tr></table></figure>
 
       
 
@@ -968,77 +1044,6 @@ a = dic3.fromkeys([1,2,3],[<span class="string">'a'</span>,<span class="string">
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/07/12/for_while/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-if" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/11/if/">基本数据类型</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/11/if/" class="archive-article-date">
-  	<time datetime="2018-07-11T15:43:53.099Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h2 id="常见的数据类型"><a href="#常见的数据类型" class="headerlink" title="常见的数据类型:"></a>常见的数据类型:</h2><p>1、整型<br>2、浮点型<br>3、布尔型<br>4、复数型<br>5、字符串型</p>
-<h3 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h3><p>我们通常根据计算机中数据编码格式,将整型分为:二进制、八进制、十进制、十六进制四种类型。<br>进制间的转换<br>bin(int)=&gt;将十进制转为二进制   int(bin)=&gt;将二进制转为十进制<br>oct(int)=&gt;将十进制转为八进制   int(oct)=&gt;将八进制转为十进制<br>hex(int)=&gt;将十进制转为十六进制，int(hex)=&gt;将十六进制转为十进制</p>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>第一，算术运算符：+、-、<em>、/<br>在python中默认的数据类型时浮点型，因此在执行算术运算时5/2=2.5,而不是2。<br>%：两数进行求余运算，如果分子大于分母，得余数；如果分子小于分母，直接得分子。注意：只有分子除尽分母时，结果才返回0。<br>//：两数相除取整数，注意，此处得到的整数，为结果的整数部分不进行四舍五入操作。<br><strong>：A</strong>B 数A连续相乘B次，也可以说数A 的B次幂<br>补充:<br>对数值运算的四舍五入操作<br>math包中的floor()和ceil()函数<br>import math<br>math.floor(3/2) =&gt;1   等同于 3//2    只舍不入<br>math.ceil(3/2) =&gt;2    此处，只要有小数位就进位，不管小数部分是否大于等于5  只入不舍<br>round()函数进行四舍五入操作，round(数值[,保留小数位数])<br>round(1.5)=&gt;2<br>round(1.2)=&gt;1<br>round(1,4,1)=&gt;1.4  意味着保留小数点后一位<br>2、求幂运算<br>pow(2,3) =&gt;8 等同于2**3<br>3、求绝对值<br>abs(-10) =&gt; 10<br>4、求两数相除的商与余数<br>divmod(5,3) =&gt;(1,2)    类似5%3=&gt;2<br>5、运算符<br>i = 10<br>i = i + 5  等同于  i+=5<br>i = i - 5  等同于  i-=5<br>i = i </em> 5  等同于  i*=5<br>i = i / 5  等同于  i/=5<br>i = i//5   等同于  i//=5<br>i = i <strong> 2 等同于  i</strong>=2<br>i = i % 3  等同于  i%=3</p>
-<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>1、python中布尔型分为True和False两种，但是在实际操作中我们也可以将其与1和0等同。<br>2、布尔型常用在逻辑运算和判断条件中，作为结果来使用。但是也可以参与算术运算，当进行算术运算时，True作为1、False作为0参与运算。<br>3、a = True     a + 1 =&gt; 2<br>b = False       b + 1 =&gt;1<br>a + b =&gt; 1<br>注意：通常我们在python，不能将布尔型参与算术运算的。布尔型一般参加比较运算或逻辑运算，其返回值还是布尔型。<br>布尔型求非： not<br>not a =&gt; False<br>not b =&gt; True</p>
-<h3 id="精确的十进制"><a href="#精确的十进制" class="headerlink" title="精确的十进制"></a>精确的十进制</h3><p>在python中，我们通过阅读官方文档了解到，浮点数是一种近似值的表示，因此直接使用浮点数时常常出现精度丢失或不匹配情况发生。<br>python中提出了Decimal对象来进行解决，通过引入 import decimal生成一个decimal对象，将浮点数转换为decimal类型，可以支持完成对应的算术运算。例如：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ from decimal import Decimal   <span class="comment"># 引入decimal包中的Deciaml对象</span></span><br><span class="line">f1 = 12.4556</span><br><span class="line">f2 = 24.3</span><br><span class="line">c = Decimal.from_float(f1)    <span class="comment"># 将浮点数转换为decimal对象</span></span><br><span class="line">a = Decimal(f1).quantize(Decimal(<span class="string">'0.00'</span>)) <span class="comment">#将浮点数转换为decimal对象，同时指定该数值的精度，保留小数点后两位，并自动完成四舍五入。</span></span><br><span class="line">b = Decimal(f2).quantize(Decimal(<span class="string">'0.00'</span>))</span><br><span class="line"><span class="built_in">print</span>((a*b).quantize(Decimal(<span class="string">'0.00'</span>)))</span><br></pre></td></tr></table></figure>
-<p>注意:float类型的值是个近似值，进行运算有时会不准确，所以需要转化为decimal类型进行计算</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/11/if/">展开全文 >></a>
         </p>
       
 
