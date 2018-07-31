@@ -168,6 +168,424 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-for7.16" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/16/for7.16/">小练习</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/16/for7.16/" class="archive-article-date">
+  	<time datetime="2018-07-16T12:30:07.071Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h3 id="商品管理系统"><a href="#商品管理系统" class="headerlink" title="商品管理系统"></a>商品管理系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line">$ goods_dic = &#123;</span><br><span class="line"></span><br><span class="line">    <span class="string">'goods_no'</span>:[<span class="string">'10001'</span>,<span class="string">'10002'</span>,<span class="string">'10003'</span>],</span><br><span class="line"></span><br><span class="line">    <span class="string">'10001'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10001'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'电视'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:3000,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'上海'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:50,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'乐视'</span></span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="string">'10002'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10002'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'空调'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:2900,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'北京'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:60,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'格力'</span></span><br><span class="line"></span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="string">'10003'</span>:&#123;</span><br><span class="line"></span><br><span class="line">            <span class="string">'id'</span>:<span class="string">'10003'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'name'</span>:<span class="string">'笔记本电脑'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'price'</span>:4998,</span><br><span class="line"></span><br><span class="line">            <span class="string">'address'</span>:<span class="string">'美国'</span>,</span><br><span class="line"></span><br><span class="line">            <span class="string">'num'</span>:30,</span><br><span class="line"></span><br><span class="line">            <span class="string">'brand'</span>:<span class="string">'苹果'</span></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'商品序号'</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(goods_dic[<span class="string">'goods_no'</span>])):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;'</span>.format(goods_dic[<span class="string">'goods_no'</span>][i]))</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    msg = input(<span class="string">'请输入商品编号：'</span>)</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">if</span>  msg <span class="keyword">in</span> goods_dic[<span class="string">'goods_no'</span>]:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'1、查看商品的详细情况'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'2、购买商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'3、修改商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'4、删除商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'5、添加商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'6或其他序号、退出'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">        key = int(input(<span class="string">'请输入接下来想进行的操作所对应的序号：'</span>))</span><br><span class="line">        <span class="keyword">if</span> 1 == key:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'序号  商品名称 商品单价 商品产地 商品库存 商品品牌'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0&#125;   &#123;1&#125;      &#123;2&#125;     &#123;3&#125;      &#123;4&#125;      &#123;5&#125;'</span>.format(msg, goods_dic[msg][<span class="string">'name'</span>],goods_dic[msg][<span class="string">'price'</span>],goods_dic[msg][<span class="string">'address'</span>],goods_dic[msg][<span class="string">'num'</span>],goods_dic[msg][<span class="string">'brand'</span>]))</span><br><span class="line">        <span class="keyword">elif</span> 2 == key:</span><br><span class="line">            buy_num=int(input(<span class="string">'请输入你购买商品的数量：'</span>))</span><br><span class="line">            <span class="keyword">if</span> buy_num &gt; goods_dic[msg][<span class="string">'num'</span>]:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'购买数量超过库存数量！'</span>)</span><br><span class="line">            <span class="keyword">elif</span> buy_num &lt;= goods_dic[msg][<span class="string">'num'</span>] and buy_num &gt; 0:</span><br><span class="line">                total_num = buy_num * goods_dic[msg][<span class="string">'price'</span>]</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品名称   商品总价'</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'&#123;0&#125;        &#123;1&#125;'</span>.format(goods_dic[msg][<span class="string">'name'</span>],total_num))</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'输入的数量有误！'</span>)</span><br><span class="line">        <span class="keyword">elif</span> 3 == key:</span><br><span class="line">            goods_price = int(input(<span class="string">'请输入商品单价:'</span>))</span><br><span class="line">            goods_num = int(input(<span class="string">'请输入商品库存:'</span>))</span><br><span class="line">            <span class="keyword">if</span> goods_price&gt;0:</span><br><span class="line">                goods_dic[msg][<span class="string">'price'</span>] = goods_price</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品单价修改成功！'</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品单价修改失败！'</span>)</span><br><span class="line">            <span class="keyword">if</span> goods_num &gt;= 0: </span><br><span class="line">                goods_dic[msg][<span class="string">'num'</span>] = goods_num</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品库存修改成功'</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品库存修改失败'</span>)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">elif</span> 4 == key:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(len(goods_dic[<span class="string">'goods_no'</span>])):</span><br><span class="line">                <span class="keyword">if</span> goods_dic[<span class="string">'goods_no'</span>][i] == msg:</span><br><span class="line">                     goods_dic[<span class="string">'goods_no'</span>].pop(i)</span><br><span class="line">                     <span class="built_in">break</span></span><br><span class="line">            del goods_dic[msg]</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'删除商品成功'</span>)</span><br><span class="line">        <span class="keyword">elif</span> 5 == key:</span><br><span class="line">            goods_no_num = input(<span class="string">'请输入你想添加的商品序号'</span>)</span><br><span class="line">            <span class="keyword">if</span> goods_no_num not <span class="keyword">in</span> goods_dic[<span class="string">'goods_no'</span>] and goods_no_num not <span class="keyword">in</span> goods_dic:</span><br><span class="line">                goods_dic[<span class="string">'goods_no'</span>].append(goods_no_num)</span><br><span class="line">                goods_dic[goods_no_num] = &#123;&#125;</span><br><span class="line">                goods_dic[goods_no_num][<span class="string">'id'</span>] = goods_no_num</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'商品已存在'</span>)</span><br><span class="line">                <span class="built_in">continue</span></span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'name'</span>]=input(<span class="string">'请输入商品名称：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'price'</span>]=input(<span class="string">'请输入商品单价：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'address'</span>]=input(<span class="string">'请输入商品产地：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'num'</span>]=input(<span class="string">'请输入商品库存：'</span>)</span><br><span class="line">            goods_dic[goods_no_num][<span class="string">'brand'</span>]=input(<span class="string">'请输入商品品牌：'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'添加商品成功!'</span>) </span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">break</span>     </span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'你输入的商品编号有误，请重新输入'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="生成两个有20个随机数的列表，比较其中不同的数字有几个"><a href="#生成两个有20个随机数的列表，比较其中不同的数字有几个" class="headerlink" title="生成两个有20个随机数的列表，比较其中不同的数字有几个"></a>生成两个有20个随机数的列表，比较其中不同的数字有几个</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ import random</span><br><span class="line">lis1 = [random.randrange(10,20) <span class="keyword">for</span> i <span class="keyword">in</span> range(20)]</span><br><span class="line">lis2 = [random.randrange(10,20) <span class="keyword">for</span> i <span class="keyword">in</span> range(20)]</span><br><span class="line">lis3 = list()</span><br><span class="line"><span class="built_in">print</span>(lis1)</span><br><span class="line"><span class="built_in">print</span>(lis2)</span><br><span class="line">sum1 = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> lis1:</span><br><span class="line">    <span class="keyword">if</span> i not <span class="keyword">in</span> lis3:</span><br><span class="line">        lis3.append(i)</span><br><span class="line">        sum1 = sum1 + 1</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'其中有&#123;0&#125;个不重复的数字'</span>.format(sum1))</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/16/for7.16/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-data_type" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/15/data_type/">列表和元组</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/15/data_type/" class="archive-article-date">
+  	<time datetime="2018-07-15T15:47:08.525Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="List列表"><a href="#List列表" class="headerlink" title="List列表"></a>List列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>一、概念：List数据，首先它可以存储各种数据类型，比如：数值、字符串、布尔型等等；其次，列表中的元素可以随时进行删除、修改、增加，其长度随之变化；同时，列表也是有序的，我们同样可以使用循环对其进行遍历。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="声明一个空列表："><a href="#声明一个空列表：" class="headerlink" title="声明一个空列表："></a>声明一个空列表：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = list()</span><br></pre></td></tr></table></figure>
+<p>列表是有序的。那么通过for  in  方式可以对其进行快速遍历,例子如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> item <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="built_in">print</span>(item,end=<span class="string">' '</span>)</span><br><span class="line">1 2 3 4 5</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h2 id="列表的操作"><a href="#列表的操作" class="headerlink" title="列表的操作"></a>列表的操作</h2><h3 id="增加元素"><a href="#增加元素" class="headerlink" title="增加元素"></a>增加元素</h3><p>第一种，使用append()函数，在列表的尾部追加一个新元素。<br>函数格式：list.append(元素)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ list1.append(6)</span><br><span class="line">[1, 2, 3, 4, 5, 6]</span><br></pre></td></tr></table></figure></p>
+<p>第二种，使用extend()函数，在列表尾部，追加一个子列表内容<br>函数格式：list1.extend(子列表)<br>sublist = [7,8,9]<br>list1.extend(sublist)<br>[1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<p>第三种，使用“+”运算符，连接两个列表，其结果会生成一个新的列表。同时原来两个列表不变。<br>sublist=[7, 8, 9]<br>list3=[1, 2, 3, 4, 5]<br>print(list3+sublist)<br>结果：[1, 2, 3, 4, 5, 7, 8, 9]</p>
+<p>第四种，使用insert()函数，对列表指定位置进行插入操作。<br>函数格式：list.insert(idx，元素),其中：idx代表要插入的索引位<br>list1.insert(3,’hello’)<br>注意：插入指定的索引位后，原索引位所在的元素下标+1<br>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="修改元素"><a href="#修改元素" class="headerlink" title="修改元素"></a>修改元素</h3><p>通过索引位，找到指定的列表元素，重新对其进行赋值即可完成修改操作。<br>例如：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ list1=[1, 2, 3]</span><br><span class="line">list1[2] = 5</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="删除元素"><a href="#删除元素" class="headerlink" title="删除元素"></a>删除元素</h3><p>第一种，remove()移除在列表中指定的元素<br>函数格式：list.remove(元素)<br>返回值：移除元素后的列表，长度-1<br>第二种，pop()有两种使用模式<br>list.pop()：默认模式，从列表的尾部弹出一个元素<br>返回值：返回所弹出的元素本身。如果列表已经为空，执行pop()程序会报错提示：列表为空。<br>list.pop(idx):idx指定的下表索引位置。<br>此处pop()与remove()类似，但是区别在于pop()会将移除的元素返回。<br>第三种，使用del删除指定的列表片段或列表本身<br>del list[idx]        删除指定索引位对应的元素<br>del list             删除整个列表，同时释放该列表所占用的内存空间<br>del list[star:end]   删除指定的列表片段</p>
+<p>clear()清除列表里面的内容，留下一个空列表<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [1,2,3,4]</span><br><span class="line"> list1.clear()</span><br><span class="line"> <span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="‘-’与’-’运算符"><a href="#‘-’与’-’运算符" class="headerlink" title="‘+’与’*’运算符"></a>‘+’与’*’运算符</h3><p>‘+’运算符可以将多个列表的内容合并到一个列表中,比如: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [1,2,3,4]</span><br><span class="line">list2 = [5,6,7] </span><br><span class="line">list3 = list1 + list2</span><br><span class="line"><span class="built_in">print</span>(list3)</span><br></pre></td></tr></table></figure>
+<p>结果为[1,2,3,4,5,6,7]<br>‘*’运算符可以将目标列表的内容重复多次，然后生成一个新列表，比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [1,2,3,4]</span><br><span class="line">list2 = list1 * 2</span><br><span class="line"><span class="built_in">print</span>(list2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：[1,2,3,4,1,2,3,4]<br>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="对列表操作的一些其他函数"><a href="#对列表操作的一些其他函数" class="headerlink" title="对列表操作的一些其他函数"></a>对列表操作的一些其他函数</h3><p>max()与min()<br>函数格式：max(list)、min(list)<br>函数返回值分别为：列表中最大值，最小值<br>在使用时列表里的元素数据类型必须统一。</p>
+<p>sum()<br>函数格式：sum(list)</p>
+<p>sort()排序<br>函数格式：list.sort()、list.sort(reverse=True)<br>sorted()排序<br>函数格式：sorted(list)、sorted(list,reverse=True)<br>注意：上面两种排序函数，其中第一个属于列表自身的排序方法，而第二种属于python内置的排序方法，也就是说第二种可以应用在包括列表在内多种集合排序。</p>
+<p>list1.reverse() 将列表内容反转</p>
+<p>count()计数函数<br>函数格式：list.count(元素)<br>返回值：返回指定元素在列表中出现的次数</p>
+<p>in 关键字<br>判断指定的元素是否在列表中存在，如果存在返回True，否在返回False</p>
+<p>index()检索函数<br>函数格式：list.index(元素)<br>返回值：返回该元素在列表中的索引位置，如果不存在报错。</p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="列表比较运算符操作"><a href="#列表比较运算符操作" class="headerlink" title="列表比较运算符操作"></a>列表比较运算符操作</h3><p>import operator （引用operator包）<br>operator.ge()         大于等于   &gt;=<br>operator.gt()         大于       &gt;<br>operator.eq()       等于         ==<br>operator.ne()        不等于      !=<br>operator.le()           小于等于 &lt;=<br>operator.lt()          小于      &lt;<br>格式：operator.ge(列表1,列表2)<br>返回值：如果符合条件，返回True，反之，返回False</p>
+<p>拆分字符串：str.split(分隔符)<br>函数格式：str.split(分隔符)<br>返回值：将字符串，根据指定的分隔符，转换为列表<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w e l c o m e'</span></span><br><span class="line">list1 = str1.split(<span class="string">' '</span>)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：[‘w’,’e’,’l’,’c’,’o’,’m’,’e’]</p>
+<p>列表转为字符串：’分隔符’.join(list)<br>函数格式:’分隔符’.join(list)<br>返回值：无<br>结果:将指定的列表中的元素，通过分隔符进行连接，转换为字符串<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [<span class="string">'w'</span>,<span class="string">'e'</span>,<span class="string">'l'</span>,<span class="string">'c'</span>,<span class="string">'o'</span>,<span class="string">'m'</span>,<span class="string">'e'</span>]</span><br><span class="line"><span class="string">' '</span>.join(list1)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure></p>
+<p> 结果为：[‘w e l c o m e’]</p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><h3 id="元组的概念"><a href="#元组的概念" class="headerlink" title="元组的概念"></a>元组的概念</h3><p>元组是值的有序序列，里面可以存储各种数据类型的元素。但是元组一旦被赋值后，其内容就不可被改变。<br>第二种</p>
+<h3 id="声明与赋值"><a href="#声明与赋值" class="headerlink" title="声明与赋值"></a>声明与赋值</h3><p>第一种：tup1 = 1,2,3<br>第二种：tup1 = (1,2,3)<br>第三种：tup1 = tuple() #声明一个空的元组对象<br>注意：当在赋值时,且元组对象只有一个时,需要在元素后面加一个’,’与普通变量区分</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ tuple1 = (1,)</span><br><span class="line">tuple2 = 1,</span><br></pre></td></tr></table></figure>
+<h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><p>‘+’、’*’ in 遍历等等</p>
+<h3 id="元组与列表的转化"><a href="#元组与列表的转化" class="headerlink" title="元组与列表的转化"></a>元组与列表的转化</h3><p>元组转换为列表：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ tuple1 = (1,2,3)</span><br><span class="line">list1 = list(tuple1)</span><br></pre></td></tr></table></figure></p>
+<p>列表转换为元组：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ list1 = [1,2,3]</span><br><span class="line">tuple1 = tuple(list1)</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/15/data_type/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-str" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/14/str/">for语句和while语句使用方法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/14/str/" class="archive-article-date">
+  	<time datetime="2018-07-14T12:27:37.875Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="for循环-第一种"><a href="#for循环-第一种" class="headerlink" title="for循环 第一种"></a>for循环 第一种</h3><p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> 变量 <span class="keyword">in</span> 集合：</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
+<p>这种方式只能用在集合数据上，比如：字符串、列表、元组、字典等内容。</p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ words = <span class="string">'welcome to zhengzhou'</span></span><br><span class="line"> <span class="keyword">for</span> i <span class="keyword">in</span> words:</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+<p>推导式：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ s = list()</span><br><span class="line">item = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">[s.append(i) <span class="keyword">for</span> i <span class="keyword">in</span> item <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：[1,2,3,4,5,6,7,8]<br>注意：推导式的执行顺序是:先执行变量后面的循环语句，如果有两个连续的循环语句那么表明这是一个循环嵌套语句，先执行一次前面的循环语句，然后执行N次后面的循环语句，每次执行完就生成一次最前面变量，该变量作为列表的一个元素。一致到所有循环结束。</p>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="for的第二种用法"><a href="#for的第二种用法" class="headerlink" title="for的第二种用法"></a>for的第二种用法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i  <span class="keyword">in</span> range(循环次数):</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
+<p>range()函数：<br>range(stop) :缺省情况下，表示从0开始，循环n次<br>range(star,stop[,step])</p>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(10):</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="while语句用法"><a href="#while语句用法" class="headerlink" title="while语句用法"></a>while语句用法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">while</span> 条件：</span><br><span class="line">    代码</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="例子-2"><a href="#例子-2" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i=1</span><br><span class="line">$ <span class="keyword">while</span> i&lt;=9:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line">    i = i + 1</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="利用for循环来生成列表"><a href="#利用for循环来生成列表" class="headerlink" title="利用for循环来生成列表"></a>利用for循环来生成列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ s = [i*k <span class="keyword">for</span> i <span class="keyword">in</span> range(1,10) <span class="keyword">for</span> k <span class="keyword">in</span> range(1,10)]</span><br><span class="line">  <span class="built_in">print</span> (s)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="for循环常用的方式：嵌套"><a href="#for循环常用的方式：嵌套" class="headerlink" title="for循环常用的方式：嵌套"></a>for循环常用的方式：嵌套</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(次数):</span><br><span class="line">     <span class="keyword">for</span> j <span class="keyword">in</span> range(次数):</span><br></pre></td></tr></table></figure>
+<p>注意：如果变量的值需要通过外层循环来获取或生成，那么我们可以将其设为全局变量，即与外层循环for同等级的变量，如果变量需要在内层循环中生成或获取，我们通常会在外循环中声明，即与内循环同级。<br>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="break和continue"><a href="#break和continue" class="headerlink" title="break和continue"></a>break和continue</h3><p>break：当满足指定条件，break表示中断（中止）此循环，如果循环外部还有其他代码则继续向下执行。<br>continue：当满足指定条件时，continue表示结束本次循环，开始下一次循环，并未退出循环。<br>这两个关键字都是必须配合循环语句来使用，不能单独用在其他地方。<br><a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h2 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h2><h3 id="1-输出10行内容，每行的内容都是“-”。"><a href="#1-输出10行内容，每行的内容都是“-”。" class="headerlink" title="1. 输出10行内容，每行的内容都是“*”。"></a>1. 输出10行内容，每行的内容都是“<strong>*</strong>”。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">for</span> i <span class="keyword">in</span> range(10):</span><br><span class="line">     <span class="built_in">print</span> (<span class="string">'*****'</span>)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="2-计算从1到1000以内所有能被3或者17整除的数的和并输出"><a href="#2-计算从1到1000以内所有能被3或者17整除的数的和并输出" class="headerlink" title="2. 计算从1到1000以内所有能被3或者17整除的数的和并输出"></a>2. 计算从1到1000以内所有能被3或者17整除的数的和并输出</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ </span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,1001):</span><br><span class="line">     <span class="keyword">if</span> i%3 == 0 or i%17 == 0:</span><br><span class="line">         sum = sum + i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'1到1000以内所有能被3或17整除的数的和为&#123;0&#125;'</span>.format(sum))</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="3-给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）"><a href="#3-给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）" class="headerlink" title="3. 给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）"></a>3. 给定一个整数n，判断是否是质数（质数是只能被1和它自身整除的数）</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ </span><br><span class="line">sum = 0</span><br><span class="line">n = int(input(<span class="string">'请输入一个正整数：'</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,n+1):</span><br><span class="line">    <span class="keyword">if</span> n%i == 0:</span><br><span class="line">        sum = sum + 1</span><br><span class="line"><span class="keyword">if</span> sum == 2:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;是质数'</span>.format(n))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;0&#125;不是质数'</span>.format(n))</span><br></pre></td></tr></table></figure>
+<h3 id="4-li-1-1-2-2-3-4-5-5-6-6-7-8-将此列表去重。"><a href="#4-li-1-1-2-2-3-4-5-5-6-6-7-8-将此列表去重。" class="headerlink" title="4. li = [1,1,2,2,3,4,5,5,6,6,7,8]将此列表去重。"></a>4. li = [1,1,2,2,3,4,5,5,6,6,7,8]将此列表去重。</h3><p>正确做法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ li = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">s = list()</span><br><span class="line">[s.append(i) <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
+<p>输出结果：[1,2,3,4,5,6,7,8]</p>
+<p>错误做法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ li = [1,1,2,2,3,4,5,5,6,6,7,8]</span><br><span class="line">s = list()</span><br><span class="line">s = [i <span class="keyword">for</span> i <span class="keyword">in</span> li <span class="keyword">if</span> i not <span class="keyword">in</span> s]</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></p>
+<p>输出结果：[1,1,2,2,3,4,5,5,6,6,7,8]<br>错误原因：因为在执行if语句时s列表没有被加入内容，会把所有li的内容赋值给i,最后形成的列表赋值给s,所以输出的s列表和li相同。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/14/str/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-list_Tuple" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/list_Tuple/">IF 语句</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/13/list_Tuple/" class="archive-article-date">
+  	<time datetime="2018-07-13T15:32:44.764Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">kkzhui</a>! </p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="how-to-use-“if”"><a href="#how-to-use-“if”" class="headerlink" title="how to use “if”"></a>how to use “if”</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">if</span> 布尔值:</span><br><span class="line">      <span class="built_in">print</span>(<span class="string">'结果正确'</span>) <span class="comment"># 判断结果为True时执行的代码</span></span><br><span class="line">  <span class="keyword">elif</span> 布尔值：</span><br><span class="line">      <span class="built_in">print</span>(<span class="string">'结果正确'</span>)</span><br><span class="line">  <span class="keyword">else</span> :</span><br><span class="line">      <span class="built_in">print</span>(<span class="string">'结果正确'</span>)</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>and:左右两端都是布尔型，其结果也为布尔型。当左右两端的值都为True，其结果才为True，有一方为False，其结果一定为False。<br>or:左右两端都是布尔型，其结果也为布尔型。当左右两端的值有一方为True时，其结果就为True，只有在双方都为False时，其结果才为False。<br>not：属于单目运算，其结果也是布尔型。其作用就是求反，如果变量为True，结果为False，如果为False，其结果为True。<br>逻辑运算、比较运算常用在条件中使用。同时，这两种运算符经常配合使用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ i = 10</span><br><span class="line"><span class="keyword">if</span> i&gt;=9 and i%2 == 0:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"><span class="keyword">else</span> :</span><br><span class="line">    <span class="built_in">print</span>(i+1)</span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="关于王者荣耀游戏中人物一些数据的分析"><a href="#关于王者荣耀游戏中人物一些数据的分析" class="headerlink" title="关于王者荣耀游戏中人物一些数据的分析"></a>关于王者荣耀游戏中人物一些数据的分析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">$ </span><br><span class="line">import math</span><br><span class="line">user = input(<span class="string">'请输入角色名：'</span>)</span><br><span class="line">kills = input(<span class="string">'请输入技能名称：'</span>)</span><br><span class="line">boss_blood = 10000  <span class="comment">#Boss血量</span></span><br><span class="line"><span class="keyword">if</span> user == <span class="string">'赵云'</span>:</span><br><span class="line">    <span class="keyword">if</span> kills == <span class="string">'物理攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/80) <span class="comment"># Boss被物理攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'技能攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/120)<span class="comment">#Boss被技能攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'物理攻击和技能攻击'</span>:</span><br><span class="line">         physics_number=math.ceil((boss_blood-(500/50*120))/80)</span><br><span class="line">         skill_number=math.floor(500/50)</span><br><span class="line">         number=physics_number+skill_number <span class="comment"># Boss被物理攻击和技能攻击击败的攻击次数</span></span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'&#123;0&#125;使用了&#123;1&#125;次物理攻击和&#123;2&#125;次技能攻击击败了BOSS'</span>.format(user,physics_number,skill_number))</span><br><span class="line">         <span class="built_in">exit</span>()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'输入的技能名称有误！'</span>)</span><br><span class="line">         <span class="built_in">exit</span>()</span><br><span class="line"><span class="keyword">elif</span> user == <span class="string">'李白'</span>:</span><br><span class="line">    <span class="keyword">if</span> kills == <span class="string">'物理攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/30) <span class="comment"># Boss被物理攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'技能攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/100)  <span class="comment">#Boss被技能攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'物理攻击和技能攻击'</span>:</span><br><span class="line">         physics_number=math.ceil((boss_blood-(350/80*100))/30)</span><br><span class="line">         skill_number=math.floor(350/80)</span><br><span class="line">         number=physics_number+skill_number <span class="comment"># Boss被物理攻击和技能攻击击败的攻击次数</span></span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'&#123;0&#125;使用了&#123;1&#125;次物理攻击和&#123;2&#125;次技能攻击击败了BOSS'</span>.format(user,physics_number,skill_number))</span><br><span class="line">         <span class="built_in">exit</span>()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'输入的技能名称有误！'</span>)</span><br><span class="line">         <span class="built_in">exit</span>()</span><br><span class="line"><span class="keyword">elif</span> user == <span class="string">'刘备'</span>:</span><br><span class="line">    <span class="keyword">if</span> kills == <span class="string">'物理攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/50) <span class="comment"># Boss被物理攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'技能攻击'</span>:</span><br><span class="line">         number = math.ceil(boss_blood/200) <span class="comment">#Boss被技能攻击击败的攻击次数</span></span><br><span class="line">    <span class="keyword">elif</span> kills == <span class="string">'物理攻击和技能攻击'</span>:</span><br><span class="line">         physics_number = math.ceil((boss_blood-(600/100*200))/50)</span><br><span class="line">         skill_number = math.floor(600/100)</span><br><span class="line">         number =physics_number+skill_number  <span class="comment"># Boss被物理攻击和技能攻击击败的攻击次数</span></span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'&#123;0&#125;使用了&#123;1&#125;次物理攻击和&#123;2&#125;次技能攻击击败了BOSS'</span>.format(user,physics_number,skill_number))</span><br><span class="line">         <span class="built_in">exit</span>()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'输入的技能名称有误！'</span>) </span><br><span class="line">         <span class="built_in">exit</span>() </span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">     <span class="built_in">print</span>(<span class="string">'输入的角色名称有误！'</span>)</span><br><span class="line">     <span class="built_in">exit</span>() </span><br><span class="line"><span class="built_in">print</span>(<span class="string">'&#123;0&#125;使用了&#123;1&#125;次&#123;2&#125;击败了BOSS'</span>.format(user,number,kills))</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/13/list_Tuple/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-for_while" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/12/for_while/">字符串的声明和操作</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/12/for_while/" class="archive-article-date">
+  	<time datetime="2018-07-12T13:45:27.514Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><h3 id="字符串的声明"><a href="#字符串的声明" class="headerlink" title="字符串的声明"></a>字符串的声明</h3><p>字符串声明时,可以使用’’也可以使用””,他们都可以表示字符串的内容。<br>例如：str1 = ‘welcome’、str2 = “welcome”<br>字符串类型，一旦被声明赋值后，其内容是不可被改变的，如果需要改变原字符串变量的值，必须对其进行重新赋值。<br>字符串进行比较时,采用对应位置的逐个字母比较，首先将字母转成ASCII码，然后根据码值进行比较大小。如果一旦出现一方的字母码值大于另一方，就结束比较。<br>比较运算符：&gt;、&lt;、==、!=、&gt;=、&lt;=<br>他们的返回值为布尔型，即True或False</p>
+<p>使用input(),允许进行交互式输入,默认input()输入的值类型为str字符串类型。</p>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="字符串常用方法"><a href="#字符串常用方法" class="headerlink" title="字符串常用方法"></a>字符串常用方法</h3><p>find() 查找<br>函数格式：str.find(子字符串[,开始索引位，结束索引位])<br>返回值：如果查找成功，则返回所查找内容在字符串中的索引位置，如果没有找到，返回-1.(如果查找的内容,在字符串中有多个，则只返回第一个字符的索引位)</p>
+<p>index() 返回指定字符的索引位<br>函数格式：index(子字符串[,开始索引位，结束索引位])<br>返回值：如果找到指定的字符串，则返回其索引位；如果找不到就报错ValueError</p>
+<p>split()拆分字符串<br>函数格式：str.split([分隔符])<br>返回值：根据指定的分隔符，对字符串进行拆分，返回一个列表；如果不指定分隔符，那么会将整个字符串，作为列表的一个元素。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w,e,l,c,o,m,e'</span></span><br><span class="line"> str1.split(<span class="string">','</span>)</span><br><span class="line"> <span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure></p>
+<p> 结果为：[‘w’, ‘e’, ‘l’, ‘c’,’o’,’m’,’e’]</p>
+<p>注意：如果分割符在字符串中未出现，则会把字符串作为列表的一个元素<br>比如:<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'w,e,l,c,o,m,e'</span></span><br><span class="line"> str1.split()</span><br></pre></td></tr></table></figure></p>
+<p> 结果为:[‘w,e,l,c,o,m,e’]</p>
+<p>strip() 字符串左右两端去除指定字符（默认情况，去除空格）<br>函数格式：str.strip([指定字符])<br>返回值：根据指定的字符，对字符串进行两端去除其内容，返回一个新的字符串。如果字符串中间有空格或指定字符，那么该函数不起作用。如果指定的字符在字符串左右两端不存在，那么将返回字符串本身</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">' welcome  '</span></span><br><span class="line"> str2 = str1.strip()</span><br><span class="line"> <span class="built_in">print</span>(str1,str2)</span><br></pre></td></tr></table></figure>
+<p>结果为： welcome  welcome</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'awelcom to zhengzhoua'</span></span><br><span class="line">str1.strip(<span class="string">'a'</span>)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br></pre></td></tr></table></figure>
+<p>结果为：welcom to zhengzhou</p>
+<p>注意：如果指定字符内容为一个字符序列，那么意味着使用strip去除左右两端指定字符时，只要符合字符序列中的某一位，就进行去除<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ string1 = <span class="string">' awelcom to zhengzhouab'</span></span><br><span class="line">string1.strip(<span class="string">' ab'</span>)</span><br><span class="line"><span class="string">'welcom to zhengzhou'</span></span><br></pre></td></tr></table></figure></p>
+<p> 结果为：welcom to zhengzhou</p>
+<p>replace()替换函数<br>函数格式：str.replace(old,new[,max])<br>返回值：将指定字符串（old）替换为新字符串（new）,最大可以替换max次。替换完成后，返回一个新字符串。<br>注意：此处的max参数，主要用来指定替换的次数，如果该参数缺省，表示替换里面所有符合条件的字符串。<br>比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str)  <span class="comment"># 替换所有的a</span></span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为:’f,b,c,f,f,d’</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'a,b,c,a,a,d'</span></span><br><span class="line">old_str = <span class="string">'a'</span></span><br><span class="line">new_str = <span class="string">'f'</span></span><br><span class="line">str2 = str1.replace(old_str, new_str,2)  </span><br><span class="line"><span class="built_in">print</span>(str2)</span><br></pre></td></tr></table></figure>
+<p>结果为:’f,b,c,f,a,d’</p>
+<p>isalnum()、isalpha()、isdigit()<br>函数格式：str.isalnum()    判断字符串内容，是否有数字或字母组成<br>          str.isalpha()    判断字符串内容，是否由字母组成<br>          str.isdigit()    判断字符串内容，是否由数字组成<br>返回值：如果符合条件，返回True；如果不符合，返回False。</p>
+<h3 id="字符串运算符"><a href="#字符串运算符" class="headerlink" title="字符串运算符 []"></a>字符串运算符 []</h3><p>使用方法：str[索引位] =&gt; 返回指定索引位的字符<br>索引位有两种表示方式：<br>string1 = ‘hello world’<br>第一种：string1[0] =&gt; h    到string1[10] =&gt; d<br>第二种：string1[-1] =&gt; d   到string1[-11] =&gt; h<br>切片操作:<br>格式：str[start,end,step]<br>start：代表切片开始的索引位<br>end: 代表切片结束的索引位（但是不会输出该索引位指向的字符）<br>step：代表每隔次几个字符个数截取一个</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ str1 = <span class="string">'welcome'</span></span><br><span class="line">a = str1[2] <span class="comment">#从字符串索引位0开始到1依次获取字符串元素形成一个新子字符串</span></span><br><span class="line">b = str1[1:3]<span class="comment">#从字符串索引位1开始到3依次获取字符串元素形成一个新子字符串</span></span><br><span class="line">c = str1[1:]<span class="comment">#从字符串索引位1开始获取字符串直到最后一位元素形成一个新子字符串</span></span><br><span class="line">d = str1[:3]<span class="comment">#从字符串索引位0开始到2获取字符串元素形成一个新子字符串</span></span><br><span class="line">e = str1[1:4:2]<span class="comment">#从字符串索引位1，3获取字符串元素形成一个新子字符串</span></span><br><span class="line">f = str1[-5:-1]<span class="comment">#从字符串索引位-5开始到-1获取字符串元素形成一个新子字符串</span></span><br><span class="line">d = str1[5:1:-1]<span class="comment">#从字符串索引位5开始到1从右往左获取字符串元素形成一个新子字符串 </span></span><br><span class="line"><span class="built_in">print</span>(a,b,c,d,e,f)</span><br></pre></td></tr></table></figure>
+<h3 id="连接符与重复操作符"><a href="#连接符与重复操作符" class="headerlink" title="连接符与重复操作符"></a>连接符与重复操作符</h3><p>+：在字符串中使用时，作为连接两个字符串，并返回一个新字符串的作用来使用。<br><em>：重复操作指定的次数，即将字符串重复输出N次。返回一个新字符串。<br>注意：在重复操作中，必须遵循：字符串</em>正整数这样的格式，如果数值不是正整数，其结果返回一个空字符串，如果不是数值类型，程序报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ str1= <span class="string">'abc'</span></span><br><span class="line">str2 = <span class="string">'df'</span></span><br><span class="line"><span class="built_in">print</span>(str1+str2)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：abcdf</p>
+<h3 id="in运算符"><a href="#in运算符" class="headerlink" title="in运算符"></a>in运算符</h3><p>用来检测指定的内容，是否在字符串中，如果存在则返回True，反之返回False</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/12/for_while/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-if" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
