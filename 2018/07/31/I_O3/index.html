@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>高阶函数 | 小豌豆</title>
+  <title>Python对XML文件的解析 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. 高阶函数1、匿名函数定义匿名函数的语法格式：lambda arg1,arg2,…,argn: expressionargs是参数，可以有多个，用逗号隔开，expression是表达式(返回值) 注意：1.lambda函数拥有自己的命名空间，且不能访问">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1、XML解析的两种方式：DOM与SAXDOM：文档对象模型，是Python处理XML文件的标准模式。一个DOM的解析器在解析XML文档时 ，一次性读入整个文档，把文档中的所有元素（标签和文本）保存在内存中的一个树形结构，然后我们可以利用DOM提供的各">
 <meta name="keywords" content="python、爬虫、Web开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高阶函数">
-<meta property="og:url" content="http://yoursite.com/2018/07/26/high_def/index.html">
+<meta property="og:title" content="Python对XML文件的解析">
+<meta property="og:url" content="http://yoursite.com/2018/07/31/I_O3/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. 高阶函数1、匿名函数定义匿名函数的语法格式：lambda arg1,arg2,…,argn: expressionargs是参数，可以有多个，用逗号隔开，expression是表达式(返回值) 注意：1.lambda函数拥有自己的命名空间，且不能访问">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1、XML解析的两种方式：DOM与SAXDOM：文档对象模型，是Python处理XML文件的标准模式。一个DOM的解析器在解析XML文档时 ，一次性读入整个文档，把文档中的所有元素（标签和文本）保存在内存中的一个树形结构，然后我们可以利用DOM提供的各">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-30T13:30:38.505Z">
+<meta property="og:updated_time" content="2018-08-01T12:20:53.985Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高阶函数">
-<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. 高阶函数1、匿名函数定义匿名函数的语法格式：lambda arg1,arg2,…,argn: expressionargs是参数，可以有多个，用逗号隔开，expression是表达式(返回值) 注意：1.lambda函数拥有自己的命名空间，且不能访问">
+<meta name="twitter:title" content="Python对XML文件的解析">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 1、XML解析的两种方式：DOM与SAXDOM：文档对象模型，是Python处理XML文件的标准模式。一个DOM的解析器在解析XML文档时 ，一次性读入整个文档，把文档中的所有元素（标签和文本）保存在内存中的一个树形结构，然后我们可以利用DOM提供的各">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -170,44 +170,32 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-high_def" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-I_O3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      高阶函数
+      Python对XML文件的解析
     </h1>
   
 
         
-        <a href="/2018/07/26/high_def/" class="archive-article-date">
-  	<time datetime="2018-07-26T07:14:26.638Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-26</time>
+        <a href="/2018/07/31/I_O3/" class="archive-article-date">
+  	<time datetime="2018-07-31T12:56:45.702Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily<br>.</p>
-<h2 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h2><h3 id="1、匿名函数"><a href="#1、匿名函数" class="headerlink" title="1、匿名函数"></a>1、匿名函数</h3><p>定义匿名函数的语法格式：<br>lambda arg1,arg2,…,argn: expression<br>args是参数，可以有多个，用逗号隔开，expression是表达式(返回值)</p>
-<p>注意：<br>1.lambda函数拥有自己的命名空间，且不能访问自有参数列表之外或全局命名空间里的参数。<br>2.lambda的主体是一个表达式，而不是一个代码块，只能在lambda表达式中封装有限的逻辑。<br>3.参数可以有多个，用逗号隔开<br>4.匿名函数不管逻辑多复杂，只能写一行，且逻辑执行结束后的内容就是返回值<br>5.返回值和正常的函数一样可以使任意数据类型</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ a = lambda n :n*n</span><br><span class="line"><span class="built_in">print</span>(a(10))</span><br></pre></td></tr></table></figure>
-<p>结果为:100</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ max1 = lambda a ,b, c: a <span class="keyword">if</span> a &gt; b and a&gt;c <span class="keyword">else</span> (b <span class="keyword">if</span> b &gt;a and b &gt;c  <span class="keyword">else</span> c) </span><br><span class="line"><span class="built_in">print</span>(max1(2,3,3))</span><br></pre></td></tr></table></figure>
-<p>结果为：3</p>
-<h3 id="2、map-函数-映射函数"><a href="#2、map-函数-映射函数" class="headerlink" title="2、map()函数(映射函数)"></a>2、map()函数(映射函数)</h3><p>函数格式：map(func,iterable)<br>返回值：map 对象（迭代器）<br>说明：map函数主要作用是，将指定函数与序列中的元素进行映射，并完成函数中功能的批量操作，返回值为一个迭代器。我们可以使用for循环或next()函数进行遍历。通常情况下，如果映射的函数较为简单，我们就不单独声明函数，而是采用匿名函数来实现，这样也能提高运行效率。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ def f(x):</span><br><span class="line">    <span class="built_in">return</span> x * x</span><br><span class="line">result = map(f,[1,2,3])  <span class="comment">#生成一个迭代器</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:1,4,9</p>
-<p>另外，用到map函数时，如果函数f比较简单，也可以不事先定义函数，而是以一种匿名函数的形式来进行计算，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ result = map(lambda x:x+5,[1,2,3])</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:6<br>       7<br>       8</p>
-<h3 id="3、reduce函数-归纳函数"><a href="#3、reduce函数-归纳函数" class="headerlink" title="3、reduce函数(归纳函数)"></a>3、reduce函数(归纳函数)</h3><p>函数格式：reduce(func,iterator)<br>返回值：返回函数计算结果，具体类型根据函数的返回值来定<br>说明：reduce函数中的func，一定要设为两个参数，用来接收迭代器返回的值。操作顺序为首先接收第一、第二个值，进行运算；运算结果再与第三个值进行运行，以此类推，直到迭代器迭代完全部数据。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ from functools import reduce</span><br><span class="line">def f(x,y):</span><br><span class="line">    <span class="built_in">return</span>  x * y</span><br><span class="line">result = reduce(f,range(1,4))  </span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
-<p>结果为:6</p>
-<h3 id="4、filter函数-过滤函数"><a href="#4、filter函数-过滤函数" class="headerlink" title="4、filter函数(过滤函数)"></a>4、filter函数(过滤函数)</h3><p>函数格式：filter(func,iterable)<br>返回值：返回一个迭代器<br>说明：过滤函数与映射函数类似，都需要将函数作用于序列中的每个元素，根据函数判断True或False，返回相关元素。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ def is_even(x):</span><br><span class="line">    <span class="built_in">return</span> x % 2 == 0</span><br><span class="line">l = filter(is_even,[0,1,2,3,4,5])</span><br><span class="line"><span class="keyword">for</span> var <span class="keyword">in</span> l:   </span><br><span class="line">    <span class="built_in">print</span>(var)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:0<br>      2<br>      4</p>
-<h3 id="5、递归函数"><a href="#5、递归函数" class="headerlink" title="5、递归函数"></a>5、递归函数</h3><p>递归概念：就是使用自身函数对自身进行调用，每调用一次将当前次的运行结果保存到函数的堆栈中，以副本形式保存，一直到最后完成全部调用。然后逐一向外将当期函数的结果返回并退出到其调用的位置。<br>在Python中，通常推荐使用迭代，递归本身对内存的消耗和运行效率低下的问题较少使用。<br>例：递归求和<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ def mysum(L):</span><br><span class="line">	<span class="keyword">if</span> not L:</span><br><span class="line">		<span class="built_in">return</span> 0</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">return</span> L[0] + mysum(L[1:])</span><br><span class="line">mysum([1,2,3,4,5])</span><br></pre></td></tr></table></figure></p>
-<p>结果为：15</p>
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="1、XML解析的两种方式：DOM与SAX"><a href="#1、XML解析的两种方式：DOM与SAX" class="headerlink" title="1、XML解析的两种方式：DOM与SAX"></a>1、XML解析的两种方式：DOM与SAX</h2><p>DOM：文档对象模型，是Python处理XML文件的标准模式。一个DOM的解析器在解析XML文档时 ，一次性读入整个文档，把文档中的所有元素（标签和文本）保存在内存中的一个树形结构，然后我们可以利用DOM提供的各种函数，来读取或修改文档中的内容。<br>SAX：是一种时间驱动的API，利用SAX解析XML 。主要使用解析器负责读取XML文档，并向事件处理器发生事件，比如：元素开始、元素结束。常用在(1)大型文档的处理，(2)只需要文件的部分内容，或者从文件中得到特定的部分(3)建立自己的对象模型。<br>dom与sax对比：<br>1、DOM解析需要读取整个文档到内存中，并且将所有元素保存到树形结构。那也就意味着，可以根据树形结构导航到任意节点，获取其相关内容。<br>2、SAX解析文档，将文档边读入，边解析的方式，不需要一次性读入全部文档内容，只需要读入一部分即可。同时，因为其边读入边解析的工作方式，能够适应大文件的解析，提高解析效率。</p>
+<h3 id="SAX解析文件步骤："><a href="#SAX解析文件步骤：" class="headerlink" title="SAX解析文件步骤："></a>SAX解析文件步骤：</h3><p>1、创建解析器<br>parser = sax.make_parser()<br>2、读取xml文档<br>xml.sax.parse(xmlfile)<br>3、设置ContentHandler对象，重写startDocument、endDocument、startElement、endElement方法</p>
+<p>startDocument():文档载入时调用，文档开始<br>   endDocument()：当解析器达到文档结尾时调用</p>
+<p>   startElement(name,attrs):当遇到XML标签时调用，name是标签的名字，attrs标签的属性字典<br>   endElement(name):当遇到XML标签结束时调用，name是标签名<br>4、使用SAX解析文件，需要为解析器配置ContentHandler，定义了如何解析标签，以及处理标签间文本内容的业务逻辑。<br>carhandler = CarHandler()<br>parser.setContentHandler(carhandler)</p>
+<h3 id="一个简单的获取xml文件内容并写入Excel中的小程序"><a href="#一个简单的获取xml文件内容并写入Excel中的小程序" class="headerlink" title="一个简单的获取xml文件内容并写入Excel中的小程序"></a>一个简单的获取xml文件内容并写入Excel中的小程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">$ import xlwt</span><br><span class="line">from xml.etree import ElementTree</span><br><span class="line">def readXML1(xmlfile):</span><br><span class="line">    dic = &#123;&#125;</span><br><span class="line">    tree = ElementTree.parse(xmlfile)</span><br><span class="line">    root = tree.getroot()<span class="comment">#读取到根节点</span></span><br><span class="line">    <span class="keyword">for</span> child <span class="keyword">in</span> root:</span><br><span class="line">        <span class="keyword">if</span> child.tag != <span class="string">'DETAIL'</span> and child.tag != <span class="string">'DTIME'</span>:</span><br><span class="line">            list1 = []</span><br><span class="line">            <span class="keyword">for</span> node <span class="keyword">in</span> child:</span><br><span class="line">                list1.append(node.text)</span><br><span class="line">            dic[child.tag] = list1</span><br><span class="line">    <span class="built_in">return</span> dic</span><br><span class="line">def readXML2(xmlfile):</span><br><span class="line">    dic = &#123;&#125;</span><br><span class="line">    list1 = []</span><br><span class="line">    tree = ElementTree.parse(xmlfile)</span><br><span class="line">    root = tree.getroot()</span><br><span class="line">    <span class="keyword">for</span> child <span class="keyword">in</span> root:</span><br><span class="line">        <span class="keyword">if</span> child.tag == <span class="string">'DETAIL'</span>:</span><br><span class="line">            list2 = []</span><br><span class="line">            <span class="keyword">for</span> node <span class="keyword">in</span> child:</span><br><span class="line">                list2.append(node.text)</span><br><span class="line">            list1.append(list2)</span><br><span class="line">        <span class="keyword">elif</span> child.tag == <span class="string">'DTIME'</span>:</span><br><span class="line">            dic[<span class="string">'DTIME'</span>] = child.text</span><br><span class="line">    dic[<span class="string">'DETAIL'</span>] = list1</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">return</span> dic</span><br><span class="line">def saveXML1(dic1,dic2):</span><br><span class="line">   </span><br><span class="line">    book = xlwt.Workbook()</span><br><span class="line">    sheet = book.add_sheet(<span class="string">'客户地址表'</span>)</span><br><span class="line">    sheet1 = book.add_sheet(<span class="string">'商家地址表'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(title1)):</span><br><span class="line">        sheet.write(0,i,title1[i])</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range(len(dic1[<span class="string">'CUSTOMERADDR'</span>])):</span><br><span class="line">        sheet.write(1,n,dic1[<span class="string">'CUSTOMERADDR'</span>][n])</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(title1)):</span><br><span class="line">        sheet1.write(0,i,title1[i])</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range(len(dic1[<span class="string">'MERCHANTADDR'</span>])):</span><br><span class="line">        sheet1.write(1,n,dic1[<span class="string">'MERCHANTADDR'</span>][n])</span><br><span class="line">    </span><br><span class="line">    sheet3 = book.add_sheet(str(dic2[<span class="string">'DTIME'</span>])+<span class="string">'购物表'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(title2)):</span><br><span class="line">        sheet3.write(0,i,title2[i])</span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> range(len(dic2[<span class="string">'DETAIL'</span>])):</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> range(len(dic2[<span class="string">'DETAIL'</span>][m])):</span><br><span class="line">            sheet3.write(m+1,n,dic2[<span class="string">'DETAIL'</span>][m][n])</span><br><span class="line">    book.save(<span class="string">'buy_goods_msg.xls'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    title1 = [<span class="string">'国家'</span>,<span class="string">'姓名'</span>,<span class="string">'街道'</span>,<span class="string">'城市'</span>,<span class="string">'省份'</span>,<span class="string">'邮编'</span>]</span><br><span class="line">    title2 = [<span class="string">'商品编号'</span>,<span class="string">'商品名称'</span>,<span class="string">'数量'</span>,<span class="string">'价格'</span>,<span class="string">'急件'</span>,<span class="string">'附言'</span>]</span><br><span class="line">    dic1 = readXML1(<span class="string">'order.xml'</span>)</span><br><span class="line">    dic2 = readXML2(<span class="string">'order.xml'</span>)</span><br><span class="line">    saveXML1(dic1,dic2)</span><br></pre></td></tr></table></figure>
 
       
 
@@ -287,7 +275,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/26/high_def/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/I_O3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -301,18 +289,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/27/I_O1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/01/modules/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          文本文件的输入输出
+          模块
         
       </div>
     </a>
   
   
-    <a href="/2018/07/25/def_bibao/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">函数嵌套</div>
+    <a href="/2018/07/30/I_O2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">二进制文件的读写操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
