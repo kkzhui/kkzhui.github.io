@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>模块 | 小豌豆</title>
+  <title>模块和包 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; More info: Writing Run server1$ hexo server More info: Server Generate">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Python的程序由包（package）、模块（module）和函数组成。包是由一系列模块组成的集合，模块是处理某一类问题的函数和类的集合 模块基本概念：在Python中进行Python定义和声明的文件，以.py结尾。使用import或from">
 <meta name="keywords" content="python、爬虫、Web开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="模块">
+<meta property="og:title" content="模块和包">
 <meta property="og:url" content="http://yoursite.com/2018/08/01/modules/index.html">
 <meta property="og:site_name" content="小豌豆">
-<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; More info: Writing Run server1$ hexo server More info: Server Generate">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Python的程序由包（package）、模块（module）和函数组成。包是由一系列模块组成的集合，模块是处理某一类问题的函数和类的集合 模块基本概念：在Python中进行Python定义和声明的文件，以.py结尾。使用import或from">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-01T12:56:05.271Z">
+<meta property="og:updated_time" content="2018-08-02T09:40:38.115Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="模块">
-<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; More info: Writing Run server1$ hexo server More info: Server Generate">
+<meta name="twitter:title" content="模块和包">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily. Python的程序由包（package）、模块（module）和函数组成。包是由一系列模块组成的集合，模块是处理某一类问题的函数和类的集合 模块基本概念：在Python中进行Python定义和声明的文件，以.py结尾。使用import或from">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -177,7 +177,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      模块
+      模块和包
     </h1>
   
 
@@ -191,14 +191,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>Python的程序由包（package）、模块（module）和函数组成。包是由一系列模块组成的集合，模块是处理某一类问题的函数和类的集合</p>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>基本概念：在Python中进行Python定义和声明的文件，以.py结尾。使用import或from   import导入的文件，我们成为模块。<br>模块的模块名（做为一个字符串）可以由全局变量 <strong>name</strong> 得到。</p>
+<h3 id="模块的优势"><a href="#模块的优势" class="headerlink" title="模块的优势"></a>模块的优势</h3><p>模块的优势<br>首先，使用模块，可以将常用的功能和变量，统一分类存储在不同的文件中，在使用时进行导入。提供了代码的可维护性。<br>其次，使用模块因为将常用功能进行了统一调用，提供了代码的复用性<br>最后，解决了在同一个文件中，方法和变量重名的问题。</p>
+<p>###导入时的问题<br>如果导入了与文件同名的函数（方法名相同，函数个数相同）时，需要使用模块名调用函数，与文件中的函数进行区分，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ import my</span><br><span class="line">my.show()</span><br><span class="line">def show():</span><br><span class="line">  pass</span><br><span class="line">show()</span><br></pre></td></tr></table></figure></p>
+<p>模块可以在Python文件中，实现多次import导入，但是只有第一次导入时才真正将模块中的内容运行、方法载入，其他再进行导入时，Python解析器会先检测是否已经载入该模块，如果载入就不在执行相关操作。</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>模块载入一共分三个步骤：<br>1、为模块的导入，创建命名空间（划分新的内存地址），被载入的文件按照全局作用域来使用。<br>2、模块载入后，将在上一步操作中创建的命名空间中，执行模块中的代码<br>3、创建一个模块的名字，来引用模块所在的命名空间。my.show()</p>
+<p>当使用from  import引入多个模块时，同时多个模块存在同名函数，那么在程序中调用该函数时，以程序导入的最后一个模块的函数为准。</p>
+<h3 id="包"><a href="#包" class="headerlink" title="包"></a>包</h3><p>包：<br>1）概念：包在Python中定义为可以包含多个模块文件的目录，其中必须要包含一个名为“<strong>init</strong>.py”的文件，用来初始化包。<br>2）包在调用的使用，首先会初始化<strong>init</strong>.py文件，主要功能为包中模块运行时提供所需要的相关数据，比如：数据库用户名称、密码、地址等内容。</p>
 
       
 
@@ -291,6 +291,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/08/02/exception/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          异常出理
+        
+      </div>
+    </a>
   
   
     <a href="/2018/07/31/I_O3/" id="article-nav-older" class="article-nav-link-wrap">

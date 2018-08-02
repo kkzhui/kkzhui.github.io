@@ -168,6 +168,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-exception" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/02/exception/">异常出理</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/02/exception/" class="archive-article-date">
+  	<time datetime="2018-08-02T09:44:30.488Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily.</p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>什么是异常？<br>当Python检测到一个错误时，解释器就会指出当前流已无法继续执行下去，这时候就出现了异常。<br>异常是指因为程序出错而在正常控制流以外采取的行为。异常即是一个事件，该事件会在程序执行过程中发生，影响了程序的正常执行。<br>异常分为两个阶段：<br>第一个阶段是引起异常发生的错误；<br>第二个阶段是检测并进行处理的阶段。</p>
+<h3 id="异常的类型"><a href="#异常的类型" class="headerlink" title="异常的类型"></a>异常的类型</h3><p>异常类名    描  述<br>Exception    所有异常的基类<br>NameError    尝试访问一个没有申明的变量<br>ZeroDivisionError    除数为0<br>SyntaxError    语法错误<br>IndexError    索引超出序列范围<br>KeyError    请求一个不存在的字典关键字<br>IOError            输入输出错误（比如你要读的文件不存在）<br>AttributeError    尝试访问未知的对象属性<br>ValueError    传给函数的参数类型不正确<br>EOFError    发现一个不期望的文件尾</p>
+<h3 id="异常处理流程"><a href="#异常处理流程" class="headerlink" title="异常处理流程"></a>异常处理流程</h3><p>try：<br>   可能会产生异常的代码<br>except  对应的异常 as 别名：<br>   异常处理语句</p>
+<p>说明：在try中，放置可能会产生错误的相关代码；except后标明对应的异常类型，一旦try中产生相关异常，except后声明的异常类能够对应捕获，执行相关异常处理语句。如果try外面后续还要其他语句，会继续执行。在产生异常是，出现异常的语句后，如果还有其他语句则不会执行。<br>try:<br>   可能会产生异常的代码<br>except 对应的异常 as 别名：<br>   异常处理语句<br>else:<br>   程序代码<br>说明：在此结构中，如果try中的代码出现异常，则使用except后面声明的异常类进行捕获处理，如果没有异常出现，则执行else内部的代码。</p>
+<p>try:<br>   可能会产生异常的代码<br>except 对应的异常 as 别名：<br>    异常处理语句<br>except 对应的异常 as 别名：<br>    异常处理语句<br>说明：当try中有多行代码可能会出现不同的异常，那么使用多个except与之对应，根据产生异常的顺序来依次捕获处理。</p>
+<p>try：<br>   可能会出产生异常的代码<br>except 对应的异常 as 别名：<br>   异常处理语句<br>finally：<br>   代码<br>说明：当异常捕获处理流程中，使用了finally来控制，表明不管是否出现异常进行捕获，最后代码都将允许finally内部的语句。<br>注意：finally中的语句，不管前面的代码出现何种操作，比如：break、return、exit等都会执行完finally内部的代码后，才会实现。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h3 id="异常的分类"><a href="#异常的分类" class="headerlink" title="异常的分类"></a>异常的分类</h3><p>在Python中所有的异常都继承自BaseExcept,如下：<br>          |——&gt;KeyboardInterrupt（键盘中断异常）<br>          |<br>BaseExcept|——&gt;SystemExit(系统退出异常)<br>          |<br>          |——&gt;Except（其他所有异常的父类）<br>其中：keyboardInterrupt在使用强制中断程序时产生。<br>SystemExit在使用sys.exit()函数时产生。</p>
+<h3 id="主动抛出异常"><a href="#主动抛出异常" class="headerlink" title="主动抛出异常"></a>主动抛出异常</h3><p>raise 异常类对象实例或自定义异常类实例<br>raise IOError(‘IO 错误’)</p>
+<h3 id="finally的替换写法"><a href="#finally的替换写法" class="headerlink" title="finally的替换写法"></a>finally的替换写法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ with open(<span class="string">'myfile.txt'</span>,<span class="string">'r'</span>) as f:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br></pre></td></tr></table></figure>
+<p>其中打开的文件对象f，在执行完内容的读取后，被强制性关闭。及时在读取过程中，出现错误，也会被关闭。</p>
+<h3 id="使用异常机制的优势"><a href="#使用异常机制的优势" class="headerlink" title="使用异常机制的优势"></a>使用异常机制的优势</h3><p>第一，把错误控制与业务逻辑进行区分，增强程序的可读性和健壮性。<br>第二，代码结构更加清晰，复杂的业务流程的实现更加便利<br>第三，程序的容错性更强，不会因为一个小bug导致整体崩溃。</p>
+<h3 id="assert-断言"><a href="#assert-断言" class="headerlink" title="assert 断言"></a>assert 断言</h3><p>语法格式：assert 表达式，断言内容。代码如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ try:</span><br><span class="line">    assert 1==2,<span class="string">'1 不等于 2'</span></span><br><span class="line">except AssertionError as ae:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'&#123;&#125;&#123;&#125;'</span>.format(ae.__class__.__name__, ae))</span><br></pre></td></tr></table></figure></p>
+<p>如果断言表达式为真，则正常执行，如果不为真，则返回断言内容，作为异常捕获的输出结果。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/02/exception/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-modules" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,7 +251,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/01/modules/">模块</a>
+      <a class="article-title" href="/2018/08/01/modules/">模块和包</a>
     </h1>
   
 
@@ -189,14 +265,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>Python的程序由包（package）、模块（module）和函数组成。包是由一系列模块组成的集合，模块是处理某一类问题的函数和类的集合</p>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>基本概念：在Python中进行Python定义和声明的文件，以.py结尾。使用import或from   import导入的文件，我们成为模块。<br>模块的模块名（做为一个字符串）可以由全局变量 <strong>name</strong> 得到。</p>
+<h3 id="模块的优势"><a href="#模块的优势" class="headerlink" title="模块的优势"></a>模块的优势</h3><p>模块的优势<br>首先，使用模块，可以将常用的功能和变量，统一分类存储在不同的文件中，在使用时进行导入。提供了代码的可维护性。<br>其次，使用模块因为将常用功能进行了统一调用，提供了代码的复用性<br>最后，解决了在同一个文件中，方法和变量重名的问题。</p>
+<p>###导入时的问题<br>如果导入了与文件同名的函数（方法名相同，函数个数相同）时，需要使用模块名调用函数，与文件中的函数进行区分，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ import my</span><br><span class="line">my.show()</span><br><span class="line">def show():</span><br><span class="line">  pass</span><br><span class="line">show()</span><br></pre></td></tr></table></figure></p>
+<p>模块可以在Python文件中，实现多次import导入，但是只有第一次导入时才真正将模块中的内容运行、方法载入，其他再进行导入时，Python解析器会先检测是否已经载入该模块，如果载入就不在执行相关操作。</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>模块载入一共分三个步骤：<br>1、为模块的导入，创建命名空间（划分新的内存地址），被载入的文件按照全局作用域来使用。<br>2、模块载入后，将在上一步操作中创建的命名空间中，执行模块中的代码<br>3、创建一个模块的名字，来引用模块所在的命名空间。my.show()</p>
+<p>当使用from  import引入多个模块时，同时多个模块存在同名函数，那么在程序中调用该函数时，以程序导入的最后一个模块的函数为准。</p>
+<h3 id="包"><a href="#包" class="headerlink" title="包"></a>包</h3><p>包：<br>1）概念：包在Python中定义为可以包含多个模块文件的目录，其中必须要包含一个名为“<strong>init</strong>.py”的文件，用来初始化包。<br>2）包在调用的使用，首先会初始化<strong>init</strong>.py文件，主要功能为包中模块运行时提供所需要的相关数据，比如：数据库用户名称、密码、地址等内容。</p>
 
       
 
@@ -814,87 +890,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/07/21/practise1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-iterator" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/19/iterator/">高级特性</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/19/iterator/" class="archive-article-date">
-  	<time datetime="2018-07-19T03:58:29.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://kkzhui.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h3 id="1-列表生成式"><a href="#1-列表生成式" class="headerlink" title="1.列表生成式"></a>1.列表生成式</h3><p>列表生成式通常是结合range()函数一起使用的。<br>Python 的内置函数range() 函数可创建一个整数序列，一般用在 for 循环中。<br>语法格式： range(start,end[,step])。<br>start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。<br>end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。<br>step：步长（可选）。默认为1，例如range(0,3,1)等价于range(0,3)；range(0,6,2)等价于[0,2,4,6]<br>注意：range()函数自身并不会自动产生整数序列，它需要使用其他方式来调用它才会产生。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ a = range(10)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:rangr(0,10)</p>
-<h3 id="列表推导式生成式"><a href="#列表推导式生成式" class="headerlink" title="列表推导式生成式"></a>列表推导式生成式</h3><p>格式：[表达式或函数  for x in 序列]<br>含义：通过生成式中的循环，逐一产生x值，表达式使用X值进行相关运算。最终结果作为列表的元素。也就意味着，循环多少次，就会产生多少个相关元素。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<h2 id="迭代器（Iterator）"><a href="#迭代器（Iterator）" class="headerlink" title="迭代器（Iterator）"></a>迭代器（Iterator）</h2><p>1、概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中迭代器只能向前不能回退。其包含两个方法iter()和next()。<br>iter()用来创建一个迭代器，next()用来访问下一个元素。<br>目前我们所学的字符串、列表、元组都可以创建迭代器，那么他们也是可迭代化的对象。</p>
-<p>迭代器两个步骤：<br>1、当调用next()函数，会将迭代器当前位置状态进行改变<br>2、会将下一个元素进行返回</p>
-<p>迭代器的延迟作用：迭代器生成的元素并不是在迭代器声明时，就准备好了的。通常时在调用迭代器需要提供该元素时生成的，也就是说只有在我们需要的时候迭代器才产生相关元素，不需要时并不会主动的生成相关元素。我们可以把迭代器看成一个容器，到我们需要时使用next()方法返回容器中的下一个值。</p>
-<p>可迭代化（iterable）：表明相关的对象可以创建迭代器对象，同时他们自身都是可以进行for数据遍历的。<br>我们可以使用isinstance()来判断对象是否为可迭代化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import Iterable</span><br><span class="line">string = <span class="string">'hello'</span></span><br><span class="line"><span class="built_in">print</span>(isinstance(string, Iterable))</span><br></pre></td></tr></table></figure></p>
-<p>输出结果为:True<br>函数格式：isinstance(对象，类型)<br>返回值：布尔值<br>结果：如果指定的对象属于指定的类型，那么返回True，反之返回False</p>
-<p>enumerate()函数<br>函数格式：enumerate(iterable)<br>返回值：生成一个枚举对象<br>例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ enum = enumberate([<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>])</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> enum:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>输出结果为:<br>(0, ‘one’)<br>(1, ‘two’)<br>(2, ‘three’)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ enum = enumberate([<span class="string">'one'</span>,<span class="string">'two'</span>,<span class="string">'three'</span>])</span><br><span class="line"><span class="keyword">for</span> i,value <span class="keyword">in</span> enum:</span><br><span class="line">    <span class="built_in">print</span>(i, value)</span><br></pre></td></tr></table></figure>
-<p>输出结果为:<br>0 one<br>1 two<br>2 three</p>
-<h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h3 id="1、创建方式"><a href="#1、创建方式" class="headerlink" title="1、创建方式"></a>1、创建方式</h3><p>第一种，使用列表推导式，将[]改为()，生成一个generator对象<br>第二种，使用函数方式，采用yield关键字来实现</p>
-<h3 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h3><p>生成器我们通常可以认为一种特殊的迭代器，但是它不需要像迭代器一样去实现<strong>iter</strong>,<strong>next</strong>方法。只需要使用yield关键字，该关键字可以在每次调用生成器函数时起到暂停作用，并将其值进行返回。同时还会记录当前运行值的状态。</p>
-<h2 id="迭代器和生成器总结"><a href="#迭代器和生成器总结" class="headerlink" title="迭代器和生成器总结"></a>迭代器和生成器总结</h2><p>1、容器是一系列的元素集合，str、list、set、dict对象都可以看作是容器，容器都可以进行迭代（即用在while或for循环），凡是这样的容器我们都称为可迭代化对象（Iterable）。<br>2、可迭代化对象都实现了<strong>iter</strong>方法，该方法返回一个迭代器对象。<br>3、迭代器都拥有一个状态字段，用于记录下次迭代返回值。它实现了<strong>next</strong>和<strong>iter</strong>方法，迭代器不会一次性把所有的元素都加载到内存中，而是在需要的时候才生成返回结果。<br>4、生成器是一种特殊的迭代器，它的返回值不是通过return来返回的，而是通过yield来返回的。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<h3 id="一个简单的医院排号系统"><a href="#一个简单的医院排号系统" class="headerlink" title="一个简单的医院排号系统"></a>一个简单的医院排号系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">$ def gene ( n ):</span><br><span class="line">    i =1000</span><br><span class="line">    no = n+str(i)</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'A'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'A'</span>+str(i)</span><br><span class="line">        <span class="keyword">elif</span><span class="string">'B'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'B'</span>+str(i)</span><br><span class="line">        <span class="keyword">elif</span> <span class="string">'C'</span> == n:</span><br><span class="line">            yield no</span><br><span class="line">            i+=1</span><br><span class="line">            no = <span class="string">'C'</span>+str(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pass</span><br><span class="line">a = gene(<span class="string">'A'</span>)</span><br><span class="line">b = gene(<span class="string">'B'</span>)</span><br><span class="line">c = gene(<span class="string">'C'</span>)</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    msg=input(<span class="string">'请输入您需要查看科室的代码,输入Q退出：'</span>)</span><br><span class="line">    name =input(<span class="string">'请输入你的姓名：'</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> msg == <span class="string">'Q'</span>:</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'A'</span> == msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(a),name,msg))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'B'</span> ==msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(b),name,msg))</span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'C'</span> ==msg:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'请&#123;0&#125;号患者&#123;1&#125;前往&#123;2&#125;'</span>.format(next(c),name,msg))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入错误！'</span>)</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/19/iterator/">展开全文 >></a>
         </p>
       
 
