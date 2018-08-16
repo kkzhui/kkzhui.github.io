@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 小豌豆</title>
+  <title>几个模块的讲解 | 小豌豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="python、爬虫、Web开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小豌豆">
-<meta property="og:url" content="http://yoursite.com/archives/page/2/index.html">
+  <meta name="description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 序列化模块序列化：将字典，列表等内容转换成一个字符串的过程叫做序列化。序列化的目的1 以某种存储形式使自定义对象持久化2 将对象从一个地方传递到另一个地方3 使程序更具维护性 序列化的使用场景：1 能存储在文件中的一定是字符串 或者是 字节2 能在网络">
+<meta name="keywords" content="python、爬虫、Web开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="几个模块的讲解">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/modules_eg/index.html">
 <meta property="og:site_name" content="小豌豆">
+<meta property="og:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 序列化模块序列化：将字典，列表等内容转换成一个字符串的过程叫做序列化。序列化的目的1 以某种存储形式使自定义对象持久化2 将对象从一个地方传递到另一个地方3 使程序更具维护性 序列化的使用场景：1 能存储在文件中的一定是字符串 或者是 字节2 能在网络">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-06T13:49:30.280Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小豌豆">
+<meta name="twitter:title" content="几个模块的讲解">
+<meta name="twitter:description" content="Welcome to kkzhui,you can learn a lot of knowledge in there,updated daily 序列化模块序列化：将字典，列表等内容转换成一个字符串的过程叫做序列化。序列化的目的1 以某种存储形式使自定义对象持久化2 将对象从一个地方传递到另一个地方3 使程序更具维护性 序列化的使用场景：1 能存储在文件中的一定是字符串 或者是 字节2 能在网络">
   
     <link rel="alternative" href="/atom.xml" title="小豌豆" type="application/atom+xml">
   
@@ -166,295 +170,204 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-modules_eg" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      几个模块的讲解
+    </h1>
+  
+
+        
+        <a href="/2018/08/03/modules_eg/" class="archive-article-date">
+  	<time datetime="2018-08-03T11:32:51.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="序列化模块"><a href="#序列化模块" class="headerlink" title="序列化模块"></a>序列化模块</h2><p>序列化：将字典，列表等内容转换成一个字符串的过程叫做序列化。<br>序列化的目的<br>1 以某种存储形式使自定义对象持久化<br>2 将对象从一个地方传递到另一个地方<br>3 使程序更具维护性</p>
+<p>序列化的使用场景：<br>1 能存储在文件中的一定是字符串 或者是 字节<br>2 能在网络上传输的 只有字节</p>
+<h3 id="1、json模块"><a href="#1、json模块" class="headerlink" title="1、json模块"></a>1、json模块</h3><p>所有的编程语言都通用的序列化格式，它支持的数据类型非常有限：数字，字符串，列表，字典。<br>json模块提供了四个功能:dumps,dump,loads,load</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ import json</span><br><span class="line">dic = &#123;<span class="string">'小李'</span>:[1,2,3]&#125;</span><br><span class="line">r = json.dumps(dic)<span class="comment">#序列化，将一个字典转换成一个字符串</span></span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'w'</span>,encoding = <span class="string">'utf-8'</span>) as f:</span><br><span class="line">    json.dump(dic,f,ensure_ascii = False)<span class="comment">#加上 ensure_ascii = False，显示中文</span></span><br></pre></td></tr></table></figure>
+<p>dumps序列化 loads反序列化，只在内存中操作数据。主要用于网络传输 和多个数据与文件打交道。<br>dump序列化  load反序列化 ，主要用于一个数据直接存在文件里–直接和文件打交道。<br>json不支持元组，不支持除了str数据类型之外的key。<br>json在写入多次dump的时候，不能对应执行多次load来取出数据，pickle可以。<br>json如果要写入多个元素，可以先将元素dumps序列化， f.write(序列化+‘\n’)写入文件，读出元素的时候，应该先按行读文件，在使用loads将读出来的字符串转换成对应的数据类型。</p>
+<h3 id="2、pickle"><a href="#2、pickle" class="headerlink" title="2、pickle"></a>2、pickle</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ import pickle</span><br><span class="line">dic1 = &#123;(222,222,222):<span class="string">'张三'</span>&#125;</span><br><span class="line">dic2 = &#123;(22,22,22):<span class="string">'张三'</span>&#125;</span><br><span class="line">dic3 = &#123;(2,2,2):<span class="string">'张三'</span>&#125;</span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'wb'</span>) as f:</span><br><span class="line">    pickle.dump(dic1,f)</span><br><span class="line">    pickle.dump(dic2,f)</span><br><span class="line">    pickle.dump(dic3,f)</span><br><span class="line"><span class="comment">#读文件</span></span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'rb'</span>) as f:</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        try:</span><br><span class="line">            <span class="built_in">print</span>(pickle.load(f1))</span><br><span class="line">        except EOFError:</span><br><span class="line">            <span class="built_in">break</span></span><br></pre></td></tr></table></figure>
+<h3 id="shelve"><a href="#shelve" class="headerlink" title="shelve"></a>shelve</h3><p>1、shelve序列化,在python3.X之后才新增的<br>2、shelve也是python提供给我们的序列化工具，比pickle用起来更简单一些<br>3、shelve只提供给我们一个open方法，是用key来访问的，使用起来和字典类似</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ import shelve</span><br><span class="line">f = shelve.open(<span class="string">'shelve_file'</span>)<span class="comment">#直接对文件句柄操作，就可以存入数据</span></span><br><span class="line">f[<span class="string">'key'</span>] = &#123;<span class="string">'int'</span>:10,<span class="string">'float'</span>:9.5,<span class="string">'string'</span>:<span class="string">'hello world'</span>&#125;</span><br><span class="line">f.close()</span><br><span class="line">f1 = shelve.open(<span class="string">'shelve_file'</span>)</span><br><span class="line">s1 = f1[<span class="string">'key'</span>]</span><br><span class="line"><span class="built_in">print</span>(s1)</span><br></pre></td></tr></table></figure>
+<h2 id="hashlib模块"><a href="#hashlib模块" class="headerlink" title="hashlib模块"></a>hashlib模块</h2><p>Python的hashlib提供了常见的摘要算法，如md5,sha1等等。<br>什么是摘要算法呢？<br>摘要算法又称哈希算法，散列算法。它通过一个函数，把任意长度的数据转换为一个长度固定的数据串(通常用16进制的字符串表示)<br>摘要算法就是通过摘要函数，对任意长度的数据data计算出固定长度的摘要digest,目的是为了发现原始数据是否被人篡改过。</p>
+<p>用法：<br>1 文件的一致性校验<br>2 密文验证的时候加密<br>md5算法 通用的算法<br>sha算法 安全系数更高，sha算法有很多种，后面的数字越大安全系数越高，得到的数字结果越长，计算的时间越长</p>
+<p>md5 加密示例<br>这个是16进制的数，固定长度，结果是唯一的(hex)表示16进制<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">m = hashlib.md5()</span><br><span class="line">m.update(<span class="string">'haha'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>减少密码被盗取，可以使用加盐的方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ m = hashlib.md5(<span class="string">'admin'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">m.update(<span class="string">'123456'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>动态加盐<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">username = input(<span class="string">'输入账号:'</span>).strip()</span><br><span class="line">password = input(<span class="string">'输入密码'</span>).stiip()</span><br><span class="line">m = hashlib.md5(username[::2].encode(<span class="string">'utf-8'</span>))</span><br><span class="line">m.update(password.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>文件一致性校验<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">def check(filename):</span><br><span class="line">    m = hashlib.md5()</span><br><span class="line">    with open(filename,<span class="string">'rb'</span>) as f:</span><br><span class="line">        content = f.read()</span><br><span class="line">        m.update(content)</span><br><span class="line">    <span class="built_in">return</span> m.hexdigest()</span><br><span class="line">ret1 = check(<span class="string">'file1'</span>)</span><br><span class="line">ret2 = check(<span class="string">'file2'</span>)</span><br><span class="line"><span class="built_in">print</span>(ret1)</span><br><span class="line"><span class="built_in">print</span>(ret2)</span><br></pre></td></tr></table></figure></p>
+<h3 id="configparser模块"><a href="#configparser模块" class="headerlink" title="configparser模块"></a>configparser模块</h3><p>该模块适用于配置文件的格式与windows ini文件类似，可以包含一个或多个节(section),每个节可以有多个参数(键=值)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ import configparser</span><br><span class="line">config = configparser.ConfigParser()</span><br><span class="line">config[<span class="string">'DEFAULT'</span>] = &#123;</span><br><span class="line">        <span class="string">'A'</span>:<span class="string">'1'</span>,</span><br><span class="line">        <span class="string">'Compression'</span>:<span class="string">'yes'</span>,</span><br><span class="line">        <span class="string">'CompressionLevel'</span>:<span class="string">'9'</span>,</span><br><span class="line">        <span class="string">'Forwar'</span>:<span class="string">'yes'</span></span><br><span class="line">&#125;</span><br><span class="line">config[<span class="string">'bitbucket.org'</span>] = &#123;<span class="string">'user'</span>:<span class="string">'hg'</span>&#125;</span><br><span class="line">config[<span class="string">'topsecret.server.com'</span>] = &#123;<span class="string">'Host Port'</span>:<span class="string">'50022'</span>,<span class="string">'Forwar'</span>:<span class="string">'no'</span>&#125;</span><br><span class="line">with open(<span class="string">'example.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br></pre></td></tr></table></figure>
+<p>配置文件说明：(在配置文件中必须有分组，组名可以随便取)<br>[DEFAULT]  #section 小节<br>ServerAliveInterval = 45 #option<br>Compreion = yes<br>CompresionLevel = 9<br>Forwardx11 = yes</p>
+<p>[bitbucket.org]<br>User = hg</p>
+<p>[topsecret.server.com]<br>port = 50022<br>Forwardx11 = no</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">$ import configparser</span><br><span class="line"></span><br><span class="line">def createConfig(section, content, file):</span><br><span class="line">    <span class="comment"># 生成一个配置文件对象</span></span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    config[section] = content</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line">def readConfig(file):</span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    <span class="comment"># 将配置文件中的内容读取，原有的section及option都会被取出</span></span><br><span class="line">    config.read(file)</span><br><span class="line">    <span class="built_in">return</span> config</span><br><span class="line"></span><br><span class="line">def saveConfig(file):</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line">def removeSection(config, section, file):</span><br><span class="line">    <span class="comment"># 删除指定的section,同时会删除其内部的option</span></span><br><span class="line">    config.remove_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def removeOption(config, section, option, file):</span><br><span class="line">    config.remove_option(section, option)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def addSection(config, section, file):</span><br><span class="line">    config.add_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def addOption(config, section, file, *option):</span><br><span class="line">    config.set(section, option[0], option[1])</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def findSection(config):</span><br><span class="line">    <span class="built_in">return</span> config.sections()</span><br><span class="line"></span><br><span class="line">def findOptions(config, section):</span><br><span class="line">    <span class="built_in">return</span> config.options(section)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    section = <span class="string">'account'</span></span><br><span class="line">    content = &#123;<span class="string">'addr'</span>: <span class="string">'zhengzhou'</span>, <span class="string">'type'</span>: <span class="string">'A'</span>&#125;</span><br><span class="line">    file = <span class="string">'book.ini'</span></span><br><span class="line">    <span class="comment"># createConfig(section, content, file)</span></span><br><span class="line">    config = readConfig(file)</span><br><span class="line">    addSection(config, section, file)</span><br></pre></td></tr></table></figure>
+<h3 id="logging模块"><a href="#logging模块" class="headerlink" title="logging模块"></a>logging模块</h3><p>logging简单配置</p>
+<p>默认情况下python的logging模块将日志打印到了标准输出中，且只显示了大于等于warning级别的日志，这说明默认的日志级别设置为warning(日志级别等级critical&gt;error&gt;warning&gt;info&gt;debug),默认的日志格式为日志级别:Logger名称:用户输入消息</p>
+<h2 id="collections模块"><a href="#collections模块" class="headerlink" title="collections模块"></a>collections模块</h2><p>在内置数据类型（dict、list、set、tuple）的基础上，collections模块还提供了几个额外的数据类型：Counter、deque、defaultdict、namedtuple和OrderedDict等<br>1.namedtuple: 生成可以使用名字来访问元素内容的tuple<br>2.deque: 双端队列，可以快速的从另外一侧追加和推出对象<br>3.Counter: 计数器，主要用来计数<br>4.OrderedDict: 有序字典</p>
+<h3 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h3><p>tuple元组，表示不变集合，例如，一个点的二维坐标就可以表示成：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import namedtuple</span><br><span class="line"><span class="built_in">test</span> = namedtuple(<span class="string">'hello'</span>,[<span class="string">'x'</span>,<span class="string">'y'</span>])</span><br><span class="line">p = text(1,2)</span><br><span class="line"><span class="built_in">print</span>(p,x)</span><br><span class="line"><span class="built_in">print</span>(p,y)</span><br></pre></td></tr></table></figure></p>
+<p>执行结果为:1<br>          2</p>
+<p>类似的，如果要用坐标和半径表示一个圆，也可以用namedtuple定义，里面的值不可修改(元组不可变)，修改会报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import namedtuple</span><br><span class="line">Circle = namedtuple(<span class="string">'Circle'</span>,[<span class="string">'x'</span>,<span class="string">'y'</span>,<span class="string">'z'</span>])</span><br><span class="line">p = Circle(3,4,5)</span><br><span class="line"><span class="built_in">print</span>(p,x)</span><br><span class="line"><span class="built_in">print</span>(p,y)</span><br><span class="line"><span class="built_in">print</span>(p,z)</span><br></pre></td></tr></table></figure></p>
+<p>输出结果为: 3<br>           4<br>           5</p>
+<h3 id="deque双端队列"><a href="#deque双端队列" class="headerlink" title="deque双端队列"></a>deque双端队列</h3><p>使用list存储数据时，按索引访问元素很快，但是插入和删除元素就很慢了，因为list是线性存储，数据量大的时候，插入和删除效率很低。<br>deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈<br>计算机数据结构模型<br>先进先出：<br>队列，内部维护了严格的顺序，不能跳着取，必须一个个取</p>
+<p>双端队列 两边(前，后)同时取，写 from collections import deque</p>
+<p>队列 单向 import queue<br>先进后出：栈 是单向</p>
+<p>双端队列:deque除了实现list的append()和pop()外，还支持appendleft()和popleft()，这样就可以非常高效地往头部添加或删除元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import deque <span class="comment">#双端队列</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>使用dict时，Key是无序的。在对dict做迭代时，我们无法确定Key的顺序。<br>如果要保持Key的顺序，可以用OrderedDict<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ from collection import OrderedDict</span><br><span class="line"><span class="comment">#有序字典，谁先写在前面，就排在前面</span></span><br><span class="line">dic1 = OrderedDict([(<span class="string">'k1'</span>,<span class="string">'v1'</span>),(<span class="string">'k2'</span>,<span class="string">'v2'</span>)])</span><br><span class="line">dic2 = OrderedDict([(<span class="string">'k2'</span>,<span class="string">'v2'</span>),(<span class="string">'k1'</span>,<span class="string">'v1'</span>)])</span><br></pre></td></tr></table></figure></p>
+<h3 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>counter类的目的是用来跟踪值出现的次数，它是一个无序的容器类型，以字典的键值对形式存储，其中元素作为key,其计数作为value.计数值可以使任意的interger(包括0和负数)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import Counter</span><br><span class="line">c = Counter(<span class="string">'abcdeabcdabd'</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：<br>Counter({‘a’: 3, ‘b’: 3, ‘d’: 3, ‘c’: 2, ‘e’: 1})</p>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>常用方法<br>1 time.sleep(secs)<br>(线程)休眠指定的时间运行，单位为秒<br>2 time.time()<br>获取当前时间戳</p>
+<p>格式化的时间字符串(Format String): ‘1999-12-06’<br>%y 两位数的年份表示（00-99）<br>%Y 四位数的年份表示（000-9999）<br>%m 月份（01-12）<br>%d 月内中的一天（0-31）<br>%H 24小时制小时数（0-23）<br>%I 12小时制小时数（01-12）<br>%M 分钟数（00=59）<br>%S 秒（00-59）<br>%a 本地简化星期名称<br>%A 本地完整星期名称<br>%b 本地简化的月份名称<br>%B 本地完整的月份名称<br>%c 本地相应的日期表示和时间表示<br>%j 年内的一天（001-366）<br>%p 本地A.M.或P.M.的等价符<br>%U 一年中的星期数（00-53）星期天为星期的开始<br>%w 星期（0-6），星期天为星期的开始<br>%W 一年中的星期数（00-53）星期一为星期的开始<br>%x 本地相应的日期表示<br>%X 本地相应的时间表示<br>%Z 当前时区的名称<br>%% %号本身</p>
+<p>元组(struct_time) ：struct_time元组共有9个元素共九个元素:(年，月，日，时，分，秒，一年中第几周，一年中第几天等）</p>
+<p>import time<br>p = time.strptime(‘2015-8-8’,’%Y-%m-%d’)<br>print(time.mktime(p))#格式化时间转换时间戳</p>
+<p>ret = time.localtime(1500000000)<br>print(time.strftime(‘%Y-%M-%d %H:%m:%S’,ret))#时间戳转格式化时间</p>
+<p>print(time.strftime(‘%Y-%m-%d’,time.localtime(1500000000)))#年 月 日</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/26/high_def/" class="archive-article-date">
-  	<time datetime="2018-07-26T07:14:26.638Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/26/high_def/">高阶函数</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/modules_eg/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/25/def_bibao/" class="archive-article-date">
-  	<time datetime="2018-07-25T09:33:37.993Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/08/06/class/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          面向对象
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/08/02/exception/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">异常处理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/def_bibao/">函数嵌套</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/def_glocals/" class="archive-article-date">
-  	<time datetime="2018-07-24T03:56:54.331Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/24/def_glocals/">全局变量和局部变量</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/def/" class="archive-article-date">
-  	<time datetime="2018-07-23T13:03:33.219Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/def/">python函数</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/21/practise1/" class="archive-article-date">
-  	<time datetime="2018-07-21T06:03:27.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/21/practise1/">系统设计</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/iterator/" class="archive-article-date">
-  	<time datetime="2018-07-19T03:58:29.340Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/iterator/">高级特性</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/set/" class="archive-article-date">
-  	<time datetime="2018-07-18T09:45:38.344Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/set/">集合</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/17/dict/" class="archive-article-date">
-  	<time datetime="2018-07-17T13:01:32.803Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/17/dict/">字典</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/for7.16/" class="archive-article-date">
-  	<time datetime="2018-07-16T12:30:07.071Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/for7.16/">小练习</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/15/data_type/" class="archive-article-date">
-  	<time datetime="2018-07-15T15:47:08.525Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/15/data_type/">列表和元组</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/3/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -481,8 +394,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

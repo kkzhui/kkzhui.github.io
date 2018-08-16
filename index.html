@@ -168,6 +168,427 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-pachong2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/16/pachong2/">爬虫基础(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/16/pachong2/" class="archive-article-date">
+  	<time datetime="2018-08-16T00:55:34.134Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/16/pachong2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-pachong1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/14/pachong1/">爬虫基础(一)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/14/pachong1/" class="archive-article-date">
+  	<time datetime="2018-08-14T13:33:07.796Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="网络原理"><a href="#网络原理" class="headerlink" title="网络原理"></a>网络原理</h2><h3 id="1、HTTP与HTTPS的区别"><a href="#1、HTTP与HTTPS的区别" class="headerlink" title="1、HTTP与HTTPS的区别"></a>1、HTTP与HTTPS的区别</h3><p>HTTP：我们称为超文本传输协议，主要用来实现从由客户端（浏览器）发出请求，网络传输超文本到本地浏览器，实现高效且准确的超文本传送。目前HTTP的版本为1.1<br>HTTPS：我们认为就是以安全为目标的HTTP通道，即在HTTP协议的基础上加入了SSL层，简称HTTPS。<br>SSL的主要作用分为以下两部分：<br>第一、为HTTP传输文件提供安全的传输通道<br>第二、确认网站的真实性，通过HTTPS访问的网站都需要获取到CA认证。</p>
+<h3 id="2、网络七层模型"><a href="#2、网络七层模型" class="headerlink" title="2、网络七层模型"></a>2、网络七层模型</h3><p>从下到上的顺序<br>物理层<br>数据链路层<br>网络层<br>传输层（TCP、UDP）<br>会话层<br>表示层<br>应用层</p>
+<h3 id="3、HTTP的请求机制"><a href="#3、HTTP的请求机制" class="headerlink" title="3、HTTP的请求机制"></a>3、HTTP的请求机制</h3><p>第一，由客户端（浏览器）发出请求<br>第二，通过网络传输，到指定的服务器地址<br>第三，服务器接收相关请求，并进行解析<br>第四，服务器将最终的结果响应回客户端<br>第五，客户端接收到服务器响应后，通过浏览器解析，最终将内容进行展现</p>
+<h3 id="4、客户端访问服务器，发出请求，有四部分构成"><a href="#4、客户端访问服务器，发出请求，有四部分构成" class="headerlink" title="4、客户端访问服务器，发出请求，有四部分构成"></a>4、客户端访问服务器，发出请求，有四部分构成</h3><p>第一，请求方法（request method），默认为get方式。只有在表单提交和文件上传时为post方法。<br>第二，请求网址（request url），即在浏览器中输入的网路地址。<br>第三，请求头（request header），用来标识为一个浏览器正常的访问<br>第四，请求体（request body），用来传输到服务器端的相关数据</p>
+<h3 id="5、请求方法中get与post的区别"><a href="#5、请求方法中get与post的区别" class="headerlink" title="5、请求方法中get与post的区别"></a>5、请求方法中get与post的区别</h3><p>第一、使用get方式提交请求时，相关数据会作为url的参数被一起进行提交，我们可以直接在地址栏中观察到相关数据。而采用post方式请求的url不会包含这些数据，而是直接通过表单提交到服务器。<br>第二、get方式提交请求，对于提交的数据大小不能大于1024字节，而post方式提交数据，没有大小的限制。<br>总之，如果提交的信息比较敏感或者字节较大时，需要使用post方式；如果只是普通的请求使用get方式。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/14/pachong1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-class_high" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/08/class_high/">面向对象(二)</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/08/class_high/" class="archive-article-date">
+  	<time datetime="2018-08-08T07:04:11.351Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>1）Python中能够实现单继承与多继承。<br>单继承：就是子类只有一个直接父类。<br>多继承：子类有两个及两个以上的直接父类。<br>2）子类继承父类，子类可以继承父类的相关特征。子类继承了父类的方法，如果在多继承情况下，父类出现同名函数，那么子类继承该函数时，根据继承的顺序进行调用。<br>3）super()函数，它指代了当前类的父类。我们可以在子类中调用super函数，用来初始化父类。但是使用super()调用父类的构造函数时，只能对多继承中的第一个父类生效。<br>4)抽象与继承的区别与关系<br>抽象：指对同一类别事物的相似部分进行抽取。抽象我们认为是对具体化对象的相关行为和属性的泛化过程。<br>继承：Python中我们通常认为类就是一个抽象的内容。类本身并不能直接执行，需要通过继承，进行对象的实例化，进而获得具体的对象本身，才能执行相关的功能。<br>也就是说继承其实是抽象的具体化过程。<br>5）多继承中，当一个子类继承多个父类时，我们需要如下声明：<br>class SubClass(A,B):<br>其中，A、B是SubClass的父类。那么，如果我们分为两种个情况：<br>第一，子类中没有显式的定义<strong>init</strong>()，那么在实例化子类时调用其父类的构造函数。如果有多个类，都定义了<strong>init()函数，那么它会调用第一个具有</strong>init__()函数的父类。<br>第二，子类中显式的定义理论<strong>init_(),那么实例化子类时不再调用父类的构造函数。此时，如果我们要调用父类的构造函数，有两种方法。<br>    1）在子类的构造函数中，显式的调用对应父类的构造函数，例如：<br>        A.</strong>init__()<br>    2)采用super()函数，super().<strong>init</strong>()或者super(子类，self).<strong>init</strong>()<br>但是如果遇到其多个父类，他们的构造函数同名时，我们根据他们在MRO中的顺序，分别调用他们，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ class SubClass(B, A):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        super().__init__()   <span class="comment"># 此处调用了父类B</span></span><br><span class="line">        super(B, self).__init__() <span class="comment">#此处调用了父类C</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'我是子类'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>注意，在这里不要看到super就认为是父类，但是在多继承时，实际上super指的是MRO中的下一个类。</p>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ 在Python中，我们针对其内部细节进行封装。通常我们将属性定义为私有类型，意味着在类外无法直接访问。可以通过相关的方法对其进行调用。</span><br><span class="line">私有的成员变量和方法，都需要在类内进行定义。所有在类外实现的定义都是公有的，代码如下：</span><br><span class="line">class A:</span><br><span class="line">    __N = <span class="string">'hello'</span>      <span class="comment"># 此处是一个私有的类变量</span></span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.__name = <span class="string">'tom'</span></span><br><span class="line"></span><br><span class="line">    def __method(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'我是私有函数'</span>)</span><br><span class="line"></span><br><span class="line">    def show(self):</span><br><span class="line">        self.__method()</span><br><span class="line">        <span class="built_in">print</span>(self.__name)</span><br><span class="line"></span><br><span class="line">a = A()</span><br><span class="line">A.__age = 10       <span class="comment"># 此处的__age是一个公有的类变量</span></span><br><span class="line"><span class="built_in">print</span>(A.__age)</span><br></pre></td></tr></table></figure>
+<h3 id="property方法"><a href="#property方法" class="headerlink" title="property方法"></a>property方法</h3><p>在Python中，我们可以使用property来修饰指定的函数，被修饰后的函数，在类外可以通过对象调用（类似调用变量）</p>
+<p>class Person:<br>    def <strong>init</strong>(self, name, height, weight):<br>        self.<strong>name = name<br>        self.</strong>height = height<br>        self.__weight = weight</p>
+<pre><code>@property
+def bmi(self):
+    return self.__weight / self.__height**2
+</code></pre><p>p = Person()<br>print(p.bmi)  # 此处调用的bmi是Person类中的函数。<br>原理：当类被载入时，首先会载入类的名称和被property修饰的名字到类的命名空间中；然后在类对象进行实例化时，Python解析器会查找是否存在property修饰的名字，如果存在，就不在实例化对象是为其分配内存空间。</p>
+<h3 id="classmethod方法"><a href="#classmethod方法" class="headerlink" title="classmethod方法"></a>classmethod方法</h3><p>在Python中，我们通常使用classmethod用来修饰一个方法，这个方法就被称为类方法，类方法通常用来操作类变量。类方法和类变量一样，都需要通过类名来调用。<br>class Goods:<br>    __discount = 0.8</p>
+<pre><code>def __init__(self, name, price):
+    self.__name = name
+    self.__price = price
+
+@classmethod
+def change_discount(cls, new_discount): #此处传递的默认参数不是对象参数self，而是类参数cls
+    cls.__discount = new_discount
+
+@classmethod
+def get_discount(cls):
+    return cls.__discount
+</code></pre><p>goods = Goods(‘apple’, 6)<br>print(Goods.get_discount())<br>Goods.change_discount(0.9)<br>print(Goods.get_discount())</p>
+<h3 id="staticmethod方法"><a href="#staticmethod方法" class="headerlink" title="staticmethod方法"></a>staticmethod方法</h3><p>在Python中，我们使用staticmethod来修饰函数，该函数被称为静态方法，首先，静态方法不需要使用对象参数或类参数作为默认参数。其次，静态方法通常只能调用类变量，而不可以使用成员变量。最后，在类外进行调用时，可以使用类名来调用。</p>
+<h3 id="实例方法、类方法与静态方法的区别"><a href="#实例方法、类方法与静态方法的区别" class="headerlink" title="实例方法、类方法与静态方法的区别"></a>实例方法、类方法与静态方法的区别</h3><p>实例方法：第一个参数必须是实例对象（self）,通过它来传递实例的属性和方法，只能由实例对象来调用。<br>类方法：使用装饰器@classmethod，第一个参数必须是类对象（cls）,通过它来传递类的属性和方法。可以通过实例对象或类对象来调用，通常使用类对象调用。<br>静态方法：使用装饰器@staticmethod,没有默认参数（self和cls），但是方法体中不能使用类或实例对象的任何属性和方法。可以通过实例对象或类对象进行调用。</p>
+<p>1、类方法和静态方法都可以通过对象实例或者类名来调用。<br>2、类方法主要针对的是类，可以通过继承和重新定义<br>3、静态方法不能被继承，无法被重写，可以被认为是全局函数。静态方法在使用时完全不会用到对象实例本身。静态方法逻辑上属于类，但是不会涉及到类中的属性和方法的操作。</p>
+<h3 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h3><p>概念：当子类继承父类时，子类会继承父类所有的公有方法。如果在子类中重写定义一个与父类中同名的方法，我们成为方法的重写（覆盖）。方法重写只需要名字相同即可，与方法的参数个数、顺序无关<br>12）多态与鸭子类型<br>多态：多态一般都是通过继承来实现的，也就是根据不同的对象形态来进行区分。我们在Python中，使用多态时，意味着在编码时变量并不知道所引用的对象具体内容，只有在程序运行时相关对象被实例化后，才能够确定。<br>鸭子类型：在Python中，因为其自身特性并没有对多态进行明确的规定，可以创建一个功能相似，但与原对象无关的、全新对象，来实现程序的松耦合。<br>我们通常在开发中，采用接口的方式来实现。<br>我们认为在一组功能相似，但没有继承关系的对象中，采用接口方式。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ class Payment:</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Weixinpay(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'微信支付了&#123;0&#125;元'</span>.format(money))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Alipay(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付宝支付了&#123;0&#125;元'</span>.format(money))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class My(Payment):</span><br><span class="line">    def payment(self, money):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'支付了&#123;0&#125;元'</span>.format(money))</span><br></pre></td></tr></table></figure></p>
+<p>此例，我们可以看到：<br>第一，通过继承，实现了多态，即三种支付方式不同的形态<br>第二，我们观察到，微信支付、支付宝、个人支付，三者之间没有任何继承关系，但是都具有相同的支付功能，我们可以认为这种形式就是鸭子类型<br>第三，因为三种支付方式，分别继承了接口类Payment，都重新了相关的支付方法payment()</p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h3><p>Number类提供一个方法来拦截实例的构造函数（<strong>init</strong>），此外还有一个方法捕捉减法表达式（<strong>sub</strong>）。这种特殊的方法可与内置运算相绑定。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ class Number:</span><br><span class="line">	def __init__(self,start):</span><br><span class="line">		self.data=start</span><br><span class="line">	def __sub__(self,other):</span><br><span class="line">		<span class="built_in">return</span> Number(self.data-other)</span><br><span class="line">x=Number(5)</span><br><span class="line">y=x-2</span><br><span class="line">y.data</span><br></pre></td></tr></table></figure>
+<p>索引和分片：<strong>getitem</strong>和<strong>setitem</strong><br>如果类中定义了（或继承了）的话，则对于实例的索引运算，会自动调用<strong>getitem</strong>。<br>当实例x出现在x[i]这样的索引运算中，Python会调用这个实例继承的<strong>getitem</strong>方法，把x作为第一个参数传递，并将方括号内的索引值传给第二个参数。</p>
+<p>1、<strong>getitem</strong>：索引迭代<br>在Python，可迭代化对象在使用循环迭代时，都会默认的调用<strong>iter</strong>,如果没有next()方法，会调用<strong>getitem</strong>方法。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ class Index:</span><br><span class="line">	def __getitem__(self,index):</span><br><span class="line">		<span class="built_in">return</span> index</span><br><span class="line"></span><br><span class="line">x=Index()</span><br><span class="line">x[3]</span><br><span class="line">3</span><br><span class="line">fori <span class="keyword">in</span> range(6):</span><br><span class="line">	<span class="built_in">print</span>(x[i],end=<span class="string">' '</span>)</span><br></pre></td></tr></table></figure>
+<p>结果为:0 1 2 3 4 5</p>
+<h3 id="迭代器对象：iter和next"><a href="#迭代器对象：iter和next" class="headerlink" title="迭代器对象：iter和next"></a>迭代器对象：<strong>iter</strong>和<strong>next</strong></h3><p>上一页<strong>getitem</strong>是有效的，但它是迭代退而求其次的方法。<br>Python所有的迭代环境会有优先尝试<strong>iter</strong>的方法，再尝试<strong>getitem</strong>。从技术角度上讲，迭代环境是通过iter去尝试寻找<strong>iter</strong>方法来实现，而这种方法返回一个迭代器对象。<br>如果已经提供了，python会重复调用迭代器对象的next()方法，直到发生StopIteration异常。如果没有找到<strong>iter</strong>，python会使用<strong>getitem</strong>机制。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ class Squares:</span><br><span class="line">	def __init__(self,start,stop):</span><br><span class="line">		self.value=start-1</span><br><span class="line">		self.stop=stop</span><br><span class="line">	def __iter__(self):</span><br><span class="line">		<span class="built_in">return</span> self</span><br><span class="line">	def __next__(self):</span><br><span class="line">		<span class="keyword">if</span> self.value==self.stop:</span><br><span class="line">			raise StopIteration()</span><br><span class="line">			self.value+=1</span><br><span class="line">			<span class="built_in">return</span> self.value**2</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/08/class_high/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-class" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/06/class/">面向对象</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/06/class/" class="archive-article-date">
+  	<time datetime="2018-08-06T13:12:56.464Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="面向对象的术语"><a href="#面向对象的术语" class="headerlink" title="面向对象的术语"></a>面向对象的术语</h2><h3 id="类-Class"><a href="#类-Class" class="headerlink" title="类(Class):"></a>类(Class):</h3><p>用来描述具有相同的属性和方法的对象的集合。它定义了该集合中每个对象所共有的属性和方法。对象是类的实例。</p>
+<h3 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h3><p>类中定义的函数。</p>
+<h3 id="类变量："><a href="#类变量：" class="headerlink" title="类变量："></a>类变量：</h3><p>类变量在整个实例化的对象中是公用的。类变量定义在类中且在函数体之外。类变量通常不作为实例变量使用。</p>
+<h3 id="数据成员："><a href="#数据成员：" class="headerlink" title="数据成员："></a>数据成员：</h3><p>类变量或者实例变量用于处理类及其实例对象的相关的数据。</p>
+<h3 id="方法重写："><a href="#方法重写：" class="headerlink" title="方法重写："></a>方法重写：</h3><p>如果从父类继承的方法不能满足子类的需求，可以对其进行改写，这个过程叫方法的覆盖（override），也称为方法的重写。</p>
+<h3 id="实例变量："><a href="#实例变量：" class="headerlink" title="实例变量："></a>实例变量：</h3><p>定义在方法中的变量，只作用于当前实例的类。</p>
+<h3 id="继承："><a href="#继承：" class="headerlink" title="继承："></a>继承：</h3><p>即一个派生类（derived class）继承基类（base class）的字段和方法。继承也允许把一个派生类的对象作为一个基类对象对待。例如，有这样一个设计：一个Dog类型的对象派生自Animal类，这是模拟”是一个（is-a）”关系（例图，Dog是一个Animal）。</p>
+<h3 id="实例化："><a href="#实例化：" class="headerlink" title="实例化："></a>实例化：</h3><p>创建一个类的实例，类的具体对象。</p>
+<h3 id="对象："><a href="#对象：" class="headerlink" title="对象："></a>对象：</h3><p>通过类定义的数据结构实例。对象包括两个数据成员（类变量和实例变量）和方法。</p>
+<h3 id="类与对象的关系"><a href="#类与对象的关系" class="headerlink" title="类与对象的关系"></a>类与对象的关系</h3><p>类是一组对象的抽象表示，而对象是类的具体化表现。</p>
+<h3 id="类的语法结构"><a href="#类的语法结构" class="headerlink" title="类的语法结构"></a>类的语法结构</h3><p>class 类名：<br>     变量声明语句<br>     执行语句<br>     def func(self):<br>         执行语句<br>其中，类名首字母要求大写（约定俗成），遵守Python命名规则，不能以数字开头，通常我们都是字母开头。<br>注意：<br>1）如果类中声明了函数，其函数的参数，必须有一个默认的参数为self，self代表了该类的实例化对象。<br>2）如果在类中声明了变量，且该变量位于函数体之外，这个变量我们成为类变量，类变量是公共的。类变量的调用可以直接使用类名进行调用，比如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ class Dog:  <span class="comment"># 定义一个类，类名Animal</span></span><br><span class="line">    color = <span class="string">'灰色'</span></span><br><span class="line">    leg_num = 4</span><br><span class="line">    weight = 20</span><br><span class="line">    width = 150</span><br><span class="line">    def wangwang(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'wangwangwangwang'</span>)</span><br><span class="line">    def eat(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'吃了一顿饭'</span>)</span><br><span class="line">    def run(self):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'非常快'</span>)</span><br><span class="line">husky = Dog()  <span class="comment"># 将类实例化成对象，对象为dog</span></span><br><span class="line">husky.run()</span><br><span class="line">Dog.color</span><br></pre></td></tr></table></figure></p>
+<p>类变量，作为公共的变量，不管类实例化多少个对象，都只实例一份类变量。而且类变量会在对象实例化之前载入内容，一旦改变了类变量中的内容，所有对象中调用这个类变量的值都会随之改变。</p>
+<h3 id="使用构造函数，来初始化成员变量"><a href="#使用构造函数，来初始化成员变量" class="headerlink" title="使用构造函数，来初始化成员变量"></a>使用构造函数，来初始化成员变量</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ class Person:</span><br><span class="line">    def __init__(self):  <span class="comment"># 构造函数，在实例化对象时被默认调用，用来给对象的成员变量赋值</span></span><br><span class="line">        self.name = <span class="string">'tom'</span></span><br><span class="line">        self.age = 21</span><br><span class="line">        self.tel = <span class="string">'1350000000'</span></span><br><span class="line">        self.address = <span class="string">'北京'</span></span><br><span class="line">        self.sex = <span class="string">'男'</span></span><br><span class="line">    </span><br><span class="line">    def setName(self, name):</span><br><span class="line">        self.name = name</span><br><span class="line">    </span><br><span class="line">    def getName(self):</span><br><span class="line">        <span class="built_in">return</span> self.name</span><br><span class="line">p1 = Person()</span><br><span class="line">p1.name</span><br></pre></td></tr></table></figure>
+<p>使用<strong>init</strong>()函数，用来初始化成员变量。对象在实例化时，会默认的调用<strong>init</strong>()函数，同时将成员变量进行初始化。同时，在构造函数中，使用self.变量名进行初始化的成员变量，都是公有的。即在类外可以通过实例化的对象调用。</p>
+<h3 id="类变量与成员变量的区别"><a href="#类变量与成员变量的区别" class="headerlink" title="类变量与成员变量的区别"></a>类变量与成员变量的区别</h3><p>1、类变量是声明在类中，位于函数之外声明的变量。这些变量时公共的，即在类外使用类名.类变量的方式进行调用。我们一旦修改类变量的值，所有调用类变量的内容均发生改变。<br>2、成员变量，是声明在类中的构造函数中，通过self.变量来进行声明赋值的。这些成员变量是公有的，即在类外可以通过对象名.成员变量的方式进行调用。所有的对象都有自己的成员变量，也就意味着每个对象的成员变量都是独立的，不会相互干扰。<br>3、类变量是该类所有实例化对象所公有的，它会早于对象实例化之前被载入内容中。<br>成员变量都是跟随对象实例化的过程中，被声明出来的。它是伴随着对象的产生而产生，消亡而消亡的。<br>4、成员变量和方法，默认情况下都是公有的。也就是说在类外可以直接使用对象进行调用。我们可以通过为成员变量设置双下划线，将其标识为私有的成员变量，例如：self.__name = ‘tom’。私有的成员变量只能在类内进行直接使用，类外必须通过相关方法进行间接调用。</p>
+<h3 id="Python中对象创建的流程"><a href="#Python中对象创建的流程" class="headerlink" title="Python中对象创建的流程"></a>Python中对象创建的流程</h3><p>1、Python创建一个对象，首先要调用<strong>new</strong>方法，用来创建并返回一个对象。通常，Python中不需要我们直接显示调用，它会默认调用object.<strong>new</strong>()方法<br>2、然后，调用<strong>init</strong>方法，对该对象进行初始化。</p>
+<h3 id="析构函数："><a href="#析构函数：" class="headerlink" title="析构函数："></a>析构函数：</h3><p>1、析构函数与构造函数一样，都是Python中特殊的函数。<br>2、析构函数如果用户没有定义的话，Python会提供一个默认的析构函数<br>3、析构函数<strong>del</strong>(self)，作用用来释放掉对象所占用的内存空间，在Python回收对象空间之前自动被执行。<br>4、通常在析构函数中，主要是将对象中占用大量资源的变量进行手动的释放，便于后续Python解释器去回收这些内存空间。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/06/class/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-modules_eg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/03/modules_eg/">几个模块的讲解</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/03/modules_eg/" class="archive-article-date">
+  	<time datetime="2018-08-03T11:32:51.161Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
+<h2 id="序列化模块"><a href="#序列化模块" class="headerlink" title="序列化模块"></a>序列化模块</h2><p>序列化：将字典，列表等内容转换成一个字符串的过程叫做序列化。<br>序列化的目的<br>1 以某种存储形式使自定义对象持久化<br>2 将对象从一个地方传递到另一个地方<br>3 使程序更具维护性</p>
+<p>序列化的使用场景：<br>1 能存储在文件中的一定是字符串 或者是 字节<br>2 能在网络上传输的 只有字节</p>
+<h3 id="1、json模块"><a href="#1、json模块" class="headerlink" title="1、json模块"></a>1、json模块</h3><p>所有的编程语言都通用的序列化格式，它支持的数据类型非常有限：数字，字符串，列表，字典。<br>json模块提供了四个功能:dumps,dump,loads,load</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ import json</span><br><span class="line">dic = &#123;<span class="string">'小李'</span>:[1,2,3]&#125;</span><br><span class="line">r = json.dumps(dic)<span class="comment">#序列化，将一个字典转换成一个字符串</span></span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'w'</span>,encoding = <span class="string">'utf-8'</span>) as f:</span><br><span class="line">    json.dump(dic,f,ensure_ascii = False)<span class="comment">#加上 ensure_ascii = False，显示中文</span></span><br></pre></td></tr></table></figure>
+<p>dumps序列化 loads反序列化，只在内存中操作数据。主要用于网络传输 和多个数据与文件打交道。<br>dump序列化  load反序列化 ，主要用于一个数据直接存在文件里–直接和文件打交道。<br>json不支持元组，不支持除了str数据类型之外的key。<br>json在写入多次dump的时候，不能对应执行多次load来取出数据，pickle可以。<br>json如果要写入多个元素，可以先将元素dumps序列化， f.write(序列化+‘\n’)写入文件，读出元素的时候，应该先按行读文件，在使用loads将读出来的字符串转换成对应的数据类型。</p>
+<h3 id="2、pickle"><a href="#2、pickle" class="headerlink" title="2、pickle"></a>2、pickle</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ import pickle</span><br><span class="line">dic1 = &#123;(222,222,222):<span class="string">'张三'</span>&#125;</span><br><span class="line">dic2 = &#123;(22,22,22):<span class="string">'张三'</span>&#125;</span><br><span class="line">dic3 = &#123;(2,2,2):<span class="string">'张三'</span>&#125;</span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'wb'</span>) as f:</span><br><span class="line">    pickle.dump(dic1,f)</span><br><span class="line">    pickle.dump(dic2,f)</span><br><span class="line">    pickle.dump(dic3,f)</span><br><span class="line"><span class="comment">#读文件</span></span><br><span class="line">with open(<span class="string">'myfile.txt'</span>,<span class="string">'rb'</span>) as f:</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        try:</span><br><span class="line">            <span class="built_in">print</span>(pickle.load(f1))</span><br><span class="line">        except EOFError:</span><br><span class="line">            <span class="built_in">break</span></span><br></pre></td></tr></table></figure>
+<h3 id="shelve"><a href="#shelve" class="headerlink" title="shelve"></a>shelve</h3><p>1、shelve序列化,在python3.X之后才新增的<br>2、shelve也是python提供给我们的序列化工具，比pickle用起来更简单一些<br>3、shelve只提供给我们一个open方法，是用key来访问的，使用起来和字典类似</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ import shelve</span><br><span class="line">f = shelve.open(<span class="string">'shelve_file'</span>)<span class="comment">#直接对文件句柄操作，就可以存入数据</span></span><br><span class="line">f[<span class="string">'key'</span>] = &#123;<span class="string">'int'</span>:10,<span class="string">'float'</span>:9.5,<span class="string">'string'</span>:<span class="string">'hello world'</span>&#125;</span><br><span class="line">f.close()</span><br><span class="line">f1 = shelve.open(<span class="string">'shelve_file'</span>)</span><br><span class="line">s1 = f1[<span class="string">'key'</span>]</span><br><span class="line"><span class="built_in">print</span>(s1)</span><br></pre></td></tr></table></figure>
+<h2 id="hashlib模块"><a href="#hashlib模块" class="headerlink" title="hashlib模块"></a>hashlib模块</h2><p>Python的hashlib提供了常见的摘要算法，如md5,sha1等等。<br>什么是摘要算法呢？<br>摘要算法又称哈希算法，散列算法。它通过一个函数，把任意长度的数据转换为一个长度固定的数据串(通常用16进制的字符串表示)<br>摘要算法就是通过摘要函数，对任意长度的数据data计算出固定长度的摘要digest,目的是为了发现原始数据是否被人篡改过。</p>
+<p>用法：<br>1 文件的一致性校验<br>2 密文验证的时候加密<br>md5算法 通用的算法<br>sha算法 安全系数更高，sha算法有很多种，后面的数字越大安全系数越高，得到的数字结果越长，计算的时间越长</p>
+<p>md5 加密示例<br>这个是16进制的数，固定长度，结果是唯一的(hex)表示16进制<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">m = hashlib.md5()</span><br><span class="line">m.update(<span class="string">'haha'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>减少密码被盗取，可以使用加盐的方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ m = hashlib.md5(<span class="string">'admin'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">m.update(<span class="string">'123456'</span>.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>动态加盐<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">username = input(<span class="string">'输入账号:'</span>).strip()</span><br><span class="line">password = input(<span class="string">'输入密码'</span>).stiip()</span><br><span class="line">m = hashlib.md5(username[::2].encode(<span class="string">'utf-8'</span>))</span><br><span class="line">m.update(password.encode(<span class="string">'utf-8'</span>))</span><br><span class="line"><span class="built_in">print</span>(m.hexdigest())</span><br></pre></td></tr></table></figure></p>
+<p>文件一致性校验<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ import hashlib</span><br><span class="line">def check(filename):</span><br><span class="line">    m = hashlib.md5()</span><br><span class="line">    with open(filename,<span class="string">'rb'</span>) as f:</span><br><span class="line">        content = f.read()</span><br><span class="line">        m.update(content)</span><br><span class="line">    <span class="built_in">return</span> m.hexdigest()</span><br><span class="line">ret1 = check(<span class="string">'file1'</span>)</span><br><span class="line">ret2 = check(<span class="string">'file2'</span>)</span><br><span class="line"><span class="built_in">print</span>(ret1)</span><br><span class="line"><span class="built_in">print</span>(ret2)</span><br></pre></td></tr></table></figure></p>
+<h3 id="configparser模块"><a href="#configparser模块" class="headerlink" title="configparser模块"></a>configparser模块</h3><p>该模块适用于配置文件的格式与windows ini文件类似，可以包含一个或多个节(section),每个节可以有多个参数(键=值)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ import configparser</span><br><span class="line">config = configparser.ConfigParser()</span><br><span class="line">config[<span class="string">'DEFAULT'</span>] = &#123;</span><br><span class="line">        <span class="string">'A'</span>:<span class="string">'1'</span>,</span><br><span class="line">        <span class="string">'Compression'</span>:<span class="string">'yes'</span>,</span><br><span class="line">        <span class="string">'CompressionLevel'</span>:<span class="string">'9'</span>,</span><br><span class="line">        <span class="string">'Forwar'</span>:<span class="string">'yes'</span></span><br><span class="line">&#125;</span><br><span class="line">config[<span class="string">'bitbucket.org'</span>] = &#123;<span class="string">'user'</span>:<span class="string">'hg'</span>&#125;</span><br><span class="line">config[<span class="string">'topsecret.server.com'</span>] = &#123;<span class="string">'Host Port'</span>:<span class="string">'50022'</span>,<span class="string">'Forwar'</span>:<span class="string">'no'</span>&#125;</span><br><span class="line">with open(<span class="string">'example.ini'</span>,<span class="string">'w'</span>) as f:</span><br><span class="line">    config.write(f)</span><br></pre></td></tr></table></figure>
+<p>配置文件说明：(在配置文件中必须有分组，组名可以随便取)<br>[DEFAULT]  #section 小节<br>ServerAliveInterval = 45 #option<br>Compreion = yes<br>CompresionLevel = 9<br>Forwardx11 = yes</p>
+<p>[bitbucket.org]<br>User = hg</p>
+<p>[topsecret.server.com]<br>port = 50022<br>Forwardx11 = no</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">$ import configparser</span><br><span class="line"></span><br><span class="line">def createConfig(section, content, file):</span><br><span class="line">    <span class="comment"># 生成一个配置文件对象</span></span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    config[section] = content</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line">def readConfig(file):</span><br><span class="line">    config = configparser.ConfigParser()</span><br><span class="line">    <span class="comment"># 将配置文件中的内容读取，原有的section及option都会被取出</span></span><br><span class="line">    config.read(file)</span><br><span class="line">    <span class="built_in">return</span> config</span><br><span class="line"></span><br><span class="line">def saveConfig(file):</span><br><span class="line">    with open(file, <span class="string">'w'</span>) as f:</span><br><span class="line">        config.write(f)</span><br><span class="line"></span><br><span class="line">def removeSection(config, section, file):</span><br><span class="line">    <span class="comment"># 删除指定的section,同时会删除其内部的option</span></span><br><span class="line">    config.remove_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def removeOption(config, section, option, file):</span><br><span class="line">    config.remove_option(section, option)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def addSection(config, section, file):</span><br><span class="line">    config.add_section(section)</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def addOption(config, section, file, *option):</span><br><span class="line">    config.set(section, option[0], option[1])</span><br><span class="line">    saveConfig(file)</span><br><span class="line"></span><br><span class="line">def findSection(config):</span><br><span class="line">    <span class="built_in">return</span> config.sections()</span><br><span class="line"></span><br><span class="line">def findOptions(config, section):</span><br><span class="line">    <span class="built_in">return</span> config.options(section)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    section = <span class="string">'account'</span></span><br><span class="line">    content = &#123;<span class="string">'addr'</span>: <span class="string">'zhengzhou'</span>, <span class="string">'type'</span>: <span class="string">'A'</span>&#125;</span><br><span class="line">    file = <span class="string">'book.ini'</span></span><br><span class="line">    <span class="comment"># createConfig(section, content, file)</span></span><br><span class="line">    config = readConfig(file)</span><br><span class="line">    addSection(config, section, file)</span><br></pre></td></tr></table></figure>
+<h3 id="logging模块"><a href="#logging模块" class="headerlink" title="logging模块"></a>logging模块</h3><p>logging简单配置</p>
+<p>默认情况下python的logging模块将日志打印到了标准输出中，且只显示了大于等于warning级别的日志，这说明默认的日志级别设置为warning(日志级别等级critical&gt;error&gt;warning&gt;info&gt;debug),默认的日志格式为日志级别:Logger名称:用户输入消息</p>
+<h2 id="collections模块"><a href="#collections模块" class="headerlink" title="collections模块"></a>collections模块</h2><p>在内置数据类型（dict、list、set、tuple）的基础上，collections模块还提供了几个额外的数据类型：Counter、deque、defaultdict、namedtuple和OrderedDict等<br>1.namedtuple: 生成可以使用名字来访问元素内容的tuple<br>2.deque: 双端队列，可以快速的从另外一侧追加和推出对象<br>3.Counter: 计数器，主要用来计数<br>4.OrderedDict: 有序字典</p>
+<h3 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h3><p>tuple元组，表示不变集合，例如，一个点的二维坐标就可以表示成：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import namedtuple</span><br><span class="line"><span class="built_in">test</span> = namedtuple(<span class="string">'hello'</span>,[<span class="string">'x'</span>,<span class="string">'y'</span>])</span><br><span class="line">p = text(1,2)</span><br><span class="line"><span class="built_in">print</span>(p,x)</span><br><span class="line"><span class="built_in">print</span>(p,y)</span><br></pre></td></tr></table></figure></p>
+<p>执行结果为:1<br>          2</p>
+<p>类似的，如果要用坐标和半径表示一个圆，也可以用namedtuple定义，里面的值不可修改(元组不可变)，修改会报错。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import namedtuple</span><br><span class="line">Circle = namedtuple(<span class="string">'Circle'</span>,[<span class="string">'x'</span>,<span class="string">'y'</span>,<span class="string">'z'</span>])</span><br><span class="line">p = Circle(3,4,5)</span><br><span class="line"><span class="built_in">print</span>(p,x)</span><br><span class="line"><span class="built_in">print</span>(p,y)</span><br><span class="line"><span class="built_in">print</span>(p,z)</span><br></pre></td></tr></table></figure></p>
+<p>输出结果为: 3<br>           4<br>           5</p>
+<h3 id="deque双端队列"><a href="#deque双端队列" class="headerlink" title="deque双端队列"></a>deque双端队列</h3><p>使用list存储数据时，按索引访问元素很快，但是插入和删除元素就很慢了，因为list是线性存储，数据量大的时候，插入和删除效率很低。<br>deque是为了高效实现插入和删除操作的双向列表，适合用于队列和栈<br>计算机数据结构模型<br>先进先出：<br>队列，内部维护了严格的顺序，不能跳着取，必须一个个取</p>
+<p>双端队列 两边(前，后)同时取，写 from collections import deque</p>
+<p>队列 单向 import queue<br>先进后出：栈 是单向</p>
+<p>双端队列:deque除了实现list的append()和pop()外，还支持appendleft()和popleft()，这样就可以非常高效地往头部添加或删除元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import deque <span class="comment">#双端队列</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h3><p>使用dict时，Key是无序的。在对dict做迭代时，我们无法确定Key的顺序。<br>如果要保持Key的顺序，可以用OrderedDict<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ from collection import OrderedDict</span><br><span class="line"><span class="comment">#有序字典，谁先写在前面，就排在前面</span></span><br><span class="line">dic1 = OrderedDict([(<span class="string">'k1'</span>,<span class="string">'v1'</span>),(<span class="string">'k2'</span>,<span class="string">'v2'</span>)])</span><br><span class="line">dic2 = OrderedDict([(<span class="string">'k2'</span>,<span class="string">'v2'</span>),(<span class="string">'k1'</span>,<span class="string">'v1'</span>)])</span><br></pre></td></tr></table></figure></p>
+<h3 id="Counter"><a href="#Counter" class="headerlink" title="Counter"></a>Counter</h3><p>counter类的目的是用来跟踪值出现的次数，它是一个无序的容器类型，以字典的键值对形式存储，其中元素作为key,其计数作为value.计数值可以使任意的interger(包括0和负数)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ from collections import Counter</span><br><span class="line">c = Counter(<span class="string">'abcdeabcdabd'</span>)</span><br><span class="line"><span class="built_in">print</span>(c)</span><br></pre></td></tr></table></figure></p>
+<p>结果为：<br>Counter({‘a’: 3, ‘b’: 3, ‘d’: 3, ‘c’: 2, ‘e’: 1})</p>
+<h3 id="time"><a href="#time" class="headerlink" title="time"></a>time</h3><p>常用方法<br>1 time.sleep(secs)<br>(线程)休眠指定的时间运行，单位为秒<br>2 time.time()<br>获取当前时间戳</p>
+<p>格式化的时间字符串(Format String): ‘1999-12-06’<br>%y 两位数的年份表示（00-99）<br>%Y 四位数的年份表示（000-9999）<br>%m 月份（01-12）<br>%d 月内中的一天（0-31）<br>%H 24小时制小时数（0-23）<br>%I 12小时制小时数（01-12）<br>%M 分钟数（00=59）<br>%S 秒（00-59）<br>%a 本地简化星期名称<br>%A 本地完整星期名称<br>%b 本地简化的月份名称<br>%B 本地完整的月份名称<br>%c 本地相应的日期表示和时间表示<br>%j 年内的一天（001-366）<br>%p 本地A.M.或P.M.的等价符<br>%U 一年中的星期数（00-53）星期天为星期的开始<br>%w 星期（0-6），星期天为星期的开始<br>%W 一年中的星期数（00-53）星期一为星期的开始<br>%x 本地相应的日期表示<br>%X 本地相应的时间表示<br>%Z 当前时区的名称<br>%% %号本身</p>
+<p>元组(struct_time) ：struct_time元组共有9个元素共九个元素:(年，月，日，时，分，秒，一年中第几周，一年中第几天等）</p>
+<p>import time<br>p = time.strptime(‘2015-8-8’,’%Y-%m-%d’)<br>print(time.mktime(p))#格式化时间转换时间戳</p>
+<p>ret = time.localtime(1500000000)<br>print(time.strftime(‘%Y-%M-%d %H:%m:%S’,ret))#时间戳转格式化时间</p>
+<p>print(time.strftime(‘%Y-%m-%d’,time.localtime(1500000000)))#年 月 日</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/03/modules_eg/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-exception" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,7 +596,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/02/exception/">异常出理</a>
+      <a class="article-title" href="/2018/08/02/exception/">异常处理</a>
     </h1>
   
 
@@ -551,377 +972,9 @@
 
 
   
-    <article id="post-high_def" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/26/high_def/">高阶函数</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/26/high_def/" class="archive-article-date">
-  	<time datetime="2018-07-26T07:14:26.638Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily<br>.</p>
-<h2 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h2><h3 id="1、匿名函数"><a href="#1、匿名函数" class="headerlink" title="1、匿名函数"></a>1、匿名函数</h3><p>定义匿名函数的语法格式：<br>lambda arg1,arg2,…,argn: expression<br>args是参数，可以有多个，用逗号隔开，expression是表达式(返回值)</p>
-<p>注意：<br>1.lambda函数拥有自己的命名空间，且不能访问自有参数列表之外或全局命名空间里的参数。<br>2.lambda的主体是一个表达式，而不是一个代码块，只能在lambda表达式中封装有限的逻辑。<br>3.参数可以有多个，用逗号隔开<br>4.匿名函数不管逻辑多复杂，只能写一行，且逻辑执行结束后的内容就是返回值<br>5.返回值和正常的函数一样可以使任意数据类型</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ a = lambda n :n*n</span><br><span class="line"><span class="built_in">print</span>(a(10))</span><br></pre></td></tr></table></figure>
-<p>结果为:100</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ max1 = lambda a ,b, c: a <span class="keyword">if</span> a &gt; b and a&gt;c <span class="keyword">else</span> (b <span class="keyword">if</span> b &gt;a and b &gt;c  <span class="keyword">else</span> c) </span><br><span class="line"><span class="built_in">print</span>(max1(2,3,3))</span><br></pre></td></tr></table></figure>
-<p>结果为：3</p>
-<h3 id="2、map-函数-映射函数"><a href="#2、map-函数-映射函数" class="headerlink" title="2、map()函数(映射函数)"></a>2、map()函数(映射函数)</h3><p>函数格式：map(func,iterable)<br>返回值：map 对象（迭代器）<br>说明：map函数主要作用是，将指定函数与序列中的元素进行映射，并完成函数中功能的批量操作，返回值为一个迭代器。我们可以使用for循环或next()函数进行遍历。通常情况下，如果映射的函数较为简单，我们就不单独声明函数，而是采用匿名函数来实现，这样也能提高运行效率。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ def f(x):</span><br><span class="line">    <span class="built_in">return</span> x * x</span><br><span class="line">result = map(f,[1,2,3])  <span class="comment">#生成一个迭代器</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:1,4,9</p>
-<p>另外，用到map函数时，如果函数f比较简单，也可以不事先定义函数，而是以一种匿名函数的形式来进行计算，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ result = map(lambda x:x+5,[1,2,3])</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:6<br>       7<br>       8</p>
-<h3 id="3、reduce函数-归纳函数"><a href="#3、reduce函数-归纳函数" class="headerlink" title="3、reduce函数(归纳函数)"></a>3、reduce函数(归纳函数)</h3><p>函数格式：reduce(func,iterator)<br>返回值：返回函数计算结果，具体类型根据函数的返回值来定<br>说明：reduce函数中的func，一定要设为两个参数，用来接收迭代器返回的值。操作顺序为首先接收第一、第二个值，进行运算；运算结果再与第三个值进行运行，以此类推，直到迭代器迭代完全部数据。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ from functools import reduce</span><br><span class="line">def f(x,y):</span><br><span class="line">    <span class="built_in">return</span>  x * y</span><br><span class="line">result = reduce(f,range(1,4))  </span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
-<p>结果为:6</p>
-<h3 id="4、filter函数-过滤函数"><a href="#4、filter函数-过滤函数" class="headerlink" title="4、filter函数(过滤函数)"></a>4、filter函数(过滤函数)</h3><p>函数格式：filter(func,iterable)<br>返回值：返回一个迭代器<br>说明：过滤函数与映射函数类似，都需要将函数作用于序列中的每个元素，根据函数判断True或False，返回相关元素。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ def is_even(x):</span><br><span class="line">    <span class="built_in">return</span> x % 2 == 0</span><br><span class="line">l = filter(is_even,[0,1,2,3,4,5])</span><br><span class="line"><span class="keyword">for</span> var <span class="keyword">in</span> l:   </span><br><span class="line">    <span class="built_in">print</span>(var)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:0<br>      2<br>      4</p>
-<h3 id="5、递归函数"><a href="#5、递归函数" class="headerlink" title="5、递归函数"></a>5、递归函数</h3><p>递归概念：就是使用自身函数对自身进行调用，每调用一次将当前次的运行结果保存到函数的堆栈中，以副本形式保存，一直到最后完成全部调用。然后逐一向外将当期函数的结果返回并退出到其调用的位置。<br>在Python中，通常推荐使用迭代，递归本身对内存的消耗和运行效率低下的问题较少使用。<br>例：递归求和<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ def mysum(L):</span><br><span class="line">	<span class="keyword">if</span> not L:</span><br><span class="line">		<span class="built_in">return</span> 0</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">return</span> L[0] + mysum(L[1:])</span><br><span class="line">mysum([1,2,3,4,5])</span><br></pre></td></tr></table></figure></p>
-<p>结果为：15</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/26/high_def/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-def_bibao" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/25/def_bibao/">函数嵌套</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/25/def_bibao/" class="archive-article-date">
-  	<time datetime="2018-07-25T09:33:37.993Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h2 id="函数嵌套"><a href="#函数嵌套" class="headerlink" title="函数嵌套"></a>函数嵌套</h2><p>根据Python中，对函数的载入和调用特点。我们可以清楚看到，当Python运行相关文件时，如果遇到函数时，会先将其名字载入到内存中（即为函数名指定一个内存地址）。因此我们在使用函数名时，可以有以下三种情况：</p>
-<h3 id="1、将函数名赋值给变量"><a href="#1、将函数名赋值给变量" class="headerlink" title="1、将函数名赋值给变量"></a>1、将函数名赋值给变量</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line"></span><br><span class="line">a = f1</span><br></pre></td></tr></table></figure>
-<p>a的值为f1()函数名的内存地址</p>
-<h3 id="2、将函数名作为容器的元素"><a href="#2、将函数名作为容器的元素" class="headerlink" title="2、将函数名作为容器的元素"></a>2、将函数名作为容器的元素</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line">ls = [1,2,f1]</span><br></pre></td></tr></table></figure>
-<p>注意，此时存入到列表ls中的f1，它的值仍然是该函数名对应的内存地址</p>
-<h3 id="3、将函数名作为另外一个函数的参数，进行传递"><a href="#3、将函数名作为另外一个函数的参数，进行传递" class="headerlink" title="3、将函数名作为另外一个函数的参数，进行传递"></a>3、将函数名作为另外一个函数的参数，进行传递</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ def f1():</span><br><span class="line">   <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line"></span><br><span class="line">def f2(x):</span><br><span class="line">   x()</span><br><span class="line">f2(f1)</span><br></pre></td></tr></table></figure>
-<p>结果为’ok’</p>
-<p>普通函数嵌套<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ def f2():</span><br><span class="line">   def f1():</span><br><span class="line">      <span class="built_in">print</span>(<span class="string">'ok'</span>)</span><br><span class="line">   f1()</span><br><span class="line">f2()</span><br></pre></td></tr></table></figure></p>
-<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>概念：内部函数包含对外部作用域而非全局作用域变量的引用，外函数的返回值为内部函数的函数名，该内部函数称为闭包函数。</p>
-<p>优势：当函数开始执行时，如果遇到了闭包，Python机制会为其永远开辟一个内存空间，将闭包中的变量等值放入其中，不会随着函数的执行完毕而消失。<br>使用闭包的过程中，一旦外函数被调用一次返回了内函数的引用，虽然每次调用内函数，是开启一个函数执行过后消亡，但是闭包变量实际上只有一份，每次开启内函数都在使用同一份闭包变量</p>
-<p>通过对例子的观察，我们发现闭包函数的写法有如下特点：<br>1、闭包函数作为内部函数，嵌套在外部函数中<br>2、闭包函数会作为外部函数的返回值，进行返回。返回闭包函数时，只返回函数名，不带括号。<br>3、外部调用时，首先要执行外部函数，然后将结果赋值给一个变量，此时该变量对应了闭包函数。<br>4、我们可以通过<strong>closure</strong>内部函数可以观察到，闭包函数的存在。前提是，闭包函数要与外部函数进行数据传递或调用。<br>总结：闭包使用的数据，必须是本身定义或外部函数中定义的相关变量，通常需要调用外部函数的数据，形成一个封闭的函数结构。不能与外部数据（全局变量）发生交流。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ def f1(a):</span><br><span class="line">    def f2():</span><br><span class="line">        <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="built_in">return</span> f2</span><br><span class="line">b = f1(3)</span><br><span class="line">b()</span><br></pre></td></tr></table></figure>
-<p>结果为：3</p>
-<h3 id="闭包的应用—装饰器"><a href="#闭包的应用—装饰器" class="headerlink" title="闭包的应用—装饰器"></a>闭包的应用—装饰器</h3><p>1、概念：装饰器本身仍然是一个函数。是我们队闭包应用的一种具体实现。<br>2、作用：装饰器可以在不改变函数本身功能的情况下，为函数添加额外的功能。诸如：日志、测试、性能检测等。装饰器同样也是返回一个函数对象。<br>3、用法：<br>使用格式：@+装饰器名称</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ import time</span><br><span class="line"></span><br><span class="line">def outer(f):</span><br><span class="line">    def inner(*var):</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        f(*var)</span><br><span class="line">        time.sleep(0.3)</span><br><span class="line">        end_time = time.time()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'此函数执行时间为&#123;0&#125;'</span>.format(str(end_time-start_time)))</span><br><span class="line">    <span class="built_in">return</span> inner</span><br><span class="line"></span><br><span class="line">@outer      <span class="comment"># 此处就是装饰器的声明，这种方法我们成为语法糖</span></span><br><span class="line">def func1():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'hello world'</span>)</span><br></pre></td></tr></table></figure>
-<p>在执行func1时相当于执行inner,func1作为outer的参数，inner函数内调用func1相当于闭包,func1的参数为inner的参数,返回值为inner的返回值<br>利用return制造了一个假象，func1()执行，其实是执行了inner()，而func变量名传给了inner里的f，func1()已经把原来的func1()覆盖了。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/25/def_bibao/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-def_glocals" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/24/def_glocals/">全局变量和局部变量</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/24/def_glocals/" class="archive-article-date">
-  	<time datetime="2018-07-24T03:56:54.331Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h2 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h2><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><p>1、Python中，函数在调用的时候Python才会给函数一个内存地址，用来执行函数内部的相关代码。<br>2、Python程序在运行时，首先会将程序最外部的变量载入内容，并给其分配相关的内存空间。我们成这种变量为全局变量。</p>
-<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>1、函数中声明的变量，只有在函数被执行时，才会被分配内存空间进行执行。我们成这种变量为局部变量。<br>2、Python程序执行的过程中，执行函数时首先会检查其函数内部的局部变量是否存在，如果存在就调用它，如果不存在就从外部全局变量中进行调用，如果仍然没有发现相关内容，则报错。</p>
-<h2 id="globals-与locals"><a href="#globals-与locals" class="headerlink" title="globals()与locals()"></a>globals()与locals()</h2><p>在Python中，通过globals()观察全局作用域中内容，包括：内置函数、自定义函数、全局变量；通过locals()观察局部作用域中的内容，包括：局部变量，嵌套函数（内部函数）inner </p>
-<h2 id="global与nonlocal"><a href="#global与nonlocal" class="headerlink" title="global与nonlocal"></a>global与nonlocal</h2><p>global用来修饰局部变量时，表示该变量将作为全局变量来使用。即不仅在函数中可以被调用，同时在文件最外部也可以被调用。<br>nonlocal用来修饰嵌套函数内部的变量，对父级作用域（外层函数）中的变量进行引用和修改，那么从该层(包括父级)以下都将调用该变量的值。注意，该关键字只能影响其直接父级函数。<br>使用global关键字修饰的变量之前可以并不存在,而使用nonlocal关键字修饰的变量在嵌套作用域中必须已经存在。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在函数中定义的变量，我们成为局部变量。包括在函数内部定义的变量、作为参数传递进来的变量。局部变量起作用的范围，我们称为局部作用域。因为Python在调用局部变量时，需要给它分配内存地址，我们称为这个地址为局部命名空间。<br>在文件最外层定义的变量，我们成为全局变量，可以在文件中的任意位置进行调用。全局变量起作用的范围，我们称为全局作用域。Python在载入文件时，就需要给全局变量分配内存地址，这个地址我们称为全局命名空间。</p>
-<p>Python运行时处理变量的步骤：<br>1、从Python解释器开始执行之后，就在内存中开辟里一个空间，每当遇到一个变量的时候，就把变量名和值之间对应的关系记录下来，但是当遇到函数定义的时候，解释器只是象征性的将函数名读入内存，表示知道这个函数存在了，至于函数内部的变量和逻辑，解释器根本不关心。<br>2、函数执行时，函数中的变量会储存在新开辟出来的内存中，函数中的变量只能在函数内部使用，并且会随着函数执行完毕，这块内存中的所有内容也会被清空</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/24/def_glocals/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-def" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/23/def/">python函数</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/23/def/" class="archive-article-date">
-  	<time datetime="2018-07-23T13:03:33.219Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h2 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h2><h3 id="1、函数的定义"><a href="#1、函数的定义" class="headerlink" title="1、函数的定义"></a>1、函数的定义</h3><p>函数的格式：<br>def 函数名([参数列表]):<br>    执行代码<br>其中，函数名的命名方式与变量名的要求相同，即只能是数字、字符、下划线三者构成，同时不能由</p>
-<p>数字开头。<br>另外，函数的参数根据情况，可以有参，也可以无参。同时，参数的个数，可以是1到N个。最后，调</p>
-<p>用函数时，一定要保证该函数已经被定义。调用的函数名与定义的函数名一致。</p>
-<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>函数在外部调用时，直接写函数名以及函数参数即可，不需要将函数体写出来。同时，函数是否有返回值，由其函数体最后一句代码是否为return来决定的。如果由return语句，那么就意味着该函数有返回值，如果没有返回值就意味着返回值为None。<br>注意：函数使用return作为返回值语句，该命令通常放在函数的最后一句，保证函数相关的代码都执行完毕后才返回，如果后面还有其他程序，则不会被执行。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def area(w, h):</span><br><span class="line">    <span class="built_in">return</span> w * h</span><br><span class="line"><span class="built_in">print</span>(area(3, 4)</span><br></pre></td></tr></table></figure>
-<p>结果为：12</p>
-<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>概念：函数在定义时声明的参数，我们称为形参（形式参数）。形参的作用，主要是用来表明参数顺序、类型和个数。并不代表具体内容。<br>我们在调用函数的时候，根据形参的规定（顺序、类型、个数），传递进来实际的内容。我们称为实参。<br>例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def display(name,age):   <span class="comment"># 定义函数时声明的形参：name,age</span></span><br><span class="line">    <span class="built_in">print</span>(name,age)</span><br><span class="line">display(<span class="string">'tom'</span>,22)        <span class="comment">#调用函数时实际传递的参数值</span></span><br></pre></td></tr></table></figure></p>
-<p>结果为：tom 22</p>
-<p>1）必须的参数<br>我们在函数定义时，显示声明在函数的参数列表中的参数，这些参数一旦被声明，函数在调用时，必须按照所声明的顺序、个数和数据类型，来传递实际的参数内容。<br>2）关键字参数<br>我们在定义函数时，声明了函数的参数后，在调用函数时我们不仅传递实际的参数内容，同时还将参数名字与之对应，这样保证传递进来的参数如果没有按照函数定义时规定的顺序，也能够正确传递进来。<br>3)默认参数<br>我们在定义函数时，声明函数的参数，同时可以给这些参数进行赋值，在调用该函数时，如果没有给对应参数传递实参，那么python会默认使用定义函数时所声明的默认参数值。<br>4）可变参数<br>普通可变参数：我们在定义函数时，因为参数过多或者不确定具体参数列表的个数，我们还可以采用可变参数来实现。可变参数表示从0到N个参数，采用*参数名<br>注意，此时可变参数类型，为tuple元组类型。<br>关键字可变参数：我们在定义函数时，通过使用**参数名，来表示0到N个参数，在外部调用函数时，将这些可变参数组装成一个字典。<br>例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ def person(name, password, **kw):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'用户名&#123;0&#125;，密码&#123;1&#125;，其他内容&#123;2&#125;'</span>.format(name,password,kw))</span><br><span class="line">person(<span class="string">'tom'</span>,<span class="string">'123456'</span>)</span><br><span class="line">person(<span class="string">'simth'</span>, <span class="string">'12345'</span>,sex=<span class="string">'男'</span>, address=<span class="string">'郑州'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>结果为：用户名tom，密码123456，其他内容{}<br>       用户名simth，密码12345，其他内容{‘sex’: ‘男’, ‘address’: ‘郑州’}<br>特殊用法：<em><br>在函数定义中，如果单独使用一个</em>号，意味着该<em>后面的参数，为关键字参数声明时必须使用的名字。在调用该函数时，关键字参数的名字要与函数定义中</em>号后面的参数名称一致。例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ def person(name, password, *, city, sex):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'用户名&#123;0&#125;，密码&#123;1&#125;，其他内容&#123;2&#125;&#123;3&#125;'</span>.format(name, password, city, sex))</span><br><span class="line">person(<span class="string">'simth'</span>, <span class="string">'12345'</span>,sex=<span class="string">'男'</span>, city=<span class="string">'郑州'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>结果为:用户名simth,密码12345，其他内容郑州男</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/23/def/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-practise1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/21/practise1/">系统设计</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/21/practise1/" class="archive-article-date">
-  	<time datetime="2018-07-21T06:03:27.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">kkzhui</a>,you can learn a lot of knowledge in there,updated daily</p>
-<h3 id="博客页面"><a href="#博客页面" class="headerlink" title="博客页面"></a>博客页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">$ import time </span><br><span class="line">import os </span><br><span class="line">login_msg = &#123;<span class="string">'111111'</span>:<span class="string">'abc'</span>,<span class="string">'222222'</span>:<span class="string">'def'</span>,<span class="string">'333333'</span>:<span class="string">'ghi'</span>&#125;</span><br><span class="line">logining = &#123;&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'欢迎来到博客园首页'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'1：请登录'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'2：请注册'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'3：文章页面'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'4：日记页面'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'5：评论页面'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'6：收藏页面'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'7：注销'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'8：退出程序'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line">login_number = 3</span><br><span class="line">login_name = 0</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    msg = input(<span class="string">'请输入菜单编号：'</span>)</span><br><span class="line">    <span class="keyword">if</span> msg == <span class="string">'1'</span>:</span><br><span class="line">        login_name=input(<span class="string">'请输入你的登录账号：'</span>)</span><br><span class="line">        login_password = input(<span class="string">'请输入你的密码：'</span>)</span><br><span class="line">        <span class="keyword">if</span> login_name <span class="keyword">in</span> login_msg and login_password == login_msg[login_name]:</span><br><span class="line">            <span class="built_in">print</span>(login_name+<span class="string">'在：'</span>,end = <span class="string">''</span>)</span><br><span class="line">            <span class="built_in">print</span>(time.strftime(<span class="string">'%Y-%m-%d'</span>,time.localtime()),end = <span class="string">''</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'执行了登录操作'</span>)</span><br><span class="line">            logining[login_name] = <span class="string">'登录成功'</span></span><br><span class="line">            login_number = 3</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            login_number -=1</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'登录失败，还有&#123;0&#125;次机会,可以重新注册或者再次登录'</span>.format(login_number))</span><br><span class="line">            <span class="keyword">if</span> login_number == 0:</span><br><span class="line">                os.system(<span class="string">'cls'</span>)</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'2'</span>:</span><br><span class="line">        login_name=input(<span class="string">'请输入你想创建的账号：'</span>)</span><br><span class="line">        login_password = input(<span class="string">'请输入你的密码：'</span>)</span><br><span class="line">        <span class="keyword">if</span> login_name not <span class="keyword">in</span> login_msg:</span><br><span class="line">             login_msg[login_name] = login_password</span><br><span class="line">             <span class="built_in">print</span>(<span class="string">'账号创建成功!'</span>)</span><br><span class="line">             logining[login_name] = <span class="string">'登录成功'</span></span><br><span class="line">             <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'账号已存在'</span>)</span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'3'</span>:</span><br><span class="line">        <span class="keyword">if</span> logining == &#123;&#125;:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'请先登录'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'欢迎&#123;0&#125;来到文章页面'</span>.format(login_name))</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'4'</span>:</span><br><span class="line">        <span class="keyword">if</span> logining == &#123;&#125;:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'请先登录'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'欢迎&#123;0&#125;来到日记页面'</span>.format(login_name))</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'5'</span>:</span><br><span class="line">        <span class="keyword">if</span> logining == &#123;&#125;:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'请先登录'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'欢迎&#123;0&#125;来到评论页面'</span>.format(login_name))</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'6'</span>:</span><br><span class="line">         <span class="keyword">if</span> logining == &#123;&#125;:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'请先登录'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">         <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'欢迎&#123;0&#125;来到收藏页面'</span>.format(login_name))</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'7'</span>:</span><br><span class="line">        logining.clear()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'注销成功！'</span>)</span><br><span class="line">        <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> msg == <span class="string">'8'</span>:</span><br><span class="line">        os.system(<span class="string">'cls'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'编号输入错误！'</span>)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="药品进销存"><a href="#药品进销存" class="headerlink" title="药品进销存"></a>药品进销存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line">$ import os </span><br><span class="line">buy_medicine_msg = &#123;&#125;  <span class="comment">#进货信息字典</span></span><br><span class="line">medicine_inventory_msg = &#123;&#125; <span class="comment">#库存信息字典</span></span><br><span class="line">sell_medicine_msg = &#123;&#125; <span class="comment"># 销售信息字典</span></span><br><span class="line">buy = &#123;&#125; <span class="comment">#进货信息临时字典</span></span><br><span class="line"></span><br><span class="line">user=&#123;<span class="string">'进货人'</span>:[<span class="string">'tom'</span>,<span class="string">'aaa'</span>],<span class="string">'销售人'</span>:[<span class="string">'lucy'</span>,<span class="string">'bbb'</span>],<span class="string">'库存管理人'</span>:[<span class="string">'hurry'</span>,<span class="string">'ccc'</span>]&#125;</span><br><span class="line">msg = 0</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'欢迎使用药品进销存系统'</span>)</span><br><span class="line"><span class="keyword">while</span> msg == 0:</span><br><span class="line">     user_name = input(<span class="string">'请输入你的登录账号：'</span>)</span><br><span class="line">     user_password = input(<span class="string">'请输入你的密码：'</span>)</span><br><span class="line">     <span class="keyword">for</span> i <span class="keyword">in</span> user:</span><br><span class="line">         <span class="keyword">if</span> user_name == user[i][0] and user_password == user[i][1]:</span><br><span class="line">             <span class="built_in">print</span>(<span class="string">'登录成功！'</span>)</span><br><span class="line">             msg = 1</span><br><span class="line">             <span class="built_in">break</span></span><br><span class="line">     <span class="keyword">if</span> msg == 0:</span><br><span class="line">         <span class="built_in">print</span>(<span class="string">'登录失败，请重新输入！'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'1：药品购入'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'2：药品入库'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'3：销售药品'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'4：药品统计'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'5：退出程序'</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'*'</span>*30)</span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    number = input(<span class="string">'请输入菜单功能编号：'</span>)</span><br><span class="line">    <span class="keyword">if</span> number == <span class="string">'1'</span>:</span><br><span class="line">       medicine_name = input(<span class="string">'请输入药品名称：'</span>)</span><br><span class="line">       <span class="keyword">if</span> medicine_name <span class="keyword">in</span> buy_medicine_msg:</span><br><span class="line">            medicine_number = int(input(<span class="string">'请输入进货数量：'</span>))</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]=medicine_number+buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'buy_medicine_time'</span>]=input(<span class="string">'请输入进货时间(格式xxxx.xx.xx)：'</span>)</span><br><span class="line">            buy[medicine_name] = <span class="string">'进货成功'</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'添加进货信息成功！'</span>)</span><br><span class="line">       <span class="keyword">else</span>:</span><br><span class="line">            buy_medicine_msg[medicine_name] = &#123;&#125;</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_name'</span>] = medicine_name</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_id'</span>] = input(<span class="string">'请输入药品编号：'</span>)</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_type'</span>] = input(<span class="string">'请输入药品分类：'</span>)</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_price'</span>] = int(input(<span class="string">'请输入药品单价：'</span>))</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>] = int(input(<span class="string">'请输入进货数量：'</span>))</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'buy_medicine_time'</span>] = input(<span class="string">'请输入进货时间(格式xxxx.xx.xx)：'</span>)</span><br><span class="line">            buy_medicine_msg[medicine_name][<span class="string">'buy_people'</span>] = user[<span class="string">'进货人'</span>][0]</span><br><span class="line">            buy[medicine_name] = <span class="string">'进货成功'</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'添加进货信息成功！'</span>)</span><br><span class="line">    <span class="keyword">elif</span> number == <span class="string">'2'</span> :</span><br><span class="line">        medicine_name = input(<span class="string">'请输入药品名称：'</span>)</span><br><span class="line">        <span class="keyword">if</span> medicine_name <span class="keyword">in</span> buy:  <span class="comment">#判断入库药品在进货信息临时表中是否存在</span></span><br><span class="line">            <span class="keyword">if</span> medicine_name <span class="keyword">in</span> medicine_inventory_msg:    <span class="comment">#判断仓库中是否还有入库的药品</span></span><br><span class="line">                <span class="keyword">if</span> medicine_name <span class="keyword">in</span> sell_medicine_msg:</span><br><span class="line">                    medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>]=buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]-sell_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>]=buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]</span><br><span class="line">                <span class="keyword">while</span> True:</span><br><span class="line">                    medicine_save_time = input(<span class="string">'请输入入库时间(格式xxxx.xx.xx)：'</span>)</span><br><span class="line">                    <span class="keyword">if</span> medicine_save_time &gt; buy_medicine_msg[medicine_name][<span class="string">'buy_medicine_time'</span>]:</span><br><span class="line">                        <span class="built_in">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="built_in">print</span>(<span class="string">'入库时间不正确！'</span>)</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_save_time'</span>] = medicine_save_time</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'manage_people'</span>] = user[<span class="string">'库存管理人'</span>][0]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                medicine_inventory_msg[medicine_name] = &#123;&#125;</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_name'</span>] = medicine_name</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_id'</span>] = input(<span class="string">'请输入药品编号：'</span>)</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_type'</span>] = input(<span class="string">'请输入药品分类：'</span>)</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_price'</span>] = int(input(<span class="string">'请输入药品单价：'</span>))</span><br><span class="line">                <span class="keyword">while</span> True:</span><br><span class="line">                     medicine_number = int(input(<span class="string">'请输入入库数量：'</span>))</span><br><span class="line">                     <span class="keyword">if</span> medicine_number == buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>]:</span><br><span class="line">                         <span class="built_in">break</span></span><br><span class="line">                     <span class="keyword">else</span>:</span><br><span class="line">                         <span class="built_in">print</span>(<span class="string">'入库数量与进货数量不相等，请重新输入！'</span>)</span><br><span class="line">                <span class="keyword">while</span> True:</span><br><span class="line">                    medicine_save_time = input(<span class="string">'请输入入库时间(格式xxxx.xx.xx)：'</span>)</span><br><span class="line">                    <span class="keyword">if</span> medicine_save_time &gt; buy_medicine_msg[medicine_name][<span class="string">'buy_medicine_time'</span>]:</span><br><span class="line">                        <span class="built_in">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="built_in">print</span>(<span class="string">'入库时间不正确！'</span>)</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>] = medicine_number</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'medicine_save_time'</span>] = medicine_save_time</span><br><span class="line">                medicine_inventory_msg[medicine_name][<span class="string">'manage_people'</span>] = user[<span class="string">'库存管理人'</span>][0]</span><br><span class="line">            del buy[medicine_name] <span class="comment">#删除当前入库药品在临时进货字典的信息  </span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'药品入库成功！'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'没有此药品的进货信息，不需要入库！'</span>)</span><br><span class="line">    <span class="keyword">elif</span> number == <span class="string">'3'</span> :</span><br><span class="line">        medicine_name = input(<span class="string">'请输入药品名称：'</span>)</span><br><span class="line">        <span class="keyword">if</span> medicine_name <span class="keyword">in</span> medicine_inventory_msg:</span><br><span class="line">            sell_medicine_msg[medicine_name] = &#123;&#125;</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_name'</span>] = medicine_name</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_id'</span>] = input(<span class="string">'请输入药品编号：'</span>)</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_type'</span>] = input(<span class="string">'请输入药品分类：'</span>)</span><br><span class="line">            medicine_price = int(input(<span class="string">'请输入药品单价：'</span>))</span><br><span class="line">            <span class="keyword">while</span> True:</span><br><span class="line">                 medicine_number = int(input(<span class="string">'请输入销售数量：'</span>))</span><br><span class="line">                 <span class="keyword">if</span> medicine_number &lt;= medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>]:</span><br><span class="line">                     <span class="built_in">break</span></span><br><span class="line">                 <span class="keyword">else</span>:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'销售数量大于库存数量，请重新输入！'</span>)</span><br><span class="line">            <span class="keyword">while</span>  True:</span><br><span class="line">                sell_medicine_time = input(<span class="string">'请输入销售时间(格式xxxx.xx.xx)：'</span>)</span><br><span class="line">                <span class="keyword">if</span> sell_medicine_time &gt; medicine_inventory_msg[medicine_name][<span class="string">'medicine_save_time'</span>]:</span><br><span class="line">                    <span class="built_in">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'销售时间不正确！'</span>)</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_price'</span>] = medicine_price</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>] = medicine_number</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'medicine_total_price'</span>] = medicine_price*medicine_number</span><br><span class="line">            medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>] = medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>] - medicine_number</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'sell_medicine_time'</span>] = sell_medicine_time</span><br><span class="line">            sell_medicine_msg[medicine_name][<span class="string">'sell_people'</span>] = user[<span class="string">'销售人'</span>][0]</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'药品销售信息添加成功！'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'仓库没有此药品'</span>)</span><br><span class="line">    <span class="keyword">elif</span> number == <span class="string">'4'</span>:</span><br><span class="line">        medicine_name = input(<span class="string">'请输入药品名称：'</span>)</span><br><span class="line">        <span class="keyword">if</span> medicine_name <span class="keyword">in</span> sell_medicine_msg:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'药品名称   药品购入数量  购入人'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0&#125;             &#123;1&#125;       &#123;2&#125;  '</span>.format(medicine_name, buy_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>],user[<span class="string">'进货人'</span>][0]))</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'药品名称   药品销售数量  销售人'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0&#125;             &#123;1&#125;       &#123;2&#125; '</span>.format(medicine_name,sell_medicine_msg[medicine_name][<span class="string">'medicine_number'</span>],user[<span class="string">'销售人'</span>][0]))</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'药品名称   药品库存数量  保管人'</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'&#123;0&#125;             &#123;1&#125;       &#123;2&#125;   '</span>.format(medicine_name, medicine_inventory_msg[medicine_name][<span class="string">'medicine_number'</span>],user[<span class="string">'库存管理人'</span>][0]))</span><br><span class="line">            chose = input(<span class="string">'输入1统计所有药品的销售情况，输入其他返回选择菜单页面：'</span>)</span><br><span class="line">            <span class="keyword">if</span> chose == <span class="string">'1'</span>:</span><br><span class="line">                list1 = [sell_medicine_msg[i][<span class="string">'medicine_number'</span>]  <span class="keyword">for</span> i <span class="keyword">in</span> sell_medicine_msg]</span><br><span class="line">                dic1 = &#123;sell_medicine_msg[i][<span class="string">'medicine_number'</span>]:i <span class="keyword">for</span> i <span class="keyword">in</span> sell_medicine_msg&#125;</span><br><span class="line">                list1.sort(reverse=True)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'药品名称    药品销售数量   药品总价    药品销售比例'</span>)</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">                    <span class="built_in">print</span>(dic1[i]+<span class="string">'         '</span>+str(i)+<span class="string">'               '</span>+str(sell_medicine_msg[dic1[i]][<span class="string">'medicine_total_price'</span>])+<span class="string">'           '</span>+str(round((i/buy_medicine_msg[dic1[i]][<span class="string">'medicine_number'</span>])*100,2))+<span class="string">'%'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'未销售过此药品！'</span>)</span><br><span class="line">    <span class="keyword">elif</span> number == <span class="string">'5'</span>:</span><br><span class="line">        os.system(<span class="string">'cls'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'输入的编号有误！'</span>)</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/21/practise1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
